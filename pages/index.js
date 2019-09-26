@@ -1,10 +1,8 @@
-import "../sass/root.scss";
-
-import Header from "../components/Header";
-import Main from "../components/Main";
-import About from "../components/About";
-import Portfolio from "../components/Portfolio";
-import Contact from "../components/About";
+import Header from "../components/Header/Header";
+import Main from "../components/Main/Main";
+import About from "../components/About/About";
+import Portfolio from "../components/Portfolio/Portfolio";
+import Contact from "../components/Footer/Footer";
 
 const index = () => (
     <div>

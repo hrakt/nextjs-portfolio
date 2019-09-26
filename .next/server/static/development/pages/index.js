@@ -88,15 +88,15 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/About.js":
-/*!*****************************!*\
-  !*** ./components/About.js ***!
-  \*****************************/
+/***/ "./components/About/About.js":
+/*!***********************************!*\
+  !*** ./components/About/About.js ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -104,16 +104,16 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _sass_components_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/components.scss */ "./sass/components.scss");
-/* harmony import */ var _sass_components_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_components_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/About.js";
+/* harmony import */ var _About_About_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../About/About.scss */ "./components/About/About.scss");
+/* harmony import */ var _About_About_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_About_About_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/About/About.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const About = () => {
   return __jsx("div", {
-    className: "container-2",
+    className: _About_About_scss__WEBPACK_IMPORTED_MODULE_1___default.a["container-2"],
     id: "about",
     __source: {
       fileName: _jsxFileName,
@@ -121,77 +121,77 @@ const About = () => {
     },
     __self: undefined
   }, __jsx("div", {
-    className: "about-container",
+    className: _About_About_scss__WEBPACK_IMPORTED_MODULE_1___default.a["about-container"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: undefined
   }, __jsx("h4", {
-    className: "about-container__heading",
+    className: _About_About_scss__WEBPACK_IMPORTED_MODULE_1___default.a["about-container__heading"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: undefined
   }, "About me"), __jsx("h5", {
-    className: "about-container__heading2",
+    className: _About_About_scss__WEBPACK_IMPORTED_MODULE_1___default.a["about-container__heading2"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: undefined
   }, "If you're interested who I am"), __jsx("div", {
-    className: "about-container__text",
+    className: _About_About_scss__WEBPACK_IMPORTED_MODULE_1___default.a["about-container__text"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: undefined
   }, __jsx("p", {
-    className: "about-container__content",
+    className: _About_About_scss__WEBPACK_IMPORTED_MODULE_1___default.a["about-container__content"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: undefined
   }, "I'm Hrak, I'm a 22 years old Full-Stack developer from Los Angeles."), __jsx("p", {
-    className: "about-container__content",
+    className: _About_About_scss__WEBPACK_IMPORTED_MODULE_1___default.a["about-container__content"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: undefined
   }, "3 years ago I made a decision to move out to Los Angeles and pursue my dreams. So far Ive had the oportunity to study Computer Science at Pasadena City College. Meanwhile, I tried to start a career working at Apple as Specialist and also had the oportuinty to do an internship at Techstars, a startup incubator program."), __jsx("p", {
-    className: "about-container__content",
+    className: _About_About_scss__WEBPACK_IMPORTED_MODULE_1___default.a["about-container__content"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
     },
     __self: undefined
   }, "In 2018, I got introduced to Web Development through CodeCademy and Reddit and I fell in love. The first time I created a web site it made me realize my passion toward building web applications."), __jsx("p", {
-    className: "about-container__content",
+    className: _About_About_scss__WEBPACK_IMPORTED_MODULE_1___default.a["about-container__content"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: undefined
   }, "In 2019, I decided that after completing my classNamees at PCC, I want to put myself into an enviornment that will get my Web Development career started. That was when I discovered General Assembly and decided to take the Software Engineering Immersive course."), __jsx("p", {
-    className: "about-container__content",
+    className: _About_About_scss__WEBPACK_IMPORTED_MODULE_1___default.a["about-container__content"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 37
     },
     __self: undefined
   }, "Because best way to learn something is just to practice it, I built over 5 projects during my time at GA expanding my knowledge on React, Node.js and Javascript in general."), __jsx("p", {
-    className: "about-container__content",
+    className: _About_About_scss__WEBPACK_IMPORTED_MODULE_1___default.a["about-container__content"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
     },
     __self: undefined
   }, "I've always strived to do more, be more and never settle learning."), __jsx("p", {
-    className: "about-container__content",
+    className: _About_About_scss__WEBPACK_IMPORTED_MODULE_1___default.a["about-container__content"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 47
@@ -204,10 +204,27 @@ const About = () => {
 
 /***/ }),
 
-/***/ "./components/Header.js":
-/*!******************************!*\
-  !*** ./components/Header.js ***!
-  \******************************/
+/***/ "./components/About/About.scss":
+/*!*************************************!*\
+  !*** ./components/About/About.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"container-2": "container-2___2_Blp",
+	"about-container": "about-container___2NCAL",
+	"about-container__heading": "about-container__heading___1Y4gl",
+	"about-container__heading2": "about-container__heading2___1KzVy",
+	"about-container__content": "about-container__content___2PuXR"
+};
+
+/***/ }),
+
+/***/ "./components/Footer/Footer.js":
+/*!*************************************!*\
+  !*** ./components/Footer/Footer.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -215,45 +232,128 @@ const About = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/main.scss */ "./sass/main.scss");
-/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_main_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _img_favicon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/favicon.png */ "./img/favicon.png");
-/* harmony import */ var _img_favicon_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_png__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Header.js";
+var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Footer/Footer.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+const Footer = () => __jsx("div", {
+  class: "container-4",
+  id: "contact",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 2
+  },
+  __self: undefined
+}, __jsx("div", {
+  class: "contact-container",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 3
+  },
+  __self: undefined
+}, __jsx("h2", {
+  class: "contact-container__header1",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4
+  },
+  __self: undefined
+}, "Contact Me"), __jsx("h4", {
+  class: "contact-container__header2",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: undefined
+}, "If you would like to talk, you can find me at:"), __jsx("div", {
+  class: "contact-container__icons",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+}, __jsx("a", {
+  href: "https://www.github.com/hrakt/",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}, __jsx("img", {
+  src: "/img/_ionicons_svg_logo-github.svg",
+  class: "contact-container__icon",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+})), __jsx("a", {
+  href: "https://www.linkedin.com/in/hrakt/",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  },
+  __self: undefined
+}, __jsx("img", {
+  src: "/img/_ionicons_svg_logo-linkedin.svg",
+  class: "contact-container__icon",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
+  },
+  __self: undefined
+})))));
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
+/***/ "./components/Header/Header.js":
+/*!*************************************!*\
+  !*** ./components/Header/Header.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _img_favicon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../img/favicon.png */ "./img/favicon.png");
+/* harmony import */ var _img_favicon_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_png__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Header/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-
 const Header = () => {
   return __jsx("div", {
-    className: _sass_main_scss__WEBPACK_IMPORTED_MODULE_1___default.a,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 5
     },
     __self: undefined
   }, __jsx("img", {
-    src: _img_favicon_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    src: _img_favicon_png__WEBPACK_IMPORTED_MODULE_1___default.a,
     alt: "Logo",
     className: "logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: undefined
   }), __jsx("nav", {
     className: "navbar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: undefined
   }, __jsx("div", {
     className: "navbar__item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: undefined
   }, __jsx("a", {
@@ -261,14 +361,14 @@ const Header = () => {
     className: "navbar__item-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: undefined
   }, "About Me")), __jsx("div", {
     className: "navbar__item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: undefined
   }, __jsx("a", {
@@ -276,14 +376,14 @@ const Header = () => {
     className: "navbar__item-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: undefined
   }, "Work")), __jsx("div", {
     className: "navbar__item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     },
     __self: undefined
   }, __jsx("a", {
@@ -291,7 +391,7 @@ const Header = () => {
     className: "navbar__item-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 19
     },
     __self: undefined
   }, "Contact"))));
@@ -301,10 +401,10 @@ const Header = () => {
 
 /***/ }),
 
-/***/ "./components/Main.js":
-/*!****************************!*\
-  !*** ./components/Main.js ***!
-  \****************************/
+/***/ "./components/Main/Main.js":
+/*!*********************************!*\
+  !*** ./components/Main/Main.js ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -312,51 +412,54 @@ const Header = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Main.js";
+/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../sass/main.scss */ "./sass/main.scss");
+/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_main_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Main/Main.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+
 const Main = () => {
   return __jsx("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "main-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: undefined
-  }, __jsx("h1", {
-    className: "main-container__heading1",
+    className: _sass_main_scss__WEBPACK_IMPORTED_MODULE_1___default.a["container"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     },
     __self: undefined
-  }, "Hi, I'm Hrak \uD83D\uDC4B"), __jsx("h2", {
-    className: "main-container__heading2",
+  }, __jsx("div", {
+    className: _sass_main_scss__WEBPACK_IMPORTED_MODULE_1___default.a["main-container"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
+    },
+    __self: undefined
+  }, __jsx("h1", {
+    className: _sass_main_scss__WEBPACK_IMPORTED_MODULE_1___default.a["main-container__heading1"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, "Hi, I'm Hrak \uD83D\uDC4B"), __jsx("h2", {
+    className: _sass_main_scss__WEBPACK_IMPORTED_MODULE_1___default.a["main-container__heading2"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
     },
     __self: undefined
   }, "A passionate web developer"), __jsx("a", {
     href: "#about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 13
     },
     __self: undefined
   }, __jsx("button", {
-    className: "btn",
+    className: _sass_main_scss__WEBPACK_IMPORTED_MODULE_1___default.a["btn"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 14
     },
     __self: undefined
   }, "About Me"))));
@@ -366,10 +469,10 @@ const Main = () => {
 
 /***/ }),
 
-/***/ "./components/Portfolio.js":
-/*!*********************************!*\
-  !*** ./components/Portfolio.js ***!
-  \*********************************/
+/***/ "./components/Portfolio/Portfolio.js":
+/*!*******************************************!*\
+  !*** ./components/Portfolio/Portfolio.js ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -377,12 +480,9 @@ const Main = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _sass_components_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/components.scss */ "./sass/components.scss");
-/* harmony import */ var _sass_components_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_components_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Portfolio.js";
+var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Portfolio/Portfolio.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
 
 const Portfolio = () => {
   return __jsx("div", {
@@ -390,63 +490,63 @@ const Portfolio = () => {
     id: "portfolio",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 3
     },
     __self: undefined
   }, __jsx("div", {
     className: "portfolio-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 4
     },
     __self: undefined
   }, __jsx("h4", {
     className: "portfolio-container__heading",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 5
     },
     __self: undefined
   }, "Portfolio"), __jsx("h5", {
     className: "portfolio-container__heading2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 6
     },
     __self: undefined
   }, "Check out my latest projects"), __jsx("div", {
     className: "portfolio-container__section",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 9
     },
     __self: undefined
   }, __jsx("div", {
     className: "portfolio-container__box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 10
     },
     __self: undefined
   }, __jsx("h6", {
     className: "portfolio-container__heading3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 11
     },
     __self: undefined
   }, "LA-HOP"), __jsx("div", {
     className: "portfolio-container__content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 14
     },
     __self: undefined
   }, __jsx("div", {
     className: "portflio-container__left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 15
     },
     __self: undefined
   }, __jsx("img", {
@@ -455,91 +555,91 @@ const Portfolio = () => {
     className: "portfolio-container__img",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 16
     },
     __self: undefined
   })), __jsx("div", {
     className: "portfolio-container__right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 22
     },
     __self: undefined
   }, __jsx("div", {
     className: "portfolio-container__description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 23
     },
     __self: undefined
   }, "The initiative behind this project was to create a product that helps one of the biggest issues the City of Los Angeles is facing currently. During a 3 day hackathon a group of 6 people(3 Web Dev/3 UX/UI) were tasked to redesign and create a better solution for the LA-HOP system."), __jsx("div", {
     className: "portfolio-container__buttons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 32
     },
     __self: undefined
   }, __jsx("a", {
     href: "https://gahackathon-95ace.firebaseapp.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 33
     },
     __self: undefined
   }, __jsx("button", {
     className: "btn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 34
     },
     __self: undefined
   }, "Visit")), __jsx("a", {
     href: "https://github.com/aBurmeseDev/LA-homelessOutreachPortal-hackathon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 36
     },
     __self: undefined
   }, __jsx("button", {
     className: "btn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 37
     },
     __self: undefined
   }, "Source"))))))), __jsx("div", {
     className: "portfolio-container__section",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 45
     },
     __self: undefined
   }, __jsx("div", {
     className: "portfolio-container__box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 46
     },
     __self: undefined
   }, __jsx("h6", {
     className: "portfolio-container__heading3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 47
     },
     __self: undefined
   }, "Event Scheduling App"), __jsx("div", {
     className: "portfolio-container__content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 50
     },
     __self: undefined
   }, __jsx("div", {
     className: "portflio-container__left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 51
     },
     __self: undefined
   }, __jsx("img", {
@@ -548,91 +648,91 @@ const Portfolio = () => {
     className: "portfolio-container__img",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 52
     },
     __self: undefined
   })), __jsx("div", {
     className: "portfolio-container__right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 59
     },
     __self: undefined
   }, __jsx("div", {
     className: "portfolio-container__description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 60
     },
     __self: undefined
   }, "The second project at GA was a new but challenging start to my journey. This was when team of 3 was tasked to create full stack MERN application. Our group came up with an idea of creating a web application where a user will be able to create, add update upcoming events such as music festivals, etc."), __jsx("div", {
     className: "portfolio-container__buttons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 70
     },
     __self: undefined
   }, __jsx("a", {
     href: "https://still-taiga-70572.herokuapp.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 71
     },
     __self: undefined
   }, __jsx("button", {
     className: "btn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 72
     },
     __self: undefined
   }, "Visit")), __jsx("a", {
     href: "https://github.com/hrakt/groupProject",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 74
     },
     __self: undefined
   }, __jsx("button", {
     className: "btn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 75
     },
     __self: undefined
   }, "Source"))))))), __jsx("div", {
     className: "portfolio-container__section",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 83
     },
     __self: undefined
   }, __jsx("div", {
     className: "portfolio-container__box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 84
     },
     __self: undefined
   }, __jsx("h6", {
     className: "portfolio-container__heading3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 85
     },
     __self: undefined
   }, "Travel Itinerary with Amadeus API"), __jsx("div", {
     className: "portfolio-container__content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 88
     },
     __self: undefined
   }, __jsx("div", {
     className: "portflio-container__left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 89
     },
     __self: undefined
   }, __jsx("img", {
@@ -641,91 +741,91 @@ const Portfolio = () => {
     className: "portfolio-container__img",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 90
     },
     __self: undefined
   })), __jsx("div", {
     className: "portfolio-container__right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 96
     },
     __self: undefined
   }, __jsx("div", {
     className: "portfolio-container__description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 97
     },
     __self: undefined
   }, "It was the third project that after creating a full stack application I was tasked to not only consume an application implementing full CRUD functionality but also implement a third party API. After days of research I came upon one of the greatest travel information API. But finding the suitable API was only the beggining of this challenge."), __jsx("div", {
     className: "portfolio-container__buttons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 108
     },
     __self: undefined
   }, __jsx("a", {
     href: "https://thawing-island-39695.herokuapp.com",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 109
     },
     __self: undefined
   }, __jsx("button", {
     className: "btn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 110
     },
     __self: undefined
   }, "Visit")), __jsx("a", {
     href: "https://github.com/hrakt/project3-react-backend",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 112
     },
     __self: undefined
   }, __jsx("button", {
     className: "btn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 113
     },
     __self: undefined
   }, "Source"))))))), __jsx("div", {
     className: "portfolio-container__section",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 121
     },
     __self: undefined
   }, __jsx("div", {
     className: "portfolio-container__box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 122
     },
     __self: undefined
   }, __jsx("h6", {
     className: "portfolio-container__heading3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 123
     },
     __self: undefined
   }, "Photo Portal App"), __jsx("div", {
     className: "portfolio-container__content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 126
     },
     __self: undefined
   }, __jsx("div", {
     className: "portflio-container__left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 127
     },
     __self: undefined
   }, __jsx("img", {
@@ -734,56 +834,56 @@ const Portfolio = () => {
     className: "portfolio-container__img",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 128
     },
     __self: undefined
   })), __jsx("div", {
     className: "portfolio-container__right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 134
     },
     __self: undefined
   }, __jsx("div", {
     className: "portfolio-container__description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 135
     },
     __self: undefined
   }, "For the next project I was introduced to switching from Express.js and Node.js to Python and Flask for back-end. For the front end we decided to stick with React and in order to speed up the design portion of the project we implemented React-Boostrap to crunch the one week deadline of learning a new programming language and framework and delivering a MVP.", " "), __jsx("div", {
     className: "portfolio-container__buttons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148
+      lineNumber: 146
     },
     __self: undefined
   }, __jsx("a", {
     href: "http://immense-plains-23468.herokuapp.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 147
     },
     __self: undefined
   }, __jsx("button", {
     className: "btn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 148
     },
     __self: undefined
   }, "Visit")), __jsx("a", {
     href: "https://github.com/rbhidalgo/photo-port-react",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152
+      lineNumber: 150
     },
     __self: undefined
   }, __jsx("button", {
     className: "btn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 151
     },
     __self: undefined
   }, "Source")))))))));
@@ -815,12 +915,11 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAYAAAA8
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _sass_root_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/root.scss */ "./sass/root.scss");
-/* harmony import */ var _sass_root_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_root_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-/* harmony import */ var _components_Main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Main */ "./components/Main.js");
-/* harmony import */ var _components_About__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/About */ "./components/About.js");
-/* harmony import */ var _components_Portfolio__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Portfolio */ "./components/Portfolio.js");
+/* harmony import */ var _components_Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Header/Header */ "./components/Header/Header.js");
+/* harmony import */ var _components_Main_Main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Main/Main */ "./components/Main/Main.js");
+/* harmony import */ var _components_About_About__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/About/About */ "./components/About/About.js");
+/* harmony import */ var _components_Portfolio_Portfolio__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Portfolio/Portfolio */ "./components/Portfolio/Portfolio.js");
+/* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Footer/Footer */ "./components/Footer/Footer.js");
 var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -830,81 +929,45 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
 const index = () => __jsx("div", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+}, __jsx(_components_Header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}), __jsx(_components_Main_Main__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 10
   },
   __self: undefined
-}, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+}), __jsx(_components_About_About__WEBPACK_IMPORTED_MODULE_3__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 11
   },
   __self: undefined
-}), __jsx(_components_Main__WEBPACK_IMPORTED_MODULE_3__["default"], {
+}), __jsx(_components_Portfolio_Portfolio__WEBPACK_IMPORTED_MODULE_4__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 12
   },
   __self: undefined
-}), __jsx(_components_About__WEBPACK_IMPORTED_MODULE_4__["default"], {
+}), __jsx(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 13
   },
   __self: undefined
-}), __jsx(_components_Portfolio__WEBPACK_IMPORTED_MODULE_5__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14
-  },
-  __self: undefined
-}), __jsx(_components_About__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15
-  },
-  __self: undefined
 }));
 
 /* harmony default export */ __webpack_exports__["default"] = (index);
-
-/***/ }),
-
-/***/ "./sass/components.scss":
-/*!******************************!*\
-  !*** ./sass/components.scss ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = {
-	"logo": "_36HUFl0DBvt8uXz2nAL5p8",
-	"navbar": "r5AJ_ythEhm6Tiw5Uc6On",
-	"navbar__item": "_22_XBi6s3VrdSjw_zqI2Og",
-	"navbar__item-link": "eYzo5rV9Lt2LFiLPy4UZ7",
-	"main-container__heading1": "_2oYZ6ugNaUJwUTOkHrjmIV",
-	"main-container__heading2": "_1o2jHFL4o0YbVh4C5vGluP",
-	"about-container": "_21t-q5Av7RTIUpuveQ6S-5",
-	"about-container__heading": "_2WuJy2l9GK2mOs59qR9g2R",
-	"about-container__heading2": "_10hd7Iw1OtHb1Qsw-gR6Se",
-	"about-container__content": "_3KOW5QR5_rtjltEav5H88b",
-	"portfolio-container": "_1a02Kjy-tKBMfIcubXzCwX",
-	"portfolio-container__heading": "tjolPMNHOhJjFD3RHygNL",
-	"portfolio-container__heading2": "_3AykyBOybxM9MoJLzyDid1",
-	"portfolio-container__box": "_3E4q0-McFkNY1F7G1cDACK",
-	"portfolio-container__heading3": "DNzhsxrZmojnc0BTL0nKY",
-	"portfolio-container__img": "IIsPbPA-BFHZr7anjvQRH",
-	"portfolio-container__content": "_35mw_wmlid_kI1Xxzjz06I",
-	"contact-container": "_1dBPHeMdkdnKmk6QSTubNP",
-	"contact-container__header1": "_3d6bGbYwnoJdMdK7wfQABI",
-	"contact-container__header2": "S8qwq386Y6H8F3P1Ivm5T",
-	"contact-container__icons": "_10Q8WOmXLToVN4UGGuTWth",
-	"contact-container__icon": "_38jVDQ65FmkUsjQVl4UvmO",
-	"btn": "mY9TJm2PBW5sBGaZjZgPI"
-};
 
 /***/ }),
 
@@ -916,23 +979,34 @@ module.exports = {
 /***/ (function(module, exports) {
 
 module.exports = {
-	"example": "_298ouM8aKzLldB0R2Tch0V"
+	"logo": "logo___4LlGj",
+	"navbar": "navbar___1vd5F",
+	"navbar__item": "navbar__item___2qvn0",
+	"navbar__item-link": "navbar__item-link___3zXZ7",
+	"main-container__heading1": "main-container__heading1___39H33",
+	"main-container__heading2": "main-container__heading2___2XF4O",
+	"portfolio-container": "portfolio-container___3YjUI",
+	"portfolio-container__heading": "portfolio-container__heading___pMYRs",
+	"portfolio-container__heading2": "portfolio-container__heading2___Nkuyt",
+	"portfolio-container__box": "portfolio-container__box___Ad4fF",
+	"portfolio-container__heading3": "portfolio-container__heading3___3sMtI",
+	"portfolio-container__img": "portfolio-container__img___1LoTu",
+	"portfolio-container__content": "portfolio-container__content___2N8_J",
+	"contact-container": "contact-container___3R7bg",
+	"contact-container__header1": "contact-container__header1___Aq-7G",
+	"contact-container__header2": "contact-container__header2___3m_gV",
+	"contact-container__icons": "contact-container__icons___1DPzv",
+	"contact-container__icon": "contact-container__icon___1cSfb",
+	"btn": "btn___1R9MZ",
+	"container": "container___2ObeQ",
+	"container-3": "container-3___diBZK",
+	"container-4": "container-4___pmGxZ",
+	"header": "header___14YjC"
 };
 
 /***/ }),
 
-/***/ "./sass/root.scss":
-/*!************************!*\
-  !*** ./sass/root.scss ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

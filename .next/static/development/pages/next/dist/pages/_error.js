@@ -3669,7 +3669,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8
 
 /***/ }),
 
-/***/ 4:
+/***/ 2:
 /*!*************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Fhrak%2FDesktop%2Fcode%2Fnextjs-portfolio%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js ***!
   \*************************************************************************************************************************************************************************************************/
@@ -3692,5 +3692,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map

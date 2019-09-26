@@ -1,0 +1,36 @@
+.container {
+    // background-color: lightgray;
+    min-height: 70rem;
+    padding-top: 18rem;
+    padding-left: 10rem;
+    display: flex;
+    margin: 2rem;
+    margin-left: 5rem;
+}
+
+.container-3 {
+    // background-color: lightgray;
+    min-height: 100rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    margin: 2rem;
+}
+
+.container-4 {
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    margin: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    margin-top: 2rem;
+}
