@@ -1,10 +1,18 @@
-import css from "../sass/main.scss";
+import "../sass/root.scss";
+
 import Header from "../components/Header";
+import Main from "../components/Main";
+import About from "../components/About";
+import Portfolio from "../components/Portfolio";
+import Contact from "../components/About";
 
 const index = () => (
     <div>
-        <p className={css.example}>Hello World</p>
         <Header />
+        <Main />
+        <About />
+        <Portfolio />
+        <Contact />
     </div>
 );
 export default index;
