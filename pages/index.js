@@ -11,7 +11,7 @@ const index = () => (
         <About />
         <Portfolio />
         <Footer />
-        <style jsx>{`
+        <style jsx global>{`
             :root {
                 --color-primary-light: #ff3366;
                 --color-primary-dark: #ba265d;
