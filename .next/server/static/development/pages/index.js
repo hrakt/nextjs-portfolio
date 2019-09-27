@@ -232,79 +232,100 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Footer/Footer.scss */ "./components/Footer/Footer.scss");
+/* harmony import */ var _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Footer/Footer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+
 const Footer = () => __jsx("div", {
-  class: "container-4",
+  className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["container-4"],
   id: "contact",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 2
-  },
-  __self: undefined
-}, __jsx("div", {
-  class: "contact-container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 3
-  },
-  __self: undefined
-}, __jsx("h2", {
-  class: "contact-container__header1",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 4
   },
   __self: undefined
-}, "Contact Me"), __jsx("h4", {
-  class: "contact-container__header2",
+}, __jsx("div", {
+  className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container"],
   __source: {
     fileName: _jsxFileName,
     lineNumber: 5
   },
   __self: undefined
-}, "If you would like to talk, you can find me at:"), __jsx("div", {
-  class: "contact-container__icons",
+}, __jsx("h2", {
+  className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__header1"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8
+    lineNumber: 6
+  },
+  __self: undefined
+}, "Contact Me"), __jsx("h4", {
+  className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__header2"],
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}, "If you would like to talk, you can find me at:"), __jsx("div", {
+  className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__icons"],
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
   },
   __self: undefined
 }, __jsx("a", {
   href: "https://www.github.com/hrakt/",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
+    lineNumber: 11
   },
   __self: undefined
 }, __jsx("img", {
   src: "/img/_ionicons_svg_logo-github.svg",
-  class: "contact-container__icon",
+  className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__icon"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
+    lineNumber: 12
   },
   __self: undefined
 })), __jsx("a", {
   href: "https://www.linkedin.com/in/hrakt/",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
+    lineNumber: 17
   },
   __self: undefined
 }, __jsx("img", {
   src: "/img/_ionicons_svg_logo-linkedin.svg",
-  class: "contact-container__icon",
+  className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__icon"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16
+    lineNumber: 18
   },
   __self: undefined
 })))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
+/***/ "./components/Footer/Footer.scss":
+/*!***************************************!*\
+  !*** ./components/Footer/Footer.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"container-4": "container-4___2jDp3",
+	"contact-container": "contact-container___nLXwQ",
+	"contact-container__header1": "contact-container__header1___1Qmmt",
+	"contact-container__header2": "contact-container__header2___DXgjC",
+	"contact-container__icons": "contact-container__icons___B_B8P",
+	"contact-container__icon": "contact-container__icon___2kCEM"
+};
 
 /***/ }),
 
@@ -992,11 +1013,6 @@ module.exports = {
 	"portfolio-container__heading3": "portfolio-container__heading3___3sMtI",
 	"portfolio-container__img": "portfolio-container__img___1LoTu",
 	"portfolio-container__content": "portfolio-container__content___2N8_J",
-	"contact-container": "contact-container___3R7bg",
-	"contact-container__header1": "contact-container__header1___Aq-7G",
-	"contact-container__header2": "contact-container__header2___3m_gV",
-	"contact-container__icons": "contact-container__icons___1DPzv",
-	"contact-container__icon": "contact-container__icon___1cSfb",
 	"btn": "btn___1R9MZ",
 	"container": "container___2ObeQ",
 	"container-3": "container-3___diBZK",
