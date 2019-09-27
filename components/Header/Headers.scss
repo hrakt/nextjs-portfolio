@@ -1,0 +1,27 @@
+.logo {
+    height: 5rem;
+    width: 5rem;
+    margin-left: 4rem;
+}
+
+.navbar {
+    display: flex;
+    align-content: center;
+    margin-right: 4rem;
+    &__item {
+        padding: 2rem;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: black;
+    }
+}

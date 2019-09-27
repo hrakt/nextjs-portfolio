@@ -1,72 +1,41 @@
-.logo___4LlGj {
+.logo___3VBbV {
   height: 5rem;
   width: 5rem;
   margin-left: 4rem; }
 
-.navbar___1vd5F {
+.navbar___2p39K {
   display: flex;
   align-content: center;
   margin-right: 4rem; }
-  .navbar__item___2qvn0 {
+  .navbar__item___1NRHp {
     padding: 2rem; }
-  .navbar__item-link___3zXZ7 {
+  .navbar__container___1eqRs {
+    display: flex;
+    justify-content: space-between; }
+  .navbar__item-link___39q9j {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.5rem;
     color: black; }
 
-.main-container__heading1___39H33 {
-  font-size: 8.5rem;
+.container___13tUu {
+  min-height: 70rem;
+  padding-top: 18rem;
+  padding-left: 10rem;
+  display: flex;
+  margin: 2rem;
+  margin-left: 5rem; }
+
+.main-container__heading1___3Zt8P {
+  font-size: 4.5rem;
   font-weight: 100; }
 
-.main-container__heading2___2XF4O {
+.main-container__heading2___jqLeF {
   font-size: 2.5rem;
   font-weight: 100; }
 
-.portfolio-container___3YjUI {
-  width: 100rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .portfolio-container__heading___pMYRs {
-    font-size: 4rem;
-    font-weight: 400;
-    margin: 0 auto; }
-  .portfolio-container__heading2___Nkuyt {
-    font-size: 2rem;
-    font-weight: 300;
-    font-style: italic; }
-  .portfolio-container__box___Ad4fF {
-    width: 120rem;
-    height: 45rem;
-    margin-top: 5rem;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-direction: column; }
-  .portfolio-container__heading3___3sMtI {
-    font-size: 3rem;
-    font-weight: 500;
-    margin-top: 2.5rem;
-    margin-bottom: 2rem;
-    text-align: center; }
-  .portfolio-container__img___1LoTu {
-    width: 40rem;
-    height: 25rem;
-    margin-top: 2rem;
-    margin-right: 6rem;
-    margin-left: 2rem;
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6); }
-  .portfolio-container__content___2N8_J {
-    display: flex;
-    align-items: center;
-    align-self: center;
-    width: 80rem;
-    font-size: 1.25rem;
-    font-weight: 100; }
-
-.btn___1R9MZ {
+.btn___3ynub {
   color: #fff;
   background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
   text-transform: uppercase;
@@ -113,37 +82,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat; }
 
-.container___2ObeQ {
-  min-height: 70rem;
-  padding-top: 18rem;
-  padding-left: 10rem;
-  display: flex;
-  margin: 2rem;
-  margin-left: 5rem; }
-
-.container-3___diBZK {
-  min-height: 100rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 2rem;
-  margin: 2rem; }
-
-.container-4___pmGxZ {
-  min-height: 30rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 2rem;
-  margin: 2rem; }
-
-.header___14YjC {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1rem;
-  margin-top: 2rem; }
-
 .container-2___2_Blp {
   min-height: 70rem;
   display: flex;
@@ -171,6 +109,77 @@ body {
     padding-top: 2rem;
     font-size: 1.5rem;
     font-weight: 200; }
+
+.container-3___2P6AK {
+  min-height: 100rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  margin: 2rem; }
+
+.portfolio-container___5ZEn5 {
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .portfolio-container__heading___1uK38 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0 auto; }
+  .portfolio-container__heading2___1MxhB {
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic; }
+  .portfolio-container__box___2Ghga {
+    width: 120rem;
+    height: 45rem;
+    margin-top: 5rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .portfolio-container__heading3___1O67E {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center; }
+  .portfolio-container__img___1X7tu {
+    width: 40rem;
+    height: 25rem;
+    margin-top: 2rem;
+    margin-right: 6rem;
+    margin-left: 2rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6); }
+  .portfolio-container__content___4KKpD {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: 80rem;
+    font-size: 1.25rem;
+    font-weight: 100; }
+
+.btn___1Y6jH {
+  color: #fff;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-width: 1px;
+  border-style: initial;
+  border-color: transparent;
+  border-image: initial;
+  border-radius: 10rem;
+  padding: 1.5rem 4rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  transition: all 0.2s ease-out 0s; }
 
 .container-4___2jDp3 {
   min-height: 30rem;
