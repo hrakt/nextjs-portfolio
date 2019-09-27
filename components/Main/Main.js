@@ -1,4 +1,5 @@
 import main from "../Main/Main.scss";
+import Button from "../common/Button";
 
 const Main = () => {
     return (
@@ -11,6 +12,7 @@ const Main = () => {
                     A passionate web developer
                 </h2>
                 <a href="#about">
+                    <Button />
                     <button className={main["btn"]}>About Me</button>
                 </a>
             </div>
