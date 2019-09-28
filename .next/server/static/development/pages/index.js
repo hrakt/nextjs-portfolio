@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -234,9 +234,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Footer/Footer.scss */ "./components/Footer/Footer.scss");
 /* harmony import */ var _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _img_ionicons_svg_logo_github_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../img/_ionicons_svg_logo-github.svg */ "./img/_ionicons_svg_logo-github.svg");
+/* harmony import */ var _img_ionicons_svg_logo_github_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_ionicons_svg_logo_github_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _img_ionicons_svg_logo_linkedin_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../img/_ionicons_svg_logo-linkedin.svg */ "./img/_ionicons_svg_logo-linkedin.svg");
+/* harmony import */ var _img_ionicons_svg_logo_linkedin_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_ionicons_svg_logo_linkedin_svg__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Footer/Footer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 const Footer = () => __jsx("div", {
@@ -244,65 +250,65 @@ const Footer = () => __jsx("div", {
   id: "contact",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 4
+    lineNumber: 6
   },
   __self: undefined
 }, __jsx("div", {
   className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5
+    lineNumber: 7
   },
   __self: undefined
 }, __jsx("h2", {
   className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__header1"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
+    lineNumber: 8
   },
   __self: undefined
 }, "Contact Me"), __jsx("h4", {
   className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__header2"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
+    lineNumber: 9
   },
   __self: undefined
 }, "If you would like to talk, you can find me at:"), __jsx("div", {
   className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__icons"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
+    lineNumber: 12
   },
   __self: undefined
 }, __jsx("a", {
   href: "https://www.github.com/hrakt/",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11
+    lineNumber: 13
   },
   __self: undefined
 }, __jsx("img", {
-  src: "/img/_ionicons_svg_logo-github.svg",
+  src: _img_ionicons_svg_logo_github_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
   className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__icon"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 14
   },
   __self: undefined
 })), __jsx("a", {
   href: "https://www.linkedin.com/in/hrakt/",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 17
+    lineNumber: 19
   },
   __self: undefined
 }, __jsx("img", {
-  src: "/img/_ionicons_svg_logo-linkedin.svg",
+  src: _img_ionicons_svg_logo_linkedin_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
   className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__icon"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18
+    lineNumber: 20
   },
   __self: undefined
 })))));
@@ -500,19 +506,13 @@ const Main = () => {
     },
     __self: undefined
   }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "About Me",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
     },
     __self: undefined
-  }), __jsx("button", {
-    className: _Main_Main_scss__WEBPACK_IMPORTED_MODULE_1___default.a["btn"],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
-  }, "About Me"))));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Main);
@@ -548,9 +548,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Portfolio/Portfolio.scss */ "./components/Portfolio/Portfolio.scss");
 /* harmony import */ var _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _common_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/Button */ "./components/common/Button.js");
 var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Portfolio/Portfolio.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 const Portfolio = () => {
@@ -559,63 +561,63 @@ const Portfolio = () => {
     id: "portfolio",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: undefined
   }, __jsx("h4", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__heading"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: undefined
   }, "Portfolio"), __jsx("h5", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__heading2"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: undefined
   }, "Check out my latest projects"), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__section"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__box"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: undefined
   }, __jsx("h6", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__heading3"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: undefined
   }, "LA-HOP"), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__content"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portflio-container__left"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: undefined
   }, __jsx("img", {
@@ -624,91 +626,91 @@ const Portfolio = () => {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__img"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: undefined
   })), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__right"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__description"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: undefined
   }, "The initiative behind this project was to create a product that helps one of the biggest issues the City of Los Angeles is facing currently. During a 3 day hackathon a group of 6 people(3 Web Dev/3 UX/UI) were tasked to redesign and create a better solution for the LA-HOP system."), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__buttons"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: undefined
   }, __jsx("a", {
     href: "https://gahackathon-95ace.firebaseapp.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
-    },
-    __self: undefined
-  }, __jsx("button", {
-    className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["btn"],
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 68
     },
     __self: undefined
-  }, "Visit")), __jsx("a", {
+  }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Visit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: undefined
+  })), __jsx("a", {
     href: "https://github.com/aBurmeseDev/LA-homelessOutreachPortal-hackathon",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: undefined
+  }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Source",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 72
     },
     __self: undefined
-  }, __jsx("button", {
-    className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["btn"],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: undefined
-  }, "Source"))))))), __jsx("div", {
+  }))))))), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__section"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 80
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__box"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 81
     },
     __self: undefined
   }, __jsx("h6", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__heading3"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 82
     },
     __self: undefined
   }, "Event Scheduling App"), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__content"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 89
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portflio-container__left"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 94
     },
     __self: undefined
   }, __jsx("img", {
@@ -717,91 +719,91 @@ const Portfolio = () => {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__img"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 99
     },
     __self: undefined
   })), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__right"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 108
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__description"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 113
     },
     __self: undefined
   }, "The second project at GA was a new but challenging start to my journey. This was when team of 3 was tasked to create full stack MERN application. Our group came up with an idea of creating a web application where a user will be able to create, add update upcoming events such as music festivals, etc."), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__buttons"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 129
     },
     __self: undefined
   }, __jsx("a", {
     href: "https://still-taiga-70572.herokuapp.com/",
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 136
+    },
+    __self: undefined
+  }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Visit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137
+    },
+    __self: undefined
+  })), __jsx("a", {
+    href: "https://github.com/hrakt/groupProject",
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 139
     },
     __self: undefined
-  }, __jsx("button", {
-    className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["btn"],
+  }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Source",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 140
     },
     __self: undefined
-  }, "Visit")), __jsx("a", {
-    href: "https://github.com/hrakt/groupProject",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 144
-    },
-    __self: undefined
-  }, __jsx("button", {
-    className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["btn"],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 145
-    },
-    __self: undefined
-  }, "Source"))))))), __jsx("div", {
+  }))))))), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__section"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 148
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__box"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156
+      lineNumber: 149
     },
     __self: undefined
   }, __jsx("h6", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__heading3"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157
+      lineNumber: 150
     },
     __self: undefined
   }, "Travel Itinerary with Amadeus API"), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__content"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164
+      lineNumber: 157
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portflio-container__left"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169
+      lineNumber: 162
     },
     __self: undefined
   }, __jsx("img", {
@@ -810,91 +812,91 @@ const Portfolio = () => {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__img"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 174
+      lineNumber: 167
     },
     __self: undefined
   })), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__right"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 182
+      lineNumber: 175
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__description"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 187
+      lineNumber: 180
     },
     __self: undefined
   }, "It was the third project that after creating a full stack application I was tasked to not only consume an application implementing full CRUD functionality but also implement a third party API. After days of research I came upon one of the greatest travel information API. But finding the suitable API was only the beggining of this challenge."), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__buttons"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 204
+      lineNumber: 197
     },
     __self: undefined
   }, __jsx("a", {
     href: "https://thawing-island-39695.herokuapp.com",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 211
+      lineNumber: 204
     },
     __self: undefined
-  }, __jsx("button", {
-    className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["btn"],
+  }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Visit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 212
+      lineNumber: 205
     },
     __self: undefined
-  }, "Visit")), __jsx("a", {
+  })), __jsx("a", {
     href: "https://github.com/hrakt/project3-react-backend",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 216
+      lineNumber: 207
     },
     __self: undefined
-  }, __jsx("button", {
-    className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["btn"],
+  }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Source",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 217
+      lineNumber: 208
     },
     __self: undefined
-  }, "Source"))))))), __jsx("div", {
+  }))))))), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__section"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 227
+      lineNumber: 216
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__box"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 228
+      lineNumber: 217
     },
     __self: undefined
   }, __jsx("h6", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__heading3"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229
+      lineNumber: 218
     },
     __self: undefined
   }, "Photo Portal App"), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__content"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 236
+      lineNumber: 225
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portflio-container__left"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 241
+      lineNumber: 230
     },
     __self: undefined
   }, __jsx("img", {
@@ -903,59 +905,59 @@ const Portfolio = () => {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__img"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 246
+      lineNumber: 235
     },
     __self: undefined
   })), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__right"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 254
+      lineNumber: 243
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__description"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 259
+      lineNumber: 248
     },
     __self: undefined
   }, "For the next project I was introduced to switching from Express.js and Node.js to Python and Flask for back-end. For the front end we decided to stick with React and in order to speed up the design portion of the project we implemented React-Boostrap to crunch the one week deadline of learning a new programming language and framework and delivering a MVP.", " "), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__buttons"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 276
+      lineNumber: 265
     },
     __self: undefined
   }, __jsx("a", {
     href: "http://immense-plains-23468.herokuapp.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 283
+      lineNumber: 272
     },
     __self: undefined
-  }, __jsx("button", {
-    className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["btn"],
+  }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Visit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 284
+      lineNumber: 273
     },
     __self: undefined
-  }, "Visit")), __jsx("a", {
+  })), __jsx("a", {
     href: "https://github.com/rbhidalgo/photo-port-react",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 288
+      lineNumber: 275
     },
     __self: undefined
-  }, __jsx("button", {
-    className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["btn"],
+  }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Source",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 289
+      lineNumber: 276
     },
     __self: undefined
-  }, "Source")))))))));
+  })))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Portfolio);
@@ -973,11 +975,13 @@ module.exports = {
 	"container-3": "container-3___2P6AK",
 	"portfolio-container": "portfolio-container___5ZEn5",
 	"portfolio-container__heading": "portfolio-container__heading___1uK38",
+	"portfolio-container__buttons": "portfolio-container__buttons___2heYv",
 	"portfolio-container__heading2": "portfolio-container__heading2___1MxhB",
 	"portfolio-container__box": "portfolio-container__box___2Ghga",
 	"portfolio-container__heading3": "portfolio-container__heading3___1O67E",
 	"portfolio-container__img": "portfolio-container__img___1X7tu",
 	"portfolio-container__content": "portfolio-container__content___4KKpD",
+	"portfolio-container__description": "portfolio-container__description___32Bff",
 	"btn": "btn___1Y6jH"
 };
 
@@ -994,14 +998,14 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_dist_next_server_lib_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/dist/next-server/lib/utils */ "next/dist/next-server/lib/utils");
-/* harmony import */ var next_dist_next_server_lib_utils__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_lib_utils__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _common_Button_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/Button.scss */ "./components/common/Button.scss");
+/* harmony import */ var _common_Button_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_common_Button_scss__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/common/Button.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Button = () => {
+const Button = props => {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
@@ -1009,16 +1013,29 @@ const Button = () => {
     },
     __self: undefined
   }, __jsx("button", {
-    className: next_dist_next_server_lib_utils__WEBPACK_IMPORTED_MODULE_1__["loadGetInitialProps"].className,
+    className: _common_Button_scss__WEBPACK_IMPORTED_MODULE_1___default.a["btn"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: undefined
-  }, next_dist_next_server_lib_utils__WEBPACK_IMPORTED_MODULE_1__["loadGetInitialProps"].title), ";");
+  }, props.title));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Button);
+
+/***/ }),
+
+/***/ "./components/common/Button.scss":
+/*!***************************************!*\
+  !*** ./components/common/Button.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"btn": "btn___11a68"
+};
 
 /***/ }),
 
@@ -1066,6 +1083,28 @@ module.exports = "/_next/static/images/Planer-7f84156e27239c0ac03b2dd55fe8065d.p
 
 /***/ }),
 
+/***/ "./img/_ionicons_svg_logo-github.svg":
+/*!*******************************************!*\
+  !*** ./img/_ionicons_svg_logo-github.svg ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMjU2IDMyQzEzMi4zIDMyIDMyIDEzNC45IDMyIDI2MS43YzAgMTAxLjUgNjQuMiAxODcuNSAxNTMuMiAyMTcuOSAxLjQuMyAyLjYuNCAzLjguNCA4LjMgMCAxMS41LTYuMSAxMS41LTExLjQgMC01LjUtLjItMTkuOS0uMy0zOS4xLTguNCAxLjktMTUuOSAyLjctMjIuNiAyLjctNDMuMSAwLTUyLjktMzMuNS01Mi45LTMzLjUtMTAuMi0yNi41LTI0LjktMzMuNi0yNC45LTMzLjYtMTkuNS0xMy43LS4xLTE0LjEgMS40LTE0LjFoLjFjMjIuNSAyIDM0LjMgMjMuOCAzNC4zIDIzLjggMTEuMiAxOS42IDI2LjIgMjUuMSAzOS42IDI1LjEgMTAuNSAwIDIwLTMuNCAyNS42LTYgMi0xNC44IDcuOC0yNC45IDE0LjItMzAuNy00OS43LTUuOC0xMDItMjUuNS0xMDItMTEzLjUgMC0yNS4xIDguNy00NS42IDIzLTYxLjYtMi4zLTUuOC0xMC0yOS4yIDIuMi02MC44IDAgMCAxLjYtLjUgNS0uNSA4LjEgMCAyNi40IDMuMSA1Ni42IDI0LjEgMTcuOS01LjEgMzctNy42IDU2LjEtNy43IDE5IC4xIDM4LjIgMi42IDU2LjEgNy43IDMwLjItMjEgNDguNS0yNC4xIDU2LjYtMjQuMSAzLjQgMCA1IC41IDUgLjUgMTIuMiAzMS42IDQuNSA1NSAyLjIgNjAuOCAxNC4zIDE2LjEgMjMgMzYuNiAyMyA2MS42IDAgODguMi01Mi40IDEwNy42LTEwMi4zIDExMy4zIDggNy4xIDE1LjIgMjEuMSAxNS4yIDQyLjUgMCAzMC43LS4zIDU1LjUtLjMgNjMgMCA1LjQgMy4xIDExLjUgMTEuNCAxMS41IDEuMiAwIDIuNi0uMSA0LS40QzQxNS45IDQ0OS4yIDQ4MCAzNjMuMSA0ODAgMjYxLjcgNDgwIDEzNC45IDM3OS43IDMyIDI1NiAzMnoiLz48L3N2Zz4="
+
+/***/ }),
+
+/***/ "./img/_ionicons_svg_logo-linkedin.svg":
+/*!*********************************************!*\
+  !*** ./img/_ionicons_svg_logo-linkedin.svg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNNDE3LjIgNjRIOTYuOEM3OS4zIDY0IDY0IDc2LjYgNjQgOTMuOVY0MTVjMCAxNy40IDE1LjMgMzIuOSAzMi44IDMyLjloMzIwLjNjMTcuNiAwIDMwLjgtMTUuNiAzMC44LTMyLjlWOTMuOUM0NDggNzYuNiA0MzQuNyA2NCA0MTcuMiA2NHpNMTgzIDM4NGgtNTVWMjEzaDU1djE3MXptLTI1LjYtMTk3aC0uNGMtMTcuNiAwLTI5LTEzLjEtMjktMjkuNSAwLTE2LjcgMTEuNy0yOS41IDI5LjctMjkuNXMyOSAxMi43IDI5LjQgMjkuNWMwIDE2LjQtMTEuNCAyOS41LTI5LjcgMjkuNXpNMzg0IDM4NGgtNTV2LTkzLjVjMC0yMi40LTgtMzcuNy0yNy45LTM3LjctMTUuMiAwLTI0LjIgMTAuMy0yOC4yIDIwLjMtMS41IDMuNi0xLjkgOC41LTEuOSAxMy41VjM4NGgtNTVWMjEzaDU1djIzLjhjOC0xMS40IDIwLjUtMjcuOCA0OS42LTI3LjggMzYuMSAwIDYzLjQgMjMuOCA2My40IDc1LjFWMzg0eiIvPjwvc3ZnPg=="
+
+/***/ }),
+
 /***/ "./img/favicon.png":
 /*!*************************!*\
   !*** ./img/favicon.png ***!
@@ -1106,7 +1145,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 const index = () => __jsx("div", {
-  className: "jsx-256175509",
+  className: "jsx-2085888330",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 8
@@ -1143,15 +1182,15 @@ const index = () => __jsx("div", {
   },
   __self: undefined
 }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-  id: "256175509",
+  id: "2085888330",
   __self: undefined
-}, ":root{--color-primary-light:#ff3366;--color-primary-dark:#ba265d;}*{margin:0;padding:0;}div{box-sizing:border-box;font-size:40%;-webkit-scroll-behavior:smooth;-moz-scroll-behavior:smooth;-ms-scroll-behavior:smooth;scroll-behavior:smooth;}div{font-family:\"Roboto\",sans-serif;font-weight:400;line-height:1.6;color:var(--color-grey-dark-2);background-size:cover;background-repeat:no-repeat;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ocmFrL0Rlc2t0b3AvY29kZS9uZXh0anMtcG9ydGZvbGlvL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWEyQixBQUcrQyxBQUlyQixBQUthLEFBTVcsU0FWdkIsVUFDZCxHQUlrQixRQVRlLEVBZWIsSUFMTyxZQU1QLFdBZnBCLEtBaUJtQywrQkFDVCxzQkFDTSw0QkFUaEMsQUFVQSIsImZpbGUiOiIvVXNlcnMvaHJhay9EZXNrdG9wL2NvZGUvbmV4dGpzLXBvcnRmb2xpby9wYWdlcy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvSGVhZGVyL0hlYWRlclwiO1xuaW1wb3J0IE1haW4gZnJvbSBcIi4uL2NvbXBvbmVudHMvTWFpbi9NYWluXCI7XG5pbXBvcnQgQWJvdXQgZnJvbSBcIi4uL2NvbXBvbmVudHMvQWJvdXQvQWJvdXRcIjtcbmltcG9ydCBQb3J0Zm9saW8gZnJvbSBcIi4uL2NvbXBvbmVudHMvUG9ydGZvbGlvL1BvcnRmb2xpb1wiO1xuaW1wb3J0IEZvb3RlciBmcm9tIFwiLi4vY29tcG9uZW50cy9Gb290ZXIvRm9vdGVyXCI7XG5cbmNvbnN0IGluZGV4ID0gKCkgPT4gKFxuICAgIDxkaXY+XG4gICAgICAgIDxIZWFkZXIgLz5cbiAgICAgICAgPE1haW4gLz5cbiAgICAgICAgPEFib3V0IC8+XG4gICAgICAgIDxQb3J0Zm9saW8gLz5cbiAgICAgICAgPEZvb3RlciAvPlxuICAgICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICAgICAgOnJvb3Qge1xuICAgICAgICAgICAgICAgIC0tY29sb3ItcHJpbWFyeS1saWdodDogI2ZmMzM2NjtcbiAgICAgICAgICAgICAgICAtLWNvbG9yLXByaW1hcnktZGFyazogI2JhMjY1ZDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICAgICoge1xuICAgICAgICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICBkaXYge1xuICAgICAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiA0MCU7IC8vIDFyZW0gPSAxMHB4XG4gICAgICAgICAgICAgICAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIGRpdiB7XG4gICAgICAgICAgICAgICAgZm9udC1mYW1pbHk6IFwiUm9ib3RvXCIsIHNhbnMtc2VyaWY7XG4gICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICAgICAgICAgICAgICBsaW5lLWhlaWdodDogMS42O1xuXG4gICAgICAgICAgICAgICAgY29sb3I6IHZhcigtLWNvbG9yLWdyZXktZGFyay0yKTtcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgICAgICAgICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbik7XG5leHBvcnQgZGVmYXVsdCBpbmRleDtcbiJdfQ== */\n/*@ sourceURL=/Users/hrak/Desktop/code/nextjs-portfolio/pages/index.js */"));
+}, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ocmFrL0Rlc2t0b3AvY29kZS9uZXh0anMtcG9ydGZvbGlvL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWEyQiIsImZpbGUiOiIvVXNlcnMvaHJhay9EZXNrdG9wL2NvZGUvbmV4dGpzLXBvcnRmb2xpby9wYWdlcy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvSGVhZGVyL0hlYWRlclwiO1xuaW1wb3J0IE1haW4gZnJvbSBcIi4uL2NvbXBvbmVudHMvTWFpbi9NYWluXCI7XG5pbXBvcnQgQWJvdXQgZnJvbSBcIi4uL2NvbXBvbmVudHMvQWJvdXQvQWJvdXRcIjtcbmltcG9ydCBQb3J0Zm9saW8gZnJvbSBcIi4uL2NvbXBvbmVudHMvUG9ydGZvbGlvL1BvcnRmb2xpb1wiO1xuaW1wb3J0IEZvb3RlciBmcm9tIFwiLi4vY29tcG9uZW50cy9Gb290ZXIvRm9vdGVyXCI7XG5cbmNvbnN0IGluZGV4ID0gKCkgPT4gKFxuICAgIDxkaXY+XG4gICAgICAgIDxIZWFkZXIgLz5cbiAgICAgICAgPE1haW4gLz5cbiAgICAgICAgPEFib3V0IC8+XG4gICAgICAgIDxQb3J0Zm9saW8gLz5cbiAgICAgICAgPEZvb3RlciAvPlxuICAgICAgICA8c3R5bGUganN4IGdsb2JhbD57YGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbik7XG5leHBvcnQgZGVmYXVsdCBpbmRleDtcbiJdfQ== */\n/*@ sourceURL=/Users/hrak/Desktop/code/nextjs-portfolio/pages/index.js */"));
 
 /* harmony default export */ __webpack_exports__["default"] = (index);
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -1160,17 +1199,6 @@ const index = () => __jsx("div", {
 
 module.exports = __webpack_require__(/*! /Users/hrak/Desktop/code/nextjs-portfolio/pages/index.js */"./pages/index.js");
 
-
-/***/ }),
-
-/***/ "next/dist/next-server/lib/utils":
-/*!**************************************************!*\
-  !*** external "next/dist/next-server/lib/utils" ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/dist/next-server/lib/utils");
 
 /***/ }),
 

@@ -1,4 +1,5 @@
 import portfolio from "../Portfolio/Portfolio.scss";
+import Button from "../common/Button";
 
 const Portfolio = () => {
     return (
@@ -65,14 +66,10 @@ const Portfolio = () => {
                                     }
                                 >
                                     <a href="https://gahackathon-95ace.firebaseapp.com/">
-                                        <button className={portfolio["btn"]}>
-                                            Visit
-                                        </button>
+                                        <Button title="Visit" />
                                     </a>
                                     <a href="https://github.com/aBurmeseDev/LA-homelessOutreachPortal-hackathon">
-                                        <button className={portfolio["btn"]}>
-                                            Source
-                                        </button>
+                                        <Button title="Source" />
                                     </a>
                                 </div>
                             </div>
@@ -137,14 +134,10 @@ const Portfolio = () => {
                                     }
                                 >
                                     <a href="https://still-taiga-70572.herokuapp.com/">
-                                        <button className={portfolio["btn"]}>
-                                            Visit
-                                        </button>
+                                        <Button title="Visit" />
                                     </a>
                                     <a href="https://github.com/hrakt/groupProject">
-                                        <button className={portfolio["btn"]}>
-                                            Source
-                                        </button>
+                                        <Button title="Source" />
                                     </a>
                                 </div>
                             </div>
@@ -209,14 +202,10 @@ const Portfolio = () => {
                                     }
                                 >
                                     <a href="https://thawing-island-39695.herokuapp.com">
-                                        <button className={portfolio["btn"]}>
-                                            Visit
-                                        </button>
+                                        <Button title="Visit" />
                                     </a>
                                     <a href="https://github.com/hrakt/project3-react-backend">
-                                        <button className={portfolio["btn"]}>
-                                            Source
-                                        </button>
+                                        <Button title="Source" />
                                     </a>
                                 </div>
                             </div>
@@ -281,14 +270,10 @@ const Portfolio = () => {
                                     }
                                 >
                                     <a href="http://immense-plains-23468.herokuapp.com/">
-                                        <button className={portfolio["btn"]}>
-                                            Visit
-                                        </button>
+                                        <Button title="Visit" />
                                     </a>
                                     <a href="https://github.com/rbhidalgo/photo-port-react">
-                                        <button className={portfolio["btn"]}>
-                                            Source
-                                        </button>
+                                        <Button title="Source" />
                                     </a>
                                 </div>
                             </div>

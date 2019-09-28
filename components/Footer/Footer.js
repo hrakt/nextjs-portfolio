@@ -1,4 +1,6 @@
 import footer from "../Footer/Footer.scss";
+import githubLogo from "../../img/_ionicons_svg_logo-github.svg";
+import linkedinLogo from "../../img/_ionicons_svg_logo-linkedin.svg";
 
 const Footer = () => (
     <div className={footer["container-4"]} id="contact">
@@ -10,13 +12,13 @@ const Footer = () => (
             <div className={footer["contact-container__icons"]}>
                 <a href="https://www.github.com/hrakt/">
                     <img
-                        src="/img/_ionicons_svg_logo-github.svg"
+                        src={githubLogo}
                         className={footer["contact-container__icon"]}
                     ></img>
                 </a>
                 <a href="https://www.linkedin.com/in/hrakt/">
                     <img
-                        src="/img/_ionicons_svg_logo-linkedin.svg"
+                        src={linkedinLogo}
                         className={footer["contact-container__icon"]}
                     ></img>
                 </a>

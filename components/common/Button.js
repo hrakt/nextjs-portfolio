@@ -1,12 +1,9 @@
-import { loadGetInitialProps } from "next/dist/next-server/lib/utils";
+import button from "../common/Button.scss";
 
-const Button = () => {
+const Button = props => {
     return (
         <div>
-            <button className={loadGetInitialProps.className}>
-                {loadGetInitialProps.title}
-            </button>
-            ;
+            <button className={button["btn"]}>{props.title}</button>
         </div>
     );
 };

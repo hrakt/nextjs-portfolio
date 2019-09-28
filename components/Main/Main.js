@@ -12,8 +12,7 @@ const Main = () => {
                     A passionate web developer
                 </h2>
                 <a href="#about">
-                    <Button />
-                    <button className={main["btn"]}>About Me</button>
+                    <Button title="About Me" />
                 </a>
             </div>
         </div>
