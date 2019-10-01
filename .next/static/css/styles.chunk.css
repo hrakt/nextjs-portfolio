@@ -19,12 +19,26 @@
     font-size: 1.5rem;
     color: black; }
 
+.navIcon___k4vbz {
+  margin: 1em;
+  width: 30px;
+  cursor: pointer; }
+
+.navIcon___k4vbz:after,
+.navIcon___k4vbz:before,
+.navIcon___k4vbz div {
+  background-color: #000;
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 4px 0;
+  transition: all 0.2s ease-in-out; }
+
 .container___13tUu {
   min-height: 70rem;
-  padding-top: 10rem;
-  padding-left: 10rem;
+  padding-top: 5rem;
   display: flex;
-  margin: 2rem;
   margin-left: 5rem; }
 
 .main-container__heading1___3Zt8P {

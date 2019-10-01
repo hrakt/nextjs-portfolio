@@ -1,0 +1,17 @@
+.navIcon {
+    margin: 1em;
+    width: 30px;
+    cursor: pointer;
+}
+
+.navIcon:after,
+.navIcon:before,
+.navIcon div {
+    background-color: #000;
+    border-radius: 3px;
+    content: "";
+    display: block;
+    height: 5px;
+    margin: 4px 0;
+    transition: all 0.2s ease-in-out;
+}
