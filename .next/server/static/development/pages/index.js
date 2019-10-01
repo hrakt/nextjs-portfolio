@@ -590,9 +590,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header_SideNav_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Header/SideNav.scss */ "./components/Header/SideNav.scss");
 /* harmony import */ var _Header_SideNav_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Header_SideNav_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Header/SideNav.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -604,7 +607,7 @@ const SideNav = () => {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: undefined
   }, __jsx("div", {
@@ -612,61 +615,70 @@ const SideNav = () => {
     className: _Header_SideNav_scss__WEBPACK_IMPORTED_MODULE_1___default.a["navIcon"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: undefined
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: undefined
-  })), isOpen ? __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }, __jsx("li", {
+  })), __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_Header_SideNav_scss__WEBPACK_IMPORTED_MODULE_1___default.a["navContainer"], {
+      [_Header_SideNav_scss__WEBPACK_IMPORTED_MODULE_1___default.a["navContainer__opened"]]: isOpen
+    }),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: undefined
-  }, __jsx("a", {
-    href: "#about",
+  }, __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 21
     },
     __self: undefined
-  }, "About Me")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#work",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, "Work")), __jsx("li", {
+  }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
     },
     __self: undefined
   }, __jsx("a", {
-    href: "#contact",
+    href: "#about",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: undefined
-  }, "Contact"))) : null);
+  }, "About Me")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#work",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: undefined
+  }, "Work")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#contact",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: undefined
+  }, "Contact")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SideNav);
@@ -681,7 +693,9 @@ const SideNav = () => {
 /***/ (function(module, exports) {
 
 module.exports = {
-	"navIcon": "navIcon___k4vbz"
+	"navIcon": "navIcon___k4vbz",
+	"navContainer": "navContainer___3CDlL",
+	"navContainer__opened": "navContainer__opened___uN87N"
 };
 
 /***/ }),

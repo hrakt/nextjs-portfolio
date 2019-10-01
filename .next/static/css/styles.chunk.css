@@ -22,7 +22,11 @@
 .navIcon___k4vbz {
   margin: 1em;
   width: 30px;
-  cursor: pointer; }
+  cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100; }
 
 .navIcon___k4vbz:after,
 .navIcon___k4vbz:before,
@@ -32,8 +36,22 @@
   content: "";
   display: block;
   height: 5px;
-  margin: 4px 0;
+  margin: 4px 0; }
+
+.navContainer___3CDlL {
+  position: fixed;
+  opacity: 0;
+  height: 100vh;
+  right: -150px;
+  width: 100vw;
+  z-index: 10;
+  background-color: lightgrey;
   transition: all 0.2s ease-in-out; }
+  .navContainer__opened___uN87N {
+    right: 0;
+    opacity: 1; }
+  .navContainer___3CDlL ul {
+    list-style-type: none; }
 
 .container___13tUu {
   min-height: 70rem;
@@ -172,7 +190,7 @@ body {
     font-weight: 300;
     font-style: italic; }
   .portfolio-container__box___2Ghga {
-    width: 120rem;
+    width: 100rem;
     height: 45rem;
     margin-top: 5rem;
     display: flex;

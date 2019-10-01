@@ -2,6 +2,10 @@
     margin: 1em;
     width: 30px;
     cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
 }
 
 .navIcon:after,
@@ -13,5 +17,23 @@
     display: block;
     height: 5px;
     margin: 4px 0;
+}
+
+.navContainer {
+    position: fixed;
+    opacity: 0;
+    height: 100vh;
+    right: -150px;
+    width: 100vw;
+    z-index: 10;
+    background-color: lightgrey;
     transition: all 0.2s ease-in-out;
+
+    &__opened {
+        right: 0;
+        opacity: 1;
+    }
+    ul {
+        list-style-type: none;
+    }
 }

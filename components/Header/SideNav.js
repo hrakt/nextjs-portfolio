@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "../Header/SideNav.scss";
+import cx from "classnames";
 
 const SideNav = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,12 @@ const SideNav = () => {
             >
                 <div></div>
             </div>
-            {isOpen ? (
+
+            <div
+                className={cx(styles["navContainer"], {
+                    [styles["navContainer__opened"]]: isOpen
+                })}
+            >
                 <ul>
                     <li>
                         <a href="#about">About Me</a>
@@ -23,7 +29,7 @@ const SideNav = () => {
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
-            ) : null}
+            </div>
         </div>
     );
 };
