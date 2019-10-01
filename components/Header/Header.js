@@ -1,7 +1,21 @@
+import { useEffect, useState } from "react";
 import logo from "../../img/favicon.png";
 import header from "../Header/Headers.scss";
 
 const Header = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    const handleResize = () => {
+        if (window.innerWidth < 600) {
+            setIsMobile(true);
+        } else {
+            setIsMobile(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", handleResize);
+    });
     return (
         <div className={header["navbar__container"]}>
             <img src={logo} alt="Logo" className={header["logo"]} />
