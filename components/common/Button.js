@@ -1,9 +1,11 @@
 import button from "../common/Button.scss";
 
-const Button = props => {
+const Button = ({ title, type }) => {
     return (
-        <div>
-            <button className={button["btn"]}>{props.title}</button>
+        <div className={button["container"]}>
+            <button className={button["btn"]} type={type}>
+                {title}
+            </button>
         </div>
     );
 };

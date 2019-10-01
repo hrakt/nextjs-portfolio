@@ -1,3 +1,8 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 .btn {
     color: #fff;
     background-image: linear-gradient(
@@ -20,7 +25,6 @@
     border-image: initial;
     border-radius: 10rem;
     padding: 1.5rem 4rem;
-    margin-top: 2rem;
-    margin-right: 2rem;
+    margin: 2rem;
     transition: all 0.2s ease-out 0s;
 }

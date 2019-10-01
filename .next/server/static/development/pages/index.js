@@ -221,6 +221,101 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./components/Footer/ContactForm.js":
+/*!******************************************!*\
+  !*** ./components/Footer/ContactForm.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _common_Input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/Input */ "./components/common/Input.js");
+/* harmony import */ var _common_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/Button */ "./components/common/Button.js");
+/* harmony import */ var _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Footer/ContactForm.scss */ "./components/Footer/ContactForm.scss");
+/* harmony import */ var _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_mail_form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-mail-form */ "react-mail-form");
+/* harmony import */ var react_mail_form__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_mail_form__WEBPACK_IMPORTED_MODULE_5__);
+var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Footer/ContactForm.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+const Contact = () => {
+  const options = ["Collaboration", "Inquiry", "Offer", "Suggestion", "Connect", "Other"];
+  return __jsx("div", {
+    className: _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3___default.a["container"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }, __jsx(_common_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    recievedStyle: _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3___default.a["textarea"],
+    type: "textarea",
+    placeholder: "Email Address",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }), __jsx(_common_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    recievedStyle: _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3___default.a["select"],
+    type: "select",
+    placeholder: "What's this about?",
+    options: options,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: undefined
+  }), __jsx(_common_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    type: "textarea",
+    placeholder: "Enter your message here",
+    recievedStyle: classnames__WEBPACK_IMPORTED_MODULE_4___default()(_Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3___default.a["textarea"], _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3___default.a["textarea__big"]),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: undefined
+  }), __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Send",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: undefined
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Contact);
+
+/***/ }),
+
+/***/ "./components/Footer/ContactForm.scss":
+/*!********************************************!*\
+  !*** ./components/Footer/ContactForm.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"container": "container___1zH2h",
+	"textarea": "textarea___1rFdy",
+	"textarea__big": "textarea__big___2qpMS",
+	"select": "select___1sLlx"
+};
+
+/***/ }),
+
 /***/ "./components/Footer/Footer.js":
 /*!*************************************!*\
   !*** ./components/Footer/Footer.js ***!
@@ -238,9 +333,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_ionicons_svg_logo_github_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_ionicons_svg_logo_github_svg__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _img_ionicons_svg_logo_linkedin_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../img/_ionicons_svg_logo-linkedin.svg */ "./img/_ionicons_svg_logo-linkedin.svg");
 /* harmony import */ var _img_ionicons_svg_logo_linkedin_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_ionicons_svg_logo_linkedin_svg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Footer_ContactForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Footer/ContactForm */ "./components/Footer/ContactForm.js");
 var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Footer/Footer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -250,42 +347,48 @@ const Footer = () => __jsx("div", {
   id: "contact",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
+    lineNumber: 7
   },
   __self: undefined
 }, __jsx("div", {
   className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
+    lineNumber: 8
   },
   __self: undefined
 }, __jsx("h2", {
   className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__header1"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8
+    lineNumber: 9
   },
   __self: undefined
-}, "Contact Me"), __jsx("h4", {
+}, "Contact Me"), __jsx(_Footer_ContactForm__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}), __jsx("h4", {
   className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__header2"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
+    lineNumber: 11
   },
   __self: undefined
 }, "If you would like to talk, you can find me at:"), __jsx("div", {
   className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__icons"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 14
   },
   __self: undefined
 }, __jsx("a", {
   href: "https://www.github.com/hrakt/",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13
+    lineNumber: 15
   },
   __self: undefined
 }, __jsx("img", {
@@ -293,14 +396,14 @@ const Footer = () => __jsx("div", {
   className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__icon"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 14
+    lineNumber: 16
   },
   __self: undefined
 })), __jsx("a", {
   href: "https://www.linkedin.com/in/hrakt/",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19
+    lineNumber: 21
   },
   __self: undefined
 }, __jsx("img", {
@@ -308,7 +411,7 @@ const Footer = () => __jsx("div", {
   className: _Footer_Footer_scss__WEBPACK_IMPORTED_MODULE_1___default.a["contact-container__icon"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
+    lineNumber: 22
   },
   __self: undefined
 })))));
@@ -1005,8 +1108,12 @@ var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/common/
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Button = props => {
+const Button = ({
+  title,
+  type
+}) => {
   return __jsx("div", {
+    className: _common_Button_scss__WEBPACK_IMPORTED_MODULE_1___default.a["container"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
@@ -1014,12 +1121,13 @@ const Button = props => {
     __self: undefined
   }, __jsx("button", {
     className: _common_Button_scss__WEBPACK_IMPORTED_MODULE_1___default.a["btn"],
+    type: type,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: undefined
-  }, props.title));
+  }, title));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Button);
@@ -1034,7 +1142,187 @@ const Button = props => {
 /***/ (function(module, exports) {
 
 module.exports = {
+	"container": "container___-j92G",
 	"btn": "btn___11a68"
+};
+
+/***/ }),
+
+/***/ "./components/common/Input.js":
+/*!************************************!*\
+  !*** ./components/common/Input.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/common/Input.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+const Input = ({
+  type,
+  placeholder,
+  recievedStyle,
+  options
+}) => {
+  const returnOptions = arr => {
+    let optionArr = [];
+    arr.map(item => {
+      optionArr.push(__jsx("option", {
+        value: item,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 5
+        },
+        __self: undefined
+      }, item));
+    });
+    return optionArr;
+  };
+
+  switch (type) {
+    case "textarea":
+      return __jsx("textarea", {
+        type: "text",
+        placeholder: placeholder,
+        className: recievedStyle,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: undefined
+      });
+
+    case "select":
+      return __jsx("select", {
+        className: recievedStyle,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: undefined
+      }, __jsx("option", {
+        value: "",
+        disabled: true,
+        selected: true,
+        hidden: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: undefined
+      }, placeholder), returnOptions(options));
+
+    default:
+      return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: undefined
+      }, __jsx("input", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+        type: "text"
+      }, props, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: undefined
+      })));
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Input);
+
+/***/ }),
+
+/***/ "./components/common/Scroller.js":
+/*!***************************************!*\
+  !*** ./components/common/Scroller.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _common_Scroller_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/Scroller.scss */ "./components/common/Scroller.scss");
+/* harmony import */ var _common_Scroller_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_common_Scroller_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _img_up_icon_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../img/_up_icon.svg */ "./img/_up_icon.svg");
+/* harmony import */ var _img_up_icon_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_up_icon_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/common/Scroller.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+const Scroller = () => {
+  const {
+    0: scrollHit,
+    1: setScrollHit
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const visibleStyle = _common_Scroller_scss__WEBPACK_IMPORTED_MODULE_1___default.a["icon__visible"];
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => window.addEventListener("scroll", handleScroll));
+
+  const handleScroll = () => {
+    if (!(window.scrollY < 250)) {
+      setScrollHit(true);
+    } else {
+      setScrollHit(false);
+    }
+  };
+
+  const scrollTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  return __jsx("div", {
+    onClick: scrollTop,
+    className: _common_Scroller_scss__WEBPACK_IMPORTED_MODULE_1___default.a["container"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: undefined
+  }, __jsx("img", {
+    src: _img_up_icon_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_common_Scroller_scss__WEBPACK_IMPORTED_MODULE_1___default.a["icon"], {
+      [_common_Scroller_scss__WEBPACK_IMPORTED_MODULE_1___default.a["icon__visible"]]: scrollHit
+    }),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: undefined
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Scroller);
+
+/***/ }),
+
+/***/ "./components/common/Scroller.scss":
+/*!*****************************************!*\
+  !*** ./components/common/Scroller.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"container": "container___1xbTH",
+	"icon": "icon___18_SR",
+	"icon__visible": "icon__visible___32OFb"
 };
 
 /***/ }),
@@ -1105,6 +1393,17 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 
 /***/ }),
 
+/***/ "./img/_up_icon.svg":
+/*!**************************!*\
+  !*** ./img/_up_icon.svg ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNNDEyLjYgMjI3LjFMMjc4LjYgODljLTUuOC02LTEzLjctOS0yMi40LTloLS40Yy04LjcgMC0xNi42IDMtMjIuNCA5bC0xMzQgMTM4LjFjLTEyLjUgMTItMTIuNSAzMS4zIDAgNDMuMiAxMi41IDExLjkgMzIuNyAxMS45IDQ1LjIgMGw3OS40LTgzdjIxNGMwIDE2LjkgMTQuMyAzMC42IDMyIDMwLjYgMTggMCAzMi0xMy43IDMyLTMwLjZ2LTIxNGw3OS40IDgzYzEyLjUgMTEuOSAzMi43IDExLjkgNDUuMiAwczEyLjUtMzEuMiAwLTQzLjJ6Ii8+PC9zdmc+"
+
+/***/ }),
+
 /***/ "./img/favicon.png":
 /*!*************************!*\
   !*** ./img/favicon.png ***!
@@ -1113,6 +1412,50 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/assign */ "core-js/library/fn/object/assign");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+
+function _extends() {
+  _extends = _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default.a || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
 
 /***/ }),
 
@@ -1134,6 +1477,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_About_About__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/About/About */ "./components/About/About.js");
 /* harmony import */ var _components_Portfolio_Portfolio__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Portfolio/Portfolio */ "./components/Portfolio/Portfolio.js");
 /* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Footer/Footer */ "./components/Footer/Footer.js");
+/* harmony import */ var _components_common_Scroller__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/common/Scroller */ "./components/common/Scroller.js");
 var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/pages/index.js";
 
 
@@ -1144,47 +1488,54 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+
 const index = () => __jsx("div", {
   className: "jsx-2085888330",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
-}, __jsx(_components_Header_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 9
   },
   __self: undefined
-}), __jsx(_components_Main_Main__WEBPACK_IMPORTED_MODULE_3__["default"], {
+}, __jsx(_components_common_Scroller__WEBPACK_IMPORTED_MODULE_7__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 10
   },
   __self: undefined
-}), __jsx(_components_About_About__WEBPACK_IMPORTED_MODULE_4__["default"], {
+}), __jsx(_components_Header_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 11
   },
   __self: undefined
-}), __jsx(_components_Portfolio_Portfolio__WEBPACK_IMPORTED_MODULE_5__["default"], {
+}), __jsx(_components_Main_Main__WEBPACK_IMPORTED_MODULE_3__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 12
   },
   __self: undefined
-}), __jsx(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+}), __jsx(_components_About_About__WEBPACK_IMPORTED_MODULE_4__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 13
   },
   __self: undefined
+}), __jsx(_components_Portfolio_Portfolio__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14
+  },
+  __self: undefined
+}), __jsx(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  },
+  __self: undefined
 }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
   id: "2085888330",
   __self: undefined
-}, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ocmFrL0Rlc2t0b3AvY29kZS9uZXh0anMtcG9ydGZvbGlvL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWEyQiIsImZpbGUiOiIvVXNlcnMvaHJhay9EZXNrdG9wL2NvZGUvbmV4dGpzLXBvcnRmb2xpby9wYWdlcy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvSGVhZGVyL0hlYWRlclwiO1xuaW1wb3J0IE1haW4gZnJvbSBcIi4uL2NvbXBvbmVudHMvTWFpbi9NYWluXCI7XG5pbXBvcnQgQWJvdXQgZnJvbSBcIi4uL2NvbXBvbmVudHMvQWJvdXQvQWJvdXRcIjtcbmltcG9ydCBQb3J0Zm9saW8gZnJvbSBcIi4uL2NvbXBvbmVudHMvUG9ydGZvbGlvL1BvcnRmb2xpb1wiO1xuaW1wb3J0IEZvb3RlciBmcm9tIFwiLi4vY29tcG9uZW50cy9Gb290ZXIvRm9vdGVyXCI7XG5cbmNvbnN0IGluZGV4ID0gKCkgPT4gKFxuICAgIDxkaXY+XG4gICAgICAgIDxIZWFkZXIgLz5cbiAgICAgICAgPE1haW4gLz5cbiAgICAgICAgPEFib3V0IC8+XG4gICAgICAgIDxQb3J0Zm9saW8gLz5cbiAgICAgICAgPEZvb3RlciAvPlxuICAgICAgICA8c3R5bGUganN4IGdsb2JhbD57YGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbik7XG5leHBvcnQgZGVmYXVsdCBpbmRleDtcbiJdfQ== */\n/*@ sourceURL=/Users/hrak/Desktop/code/nextjs-portfolio/pages/index.js */"));
+}, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ocmFrL0Rlc2t0b3AvY29kZS9uZXh0anMtcG9ydGZvbGlvL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWUyQiIsImZpbGUiOiIvVXNlcnMvaHJhay9EZXNrdG9wL2NvZGUvbmV4dGpzLXBvcnRmb2xpby9wYWdlcy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvSGVhZGVyL0hlYWRlclwiO1xuaW1wb3J0IE1haW4gZnJvbSBcIi4uL2NvbXBvbmVudHMvTWFpbi9NYWluXCI7XG5pbXBvcnQgQWJvdXQgZnJvbSBcIi4uL2NvbXBvbmVudHMvQWJvdXQvQWJvdXRcIjtcbmltcG9ydCBQb3J0Zm9saW8gZnJvbSBcIi4uL2NvbXBvbmVudHMvUG9ydGZvbGlvL1BvcnRmb2xpb1wiO1xuaW1wb3J0IEZvb3RlciBmcm9tIFwiLi4vY29tcG9uZW50cy9Gb290ZXIvRm9vdGVyXCI7XG5pbXBvcnQgU2Nyb2xsZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvY29tbW9uL1Njcm9sbGVyXCI7XG5cbmNvbnN0IGluZGV4ID0gKCkgPT4gKFxuICAgIDxkaXY+XG4gICAgICAgIDxTY3JvbGxlciAvPlxuICAgICAgICA8SGVhZGVyIC8+XG4gICAgICAgIDxNYWluIC8+XG4gICAgICAgIDxBYm91dCAvPlxuICAgICAgICA8UG9ydGZvbGlvIC8+XG4gICAgICAgIDxGb290ZXIgLz5cbiAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4pO1xuZXhwb3J0IGRlZmF1bHQgaW5kZXg7XG4iXX0= */\n/*@ sourceURL=/Users/hrak/Desktop/code/nextjs-portfolio/pages/index.js */"));
 
 /* harmony default export */ __webpack_exports__["default"] = (index);
 
@@ -1202,6 +1553,28 @@ module.exports = __webpack_require__(/*! /Users/hrak/Desktop/code/nextjs-portfol
 
 /***/ }),
 
+/***/ "classnames":
+/*!*****************************!*\
+  !*** external "classnames" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("classnames");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/assign":
+/*!***************************************************!*\
+  !*** external "core-js/library/fn/object/assign" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/assign");
+
+/***/ }),
+
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -1210,6 +1583,17 @@ module.exports = __webpack_require__(/*! /Users/hrak/Desktop/code/nextjs-portfol
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-mail-form":
+/*!**********************************!*\
+  !*** external "react-mail-form" ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-mail-form");
 
 /***/ }),
 

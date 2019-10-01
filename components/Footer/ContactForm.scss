@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+.textarea {
+    width: 25rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    resize: none;
+    padding: 4px 1px;
+
+    &__big {
+        height: 7rem;
+    }
+
+    &::placeholder {
+        font-size: 1rem;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.select {
+    background-color: transparent;
+    border-radius: 0;
+    appearance: none;
+    width: 25rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}

@@ -82,6 +82,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat; }
 
+.container___-j92G {
+  display: flex;
+  justify-content: center; }
+
 .btn___11a68 {
   color: #fff;
   background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
@@ -99,8 +103,7 @@ body {
   border-image: initial;
   border-radius: 10rem;
   padding: 1.5rem 4rem;
-  margin-top: 2rem;
-  margin-right: 2rem;
+  margin: 2rem;
   transition: all 0.2s ease-out 0s; }
 
 .container-2___2_Blp {
@@ -230,6 +233,47 @@ body {
   .contact-container__icon___2kCEM {
     width: 5rem;
     height: 5rem; }
+
+.container___1zH2h {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem; }
+
+.textarea___1rFdy {
+  width: 25rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  resize: none;
+  padding: 4px 1px; }
+  .textarea__big___2qpMS {
+    height: 7rem; }
+  .textarea___1rFdy::placeholder {
+    font-size: 1rem; }
+  .textarea___1rFdy:focus {
+    outline: none; }
+
+.select___1sLlx {
+  background-color: transparent;
+  border-radius: 0;
+  appearance: none;
+  width: 25rem;
+  height: 2.5rem;
+  margin-bottom: 1rem; }
+
+.container___1xbTH {
+  position: relative; }
+
+.icon___18_SR {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  bottom: 2rem;
+  right: -5rem;
+  transition: right 0.2s ease-in-out;
+  cursor: pointer; }
+  .icon__visible___32OFb {
+    right: 1.5rem;
+    transition: right 0.2s ease-in-out; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
