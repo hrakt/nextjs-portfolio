@@ -1,5 +1,6 @@
 import portfolio from "../Portfolio/Portfolio.scss";
 import Button from "../common/Button";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
     return (

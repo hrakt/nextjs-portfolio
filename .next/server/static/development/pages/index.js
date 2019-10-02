@@ -604,24 +604,32 @@ const SideNav = () => {
     0: isOpen,
     1: setIsOpen
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+
+  const scroll = location => {
+    setIsOpen(false);
+    window.scrollTo(`#${location}`);
+  };
+
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 13
     },
     __self: undefined
   }, __jsx("div", {
     onClick: () => setIsOpen(!isOpen),
-    className: _Header_SideNav_scss__WEBPACK_IMPORTED_MODULE_1___default.a["navIcon"],
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_Header_SideNav_scss__WEBPACK_IMPORTED_MODULE_1___default.a["navIcon"], {
+      [_Header_SideNav_scss__WEBPACK_IMPORTED_MODULE_1___default.a["navIcon__clicked"]]: isOpen
+    }),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 14
     },
     __self: undefined
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 20
     },
     __self: undefined
   })), __jsx("div", {
@@ -630,55 +638,38 @@ const SideNav = () => {
     }),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
-  }, __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: undefined
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#about",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: undefined
-  }, "About Me")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#work",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: undefined
-  }, "Work")), __jsx("li", {
+  }, __jsx("ul", {
+    className: _Header_SideNav_scss__WEBPACK_IMPORTED_MODULE_1___default.a["navContainer__items"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: undefined
-  }, __jsx("a", {
-    href: "#contact",
+  }, __jsx("li", {
+    onClick: scroll,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: undefined
-  }, "Contact")))));
+  }, "About Me"), __jsx("li", {
+    href: "#work",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: undefined
+  }, "Work"), __jsx("li", {
+    href: "#contact",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: undefined
+  }, "Contact"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SideNav);
@@ -694,8 +685,10 @@ const SideNav = () => {
 
 module.exports = {
 	"navIcon": "navIcon___k4vbz",
+	"navIcon__clicked": "navIcon__clicked___1Y6Py",
 	"navContainer": "navContainer___3CDlL",
-	"navContainer__opened": "navContainer__opened___uN87N"
+	"navContainer__opened": "navContainer__opened___uN87N",
+	"navContainer__items": "navContainer__items___2dY0v"
 };
 
 /***/ }),
@@ -800,9 +793,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Portfolio/Portfolio.scss */ "./components/Portfolio/Portfolio.scss");
 /* harmony import */ var _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _common_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/Button */ "./components/common/Button.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Portfolio/Portfolio.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -812,63 +808,63 @@ const Portfolio = () => {
     id: "portfolio",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: undefined
   }, __jsx("h4", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__heading"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: undefined
   }, "Portfolio"), __jsx("h5", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__heading2"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: undefined
   }, "Check out my latest projects"), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__section"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__box"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: undefined
   }, __jsx("h6", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__heading3"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: undefined
   }, "LA-HOP"), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__content"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portflio-container__left"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 29
     },
     __self: undefined
   }, __jsx("img", {
@@ -877,91 +873,91 @@ const Portfolio = () => {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__img"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: undefined
   })), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__right"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__description"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 47
     },
     __self: undefined
   }, "The initiative behind this project was to create a product that helps one of the biggest issues the City of Los Angeles is facing currently. During a 3 day hackathon a group of 6 people(3 Web Dev/3 UX/UI) were tasked to redesign and create a better solution for the LA-HOP system."), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__buttons"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 62
     },
     __self: undefined
   }, __jsx("a", {
     href: "https://gahackathon-95ace.firebaseapp.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 69
     },
     __self: undefined
   }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Visit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 70
     },
     __self: undefined
   })), __jsx("a", {
     href: "https://github.com/aBurmeseDev/LA-homelessOutreachPortal-hackathon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 72
     },
     __self: undefined
   }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Source",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 73
     },
     __self: undefined
   }))))))), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__section"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 81
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__box"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 82
     },
     __self: undefined
   }, __jsx("h6", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__heading3"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 83
     },
     __self: undefined
   }, "Event Scheduling App"), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__content"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 90
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portflio-container__left"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 95
     },
     __self: undefined
   }, __jsx("img", {
@@ -970,91 +966,91 @@ const Portfolio = () => {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__img"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 100
     },
     __self: undefined
   })), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__right"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 109
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__description"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 114
     },
     __self: undefined
   }, "The second project at GA was a new but challenging start to my journey. This was when team of 3 was tasked to create full stack MERN application. Our group came up with an idea of creating a web application where a user will be able to create, add update upcoming events such as music festivals, etc."), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__buttons"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 130
     },
     __self: undefined
   }, __jsx("a", {
     href: "https://still-taiga-70572.herokuapp.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 137
     },
     __self: undefined
   }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Visit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 138
     },
     __self: undefined
   })), __jsx("a", {
     href: "https://github.com/hrakt/groupProject",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 140
     },
     __self: undefined
   }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Source",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 141
     },
     __self: undefined
   }))))))), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__section"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148
+      lineNumber: 149
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__box"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 150
     },
     __self: undefined
   }, __jsx("h6", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__heading3"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 151
     },
     __self: undefined
   }, "Travel Itinerary with Amadeus API"), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__content"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157
+      lineNumber: 158
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portflio-container__left"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 162
+      lineNumber: 163
     },
     __self: undefined
   }, __jsx("img", {
@@ -1063,91 +1059,91 @@ const Portfolio = () => {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__img"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167
+      lineNumber: 168
     },
     __self: undefined
   })), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__right"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175
+      lineNumber: 176
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__description"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 180
+      lineNumber: 181
     },
     __self: undefined
   }, "It was the third project that after creating a full stack application I was tasked to not only consume an application implementing full CRUD functionality but also implement a third party API. After days of research I came upon one of the greatest travel information API. But finding the suitable API was only the beggining of this challenge."), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__buttons"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 197
+      lineNumber: 198
     },
     __self: undefined
   }, __jsx("a", {
     href: "https://thawing-island-39695.herokuapp.com",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 204
+      lineNumber: 205
     },
     __self: undefined
   }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Visit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 205
+      lineNumber: 206
     },
     __self: undefined
   })), __jsx("a", {
     href: "https://github.com/hrakt/project3-react-backend",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 207
+      lineNumber: 208
     },
     __self: undefined
   }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Source",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 208
+      lineNumber: 209
     },
     __self: undefined
   }))))))), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__section"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 216
+      lineNumber: 217
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__box"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 217
+      lineNumber: 218
     },
     __self: undefined
   }, __jsx("h6", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__heading3"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 218
+      lineNumber: 219
     },
     __self: undefined
   }, "Photo Portal App"), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__content"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 225
+      lineNumber: 226
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portflio-container__left"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 230
+      lineNumber: 231
     },
     __self: undefined
   }, __jsx("img", {
@@ -1156,56 +1152,56 @@ const Portfolio = () => {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__img"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 235
+      lineNumber: 236
     },
     __self: undefined
   })), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__right"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 243
+      lineNumber: 244
     },
     __self: undefined
   }, __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__description"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 248
+      lineNumber: 249
     },
     __self: undefined
   }, "For the next project I was introduced to switching from Express.js and Node.js to Python and Flask for back-end. For the front end we decided to stick with React and in order to speed up the design portion of the project we implemented React-Boostrap to crunch the one week deadline of learning a new programming language and framework and delivering a MVP.", " "), __jsx("div", {
     className: _Portfolio_Portfolio_scss__WEBPACK_IMPORTED_MODULE_1___default.a["portfolio-container__buttons"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 265
+      lineNumber: 266
     },
     __self: undefined
   }, __jsx("a", {
     href: "http://immense-plains-23468.herokuapp.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 272
+      lineNumber: 273
     },
     __self: undefined
   }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Visit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 273
+      lineNumber: 274
     },
     __self: undefined
   })), __jsx("a", {
     href: "https://github.com/rbhidalgo/photo-port-react",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 275
+      lineNumber: 276
     },
     __self: undefined
   }, __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Source",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 276
+      lineNumber: 277
     },
     __self: undefined
   })))))))));
@@ -1742,6 +1738,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-mail-form");
+
+/***/ }),
+
+/***/ "react-router-dom":
+/*!***********************************!*\
+  !*** external "react-router-dom" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-router-dom");
 
 /***/ }),
 

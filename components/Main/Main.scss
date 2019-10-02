@@ -6,6 +6,9 @@
     display: flex;
 
     margin-left: 5rem;
+    a {
+        text-decoration: none;
+    }
 }
 .main-container {
     &__heading1 {

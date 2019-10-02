@@ -4,11 +4,18 @@ import cx from "classnames";
 
 const SideNav = () => {
     const [isOpen, setIsOpen] = useState(false);
+
+    const scroll = location => {
+        setIsOpen(false);
+        window.scrollTo(`#${location}`);
+    };
     return (
         <div>
             <div
                 onClick={() => setIsOpen(!isOpen)}
-                className={styles["navIcon"]}
+                className={cx(styles["navIcon"], {
+                    [styles["navIcon__clicked"]]: isOpen
+                })}
             >
                 <div></div>
             </div>
@@ -18,16 +25,10 @@ const SideNav = () => {
                     [styles["navContainer__opened"]]: isOpen
                 })}
             >
-                <ul>
-                    <li>
-                        <a href="#about">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
+                <ul className={styles["navContainer__items"]}>
+                    <li onClick={scroll}>About Me</li>
+                    <li href="#work">Work</li>
+                    <li href="#contact">Contact</li>
                 </ul>
             </div>
         </div>
