@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import logo from "../../img/favicon.png";
 import header from "../Header/Headers.scss";
 import SideBarMenu from "../Header/SideNav";
+import Scroller from "../common/Scroller";
 
 const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -17,9 +18,14 @@ const Header = () => {
     useEffect(() => {
         window.addEventListener("resize", handleResize);
     });
+
     return (
         <div className={header["navbar__container"]}>
-            <img src={logo} alt="Logo" className={header["logo"]} />
+            <Scroller />
+            {/* <img src={logo} alt="Logo" className={header["logo"]} /> */}
+
+            <a className={header["logo"]}>hrak.to</a>
+
             {isMobile ? (
                 <SideBarMenu />
             ) : (

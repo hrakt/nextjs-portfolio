@@ -1,3 +1,5 @@
+@import "../../sass/mixins.scss";
+
 .container-3 {
     // background-color: lightgray;
     min-height: 100rem;
@@ -9,7 +11,7 @@
 }
 
 .portfolio-container {
-    width: 100rem;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +26,9 @@
         a {
             text-decoration: none;
         }
+        @include sm {
+            justify-content: center;
+        }
     }
 
     &__heading2 {
@@ -34,8 +39,8 @@
 
     &__box {
         // background-color: #DEE4E7;
-        width: 100rem;
-        height: 45rem;
+        width: 100vw;
+        height: 60vh;
         margin-top: 5rem;
         display: flex;
         align-content: center;
@@ -67,10 +72,18 @@
         width: 80rem;
         font-size: 2.75rem;
         font-weight: 100;
+        @include sm {
+            flex-direction: column;
+            width: 50rem;
+        }
     }
 
     &__description {
         font-size: 1rem;
+        @include sm {
+            width: 70vw;
+            margin-top: 1.5rem;
+        }
     }
 }
 

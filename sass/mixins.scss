@@ -1,0 +1,10 @@
+@mixin sm {
+    @media (max-width: 800px) {
+        @content;
+    }
+}
+
+@mixin cinmena {
+    @media (max-width: 1600) {
+    }
+}

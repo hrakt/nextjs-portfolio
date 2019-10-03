@@ -1,7 +1,13 @@
 .logo {
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
     height: 5rem;
     width: 5rem;
-    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
 
 .navbar {

@@ -1,16 +1,22 @@
+@import "../../sass/mixins.scss";
 .container {
     // background-color: lightgray;
-    min-height: 70rem;
+    min-height: 100vh;
     padding-top: 5rem;
-    // padding-left: 10rem;
     display: flex;
 
-    margin-left: 5rem;
     a {
         text-decoration: none;
     }
 }
 .main-container {
+    position: relative;
+    left: 10rem;
+    @include sm {
+        position: relative;
+        left: 30%;
+    }
+
     &__heading1 {
         font-size: 4.5rem;
         font-weight: 100;
