@@ -3,6 +3,7 @@ import logo from "../../img/favicon.png";
 import header from "../Header/Headers.scss";
 import SideBarMenu from "../Header/SideNav";
 import Scroller from "../common/Scroller";
+import Link from "next/link";
 
 const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -21,38 +22,34 @@ const Header = () => {
 
     return (
         <div className={header["navbar__container"]}>
-            <Scroller />
             {/* <img src={logo} alt="Logo" className={header["logo"]} /> */}
-
-            <a className={header["logo"]}>hrak.to</a>
+            <Scroller />
+            <Link href="/">
+                <a className={header["logo"]}>hrak.to</a>
+            </Link>
 
             {isMobile ? (
                 <SideBarMenu />
             ) : (
                 <nav className={header["navbar"]}>
                     <div className={header["navbar__item"]}>
-                        <a
-                            href="#about"
-                            className={header["navbar__item-link"]}
-                        >
-                            About Me
-                        </a>
+                        <Link href="/about">
+                            <a className={header["navbar__item-link"]}>
+                                About Me
+                            </a>
+                        </Link>
                     </div>
                     <div className={header["navbar__item"]}>
-                        <a
-                            href="#portfolio"
-                            className={header["navbar__item-link"]}
-                        >
-                            Work
-                        </a>
+                        <Link href="/work">
+                            <a className={header["navbar__item-link"]}>Work</a>
+                        </Link>
                     </div>
                     <div className={header["navbar__item"]}>
-                        <a
-                            href="#contact"
-                            className={header["navbar__item-link"]}
-                        >
-                            Contact
-                        </a>
+                        <Link href="/contact">
+                            <a className={header["navbar__item-link"]}>
+                                Contact
+                            </a>
+                        </Link>
                     </div>
                 </nav>
             )}

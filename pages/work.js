@@ -1,7 +1,14 @@
 import Portfolio from "../components/Portfolio/Portfolio";
+import Layout from "../layouts/main";
 
 const Work = () => {
-    return <Portfolio />;
+    return (
+        <div>
+            <Layout>
+                <Portfolio />
+            </Layout>
+        </div>
+    );
 };
 
 export default Work;

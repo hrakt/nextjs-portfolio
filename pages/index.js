@@ -1,15 +1,13 @@
-import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
 import About from "../components/About/About";
-import Portfolio from "../components/Portfolio/Portfolio";
-import Footer from "../components/Footer/Footer";
+import Layout from "../layouts/main";
 
 const index = () => (
     <div>
-        <Header />
-        <Main />
-        <About />
-        <Footer />
+        <Layout>
+            <Main />
+            <About />
+        </Layout>
     </div>
 );
 export default index;
