@@ -17,6 +17,7 @@ const Header = () => {
     };
 
     useEffect(() => {
+        handleResize();
         window.addEventListener("resize", handleResize);
     });
 
@@ -25,7 +26,7 @@ const Header = () => {
             {/* <img src={logo} alt="Logo" className={header["logo"]} /> */}
             <Scroller />
             <Link href="/">
-                <a className={header["logo"]}>hrak.to</a>
+                <p className={header["logo"]}>Hrak Torousian</p>
             </Link>
 
             {isMobile ? (
@@ -33,11 +34,7 @@ const Header = () => {
             ) : (
                 <nav className={header["navbar"]}>
                     <div className={header["navbar__item"]}>
-                        <Link href="/about">
-                            <a className={header["navbar__item-link"]}>
-                                About Me
-                            </a>
-                        </Link>
+                        <a className={header["navbar__item-link"]}>About Me</a>
                     </div>
                     <div className={header["navbar__item"]}>
                         <Link href="/work">

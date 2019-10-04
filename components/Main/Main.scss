@@ -2,6 +2,7 @@
 .container {
     // background-color: lightgray;
     min-height: 100vh;
+    min-width: 90vw;
     padding-top: 5rem;
     display: flex;
 
@@ -15,6 +16,9 @@
     @include sm {
         position: relative;
         left: 30%;
+    }
+    @include mobile {
+        left: 10%;
     }
 
     &__heading1 {

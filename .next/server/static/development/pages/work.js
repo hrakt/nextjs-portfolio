@@ -106,12 +106,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _common_Input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/Input */ "./components/common/Input.js");
 /* harmony import */ var _common_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/Button */ "./components/common/Button.js");
-/* harmony import */ var _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Footer/ContactForm.scss */ "./components/Footer/ContactForm.scss");
-/* harmony import */ var _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_mail_form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-mail-form */ "react-mail-form");
-/* harmony import */ var react_mail_form__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_mail_form__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _common_Text__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/Text */ "./components/common/Text.js");
+/* harmony import */ var _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Footer/ContactForm.scss */ "./components/Footer/ContactForm.scss");
+/* harmony import */ var _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Footer/ContactForm.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -121,54 +120,75 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Contact = () => {
+const ContactForm = () => {
   const options = ["Collaboration", "Inquiry", "Offer", "Suggestion", "Connect", "Other"];
   return __jsx("div", {
-    className: _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3___default.a["container"],
+    className: _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_4___default.a["container"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: undefined
-  }, __jsx(_common_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    recievedStyle: _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3___default.a["textarea"],
-    type: "textarea",
-    placeholder: "Email Address",
+  }, __jsx(_common_Text__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    type: "heading",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: undefined
+  }, __jsx(_common_Text__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    type: "paragraph",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, "Let's talk"), __jsx("span", {
+    className: _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_4___default.a["textarea__emoji"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: undefined
+  }, "\uD83D\uDC47")), __jsx(_common_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    recievedStyle: _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_4___default.a["textarea"],
+    type: "textarea",
+    placeholder: "Email Address",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: undefined
   }), __jsx(_common_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    recievedStyle: _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3___default.a["select"],
+    recievedStyle: _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_4___default.a["select"],
     type: "select",
     placeholder: "What's this about?",
     options: options,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 29
     },
     __self: undefined
   }), __jsx(_common_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
     type: "textarea",
     placeholder: "Enter your message here",
-    recievedStyle: classnames__WEBPACK_IMPORTED_MODULE_4___default()(_Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3___default.a["textarea"], _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_3___default.a["textarea__big"]),
+    recievedStyle: classnames__WEBPACK_IMPORTED_MODULE_5___default()(_Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_4___default.a["textarea"], _Footer_ContactForm_scss__WEBPACK_IMPORTED_MODULE_4___default.a["textarea__big"]),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 35
     },
     __self: undefined
   }), __jsx(_common_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Send",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 43
     },
     __self: undefined
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Contact);
+/* harmony default export */ __webpack_exports__["default"] = (ContactForm);
 
 /***/ }),
 
@@ -348,57 +368,51 @@ const Header = () => {
   };
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    handleResize();
     window.addEventListener("resize", handleResize);
   });
   return __jsx("div", {
     className: _Header_Headers_scss__WEBPACK_IMPORTED_MODULE_2___default.a["navbar__container"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: undefined
   }, __jsx(_common_Scroller__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: undefined
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: undefined
-  }, __jsx("a", {
-    className: _Header_Headers_scss__WEBPACK_IMPORTED_MODULE_2___default.a["logo"],
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: undefined
-  }, "hrak.to")), isMobile ? __jsx(_Header_SideNav__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx("p", {
+    className: _Header_Headers_scss__WEBPACK_IMPORTED_MODULE_2___default.a["logo"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 29
+    },
+    __self: undefined
+  }, "Hrak Torousian")), isMobile ? __jsx(_Header_SideNav__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
     },
     __self: undefined
   }) : __jsx("nav", {
     className: _Header_Headers_scss__WEBPACK_IMPORTED_MODULE_2___default.a["navbar"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: undefined
   }, __jsx("div", {
     className: _Header_Headers_scss__WEBPACK_IMPORTED_MODULE_2___default.a["navbar__item"],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    href: "/about",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 36
@@ -411,46 +425,46 @@ const Header = () => {
       lineNumber: 37
     },
     __self: undefined
-  }, "About Me"))), __jsx("div", {
+  }, "About Me")), __jsx("div", {
     className: _Header_Headers_scss__WEBPACK_IMPORTED_MODULE_2___default.a["navbar__item"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 39
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
     href: "/work",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 40
     },
     __self: undefined
   }, __jsx("a", {
     className: _Header_Headers_scss__WEBPACK_IMPORTED_MODULE_2___default.a["navbar__item-link"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 41
     },
     __self: undefined
   }, "Work"))), __jsx("div", {
     className: _Header_Headers_scss__WEBPACK_IMPORTED_MODULE_2___default.a["navbar__item"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 44
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
     href: "/contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 45
     },
     __self: undefined
   }, __jsx("a", {
     className: _Header_Headers_scss__WEBPACK_IMPORTED_MODULE_2___default.a["navbar__item-link"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 46
     },
     __self: undefined
   }, "Contact")))));
@@ -492,9 +506,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header_SideNav_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Header_SideNav_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/Header/SideNav.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -504,16 +521,10 @@ const SideNav = () => {
     0: isOpen,
     1: setIsOpen
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-
-  const scroll = location => {
-    setIsOpen(false);
-    window.scrollTo(`#${location}`);
-  };
-
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 10
     },
     __self: undefined
   }, __jsx("div", {
@@ -523,13 +534,13 @@ const SideNav = () => {
     }),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 11
     },
     __self: undefined
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 17
     },
     __self: undefined
   })), __jsx("div", {
@@ -538,38 +549,56 @@ const SideNav = () => {
     }),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 20
     },
     __self: undefined
   }, __jsx("ul", {
     className: _Header_SideNav_scss__WEBPACK_IMPORTED_MODULE_1___default.a["navContainer__items"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 25
+    },
+    __self: undefined
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
     },
     __self: undefined
   }, __jsx("li", {
-    onClick: scroll,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: undefined
+  }, "About Me")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/work",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: undefined
-  }, "About Me"), __jsx("li", {
-    href: "#work",
+  }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: undefined
-  }, "Work"), __jsx("li", {
-    href: "#contact",
+  }, "Work")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: undefined
-  }, "Contact"))));
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: undefined
+  }, "Contact")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SideNav);
@@ -1288,6 +1317,62 @@ module.exports = {
 	"icon__visible": "icon__visible___32OFb",
 	"empty": "empty___2nUVZ"
 };
+
+/***/ }),
+
+/***/ "./components/common/Text.js":
+/*!***********************************!*\
+  !*** ./components/common/Text.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/hrak/Desktop/code/nextjs-portfolio/components/common/Text.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+const Text = ({
+  type,
+  children,
+  recievedStyle
+}) => {
+  switch (type) {
+    case "heading":
+      return __jsx("h1", {
+        className: recievedStyle,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 4
+        },
+        __self: undefined
+      }, children);
+
+    case "paragraph":
+      return __jsx("p", {
+        className: recievedStyle,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        },
+        __self: undefined
+      }, children);
+
+    default:
+      return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: undefined
+      });
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Text);
 
 /***/ }),
 
@@ -3336,17 +3421,6 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
-
-/***/ }),
-
-/***/ "react-mail-form":
-/*!**********************************!*\
-  !*** external "react-mail-form" ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-mail-form");
 
 /***/ }),
 

@@ -39,13 +39,20 @@
 
     &__box {
         // background-color: #DEE4E7;
-        width: 100vw;
-        height: 60vh;
-        margin-top: 5rem;
+        height: 40vh;
+        margin-top: 10rem;
         display: flex;
         align-content: center;
         align-items: center;
         flex-direction: column;
+        @include sm {
+            height: 60vh;
+            margin-top: 10rem;
+        }
+
+        @include mobile {
+            height: 95vh;
+        }
     }
     &__heading3 {
         font-size: 3rem;
@@ -62,6 +69,10 @@
         margin-right: 6rem;
         margin-left: 2rem;
         box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6);
+        @include sm {
+            margin-right: 0;
+            margin-left: 0;
+        }
     }
 
     &__content {

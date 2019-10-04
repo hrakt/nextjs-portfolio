@@ -68,7 +68,7 @@ module.exports = {"container":"container___1zH2h","textarea":"textarea___1rFdy",
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1570059897199");
+            injectCss(link, link.href.split("?")[0] + "?unix=1570211693822");
           });
       }
     }
@@ -106,7 +106,7 @@ module.exports = {"container-4":"container-4___2jDp3","contact-container":"conta
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1570065307899");
+            injectCss(link, link.href.split("?")[0] + "?unix=1570229268143");
           });
       }
     }
@@ -144,7 +144,7 @@ module.exports = {"logo":"logo___3VBbV","navbar":"navbar___2p39K","navbar__item"
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1570148957344");
+            injectCss(link, link.href.split("?")[0] + "?unix=1570217123842");
           });
       }
     }
@@ -220,7 +220,7 @@ module.exports = {"container":"container___13tUu","main-container":"main-contain
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1570065307954");
+            injectCss(link, link.href.split("?")[0] + "?unix=1570229268226");
           });
       }
     }
@@ -258,7 +258,7 @@ module.exports = {"container-3":"container-3___2P6AK","portfolio-container":"por
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1570144617136");
+            injectCss(link, link.href.split("?")[0] + "?unix=1570229493537");
           });
       }
     }
@@ -334,7 +334,7 @@ module.exports = {"container":"container___1xbTH","icon":"icon___18_SR","icon__v
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1570147399883");
+            injectCss(link, link.href.split("?")[0] + "?unix=1570224685519");
           });
       }
     }

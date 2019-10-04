@@ -1,13 +1,19 @@
 .logo {
-    font-weight: 700;
+    font-weight: 200;
     cursor: pointer;
     text-transform: uppercase;
     height: 5rem;
-    width: 5rem;
-    display: flex;
+    width: 20rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: inherit;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .navbar {
@@ -27,8 +33,12 @@
     &__item-link {
         text-decoration: none;
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 200;
         font-size: 1.5rem;
         color: black;
+        cursor: pointer;
+        &:hover {
+            font-weight: 700;
+        }
     }
 }

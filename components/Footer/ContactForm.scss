@@ -1,7 +1,11 @@
 .container {
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 .textarea {
     width: 25rem;

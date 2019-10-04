@@ -1,14 +1,11 @@
 import { useState } from "react";
 import styles from "../Header/SideNav.scss";
 import cx from "classnames";
+import Link from "next/link";
 
 const SideNav = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const scroll = location => {
-        setIsOpen(false);
-        window.scrollTo(`#${location}`);
-    };
     return (
         <div>
             <div
@@ -26,9 +23,15 @@ const SideNav = () => {
                 })}
             >
                 <ul className={styles["navContainer__items"]}>
-                    <li onClick={scroll}>About Me</li>
-                    <li href="#work">Work</li>
-                    <li href="#contact">Contact</li>
+                    <Link href="/">
+                        <li>About Me</li>
+                    </Link>
+                    <Link href="/work">
+                        <li>Work</li>
+                    </Link>
+                    <Link href="/contact">
+                        <li>Contact</li>
+                    </Link>
                 </ul>
             </div>
         </div>

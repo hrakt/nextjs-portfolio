@@ -1,10 +1,10 @@
 import Input from "../common/Input";
 import Button from "../common/Button";
+import Text from "../common/Text";
 import contactform from "../Footer/ContactForm.scss";
 import cx from "classnames";
-import ReactContactForm from "react-mail-form";
 
-const Contact = () => {
+const ContactForm = () => {
     const options = [
         "Collaboration",
         "Inquiry",
@@ -15,6 +15,12 @@ const Contact = () => {
     ];
     return (
         <div className={contactform["container"]}>
+            <Text type="heading">
+                <Text type="paragraph">Let's talk</Text>
+                <span className={contactform["textarea__emoji"]}>
+                    &#128071;
+                </span>
+            </Text>
             <Input
                 recievedStyle={contactform["textarea"]}
                 type="textarea"
@@ -39,4 +45,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default ContactForm;
