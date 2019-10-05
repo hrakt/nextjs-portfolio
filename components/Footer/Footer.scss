@@ -1,13 +1,13 @@
 @import "../../sass/mixins.scss";
 
 .container-4 {
-    min-height: 40vh;
-
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
     margin: 2rem;
+    justify-content: flex-end;
 }
 .contact-container {
     display: flex;

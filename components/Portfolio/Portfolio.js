@@ -1,8 +1,16 @@
 import portfolio from "../Portfolio/Portfolio.scss";
 import Button from "../common/Button";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+var data = require("../../resources/projects.js");
+
+const getJson = () => {
+    console.log("being calleds");
+    data.map(project => console.log(project[0]));
+};
 
 const Portfolio = () => {
+    useEffect(() => getJson());
     return (
         <div className={portfolio["container-3"]} id="portfolio">
             <div className={portfolio["portfolio-container"]}>
