@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "../../img/favicon.png";
+
 import header from "../Header/Headers.scss";
 import SideBarMenu from "../Header/SideNav";
 import Scroller from "../common/Scroller";
@@ -23,7 +23,6 @@ const Header = () => {
 
     return (
         <div className={header["navbar__container"]}>
-            {/* <img src={logo} alt="Logo" className={header["logo"]} /> */}
             <Scroller />
             <Link href="/">
                 <p className={header["logo"]}>Hrak Torousian</p>

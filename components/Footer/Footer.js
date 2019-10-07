@@ -1,6 +1,6 @@
 import footer from "../Footer/Footer.scss";
-import githubLogo from "../../img/_ionicons_svg_logo-github.svg";
-import linkedinLogo from "../../img/_ionicons_svg_logo-linkedin.svg";
+// import githubLogo from "../../img/_ionicons_svg_logo-github.svg";
+// import linkedinLogo from "../../img/_ionicons_svg_logo-linkedin.svg";
 import Contact from "../Footer/ContactForm";
 
 const Footer = () => (
@@ -14,13 +14,13 @@ const Footer = () => (
             <div className={footer["contact-container__icons"]}>
                 <a href="https://www.github.com/hrakt/">
                     <img
-                        src={githubLogo}
+                        src="/static/img/_ionicons_svg_logo-github.svg"
                         className={footer["contact-container__icon"]}
                     ></img>
                 </a>
                 <a href="https://www.linkedin.com/in/hrakt/">
                     <img
-                        src={linkedinLogo}
+                        src="static/img/_ionicons_svg_logo-linkedin.svg"
                         className={footer["contact-container__icon"]}
                     ></img>
                 </a>

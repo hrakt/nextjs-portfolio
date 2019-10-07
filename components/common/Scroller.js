@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import svgStyle from "../common/Scroller.scss";
-import icon from "../../img/_up_icon.svg";
+// import icon from "../../img/_up_icon.svg";
 import cx from "classnames";
 
 const Scroller = () => {
@@ -24,7 +24,7 @@ const Scroller = () => {
     return (
         <div onClick={scrollTop} className={svgStyle["container"]}>
             <img
-                src={icon}
+                // src={icon}
                 className={cx(svgStyle["icon"], {
                     [svgStyle["icon__visible"]]: scrollHit
                 })}
