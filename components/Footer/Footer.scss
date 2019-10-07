@@ -1,15 +1,22 @@
+@import "../../sass/mixins.scss";
+
 .container-4 {
-    min-height: 30rem;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
     margin: 2rem;
+    justify-content: center;
 }
 .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include sm {
+        margin-top: 10rem;
+    }
 
     &__header1 {
         font-size: 4rem;

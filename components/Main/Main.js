@@ -1,4 +1,6 @@
 import main from "../Main/Main.scss";
+import Button from "../common/Button";
+import Link from "next/link";
 
 const Main = () => {
     return (
@@ -10,9 +12,9 @@ const Main = () => {
                 <h2 className={main["main-container__heading2"]}>
                     A passionate web developer
                 </h2>
-                <a href="#about">
-                    <button className={main["btn"]}>About Me</button>
-                </a>
+                <Link href="/about">
+                    <Button title="About Me" />
+                </Link>
             </div>
         </div>
     );
