@@ -1,0 +1,44 @@
+.logo {
+    font-weight: 200;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 5rem;
+    width: 20rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.navbar {
+    display: flex;
+    align-content: center;
+    margin-right: 4rem;
+
+    &__item {
+        padding: 2rem;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 1.5rem;
+        color: black;
+        cursor: pointer;
+        &:hover {
+            font-weight: 700;
+        }
+    }
+}
