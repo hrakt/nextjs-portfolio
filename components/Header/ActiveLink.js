@@ -11,7 +11,6 @@ const ActiveLink = ({
     activeClassName,
     ...otherProps
 }) => {
-    console.log(console.log(router.pathname));
     const child = Children.only(children);
     const className = cx(child.props.className, {
         [header['navbarItem__selected']]: router.pathname === href,
