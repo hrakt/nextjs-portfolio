@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
+    const [activeLink, setActive] = useState(false);
 
     const handleResize = () => {
         if (window.innerWidth < 600) {
@@ -24,9 +25,11 @@ const Header = () => {
     return (
         <div className={header['navbar__container']}>
             <Scroller />
-            <Link href="/">
-                <p className={header['logo']}>Hrak Torousian</p>
-            </Link>
+            <div className={header['navbar__item']}>
+                <Link href="/">
+                    <p className={header['logo']}>Hrak Torousian</p>
+                </Link>
+            </div>
 
             {isMobile ? (
                 <SideBarMenu />
