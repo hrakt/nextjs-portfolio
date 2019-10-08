@@ -9,25 +9,14 @@ const getProjects = () => {
     return projects.map(project => {
         const picture = project.picture;
         return (
-            <div
-                key={project.id}
-                className={portfolio['portfolio-container__section']}
-            >
-                <div className={portfolio['portfolio-container__box']}>
-                    <h6 className={portfolio['portfolio-container__heading3']}>
-                        {project.title}
-                    </h6>
-                    <div className={portfolio['portfolio-container__content']}>
-                        <div className={portfolio['portflio-container__left']}>
-                            <img
-                                src={project.picture}
-                                alt="Portfolio-1"
-                                className={
-                                    portfolio['portfolio-container__img']
-                                }
-                            />
-                        </div>
-                        <div
+            <div className={portfolio['portfolio-container__content']}>
+                <img
+                    src={project.picture}
+                    alt="Portfolio-1"
+                    className={portfolio['portfolio-container__img']}
+                />
+
+                {/* <div
                             className={portfolio['portfolio-container__right']}
                         >
                             <div
@@ -51,9 +40,7 @@ const getProjects = () => {
                                     <Button title="Source" />
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </div> */}
             </div>
         );
     });
@@ -69,7 +56,9 @@ const Portfolio = () => {
                 <h5 className={portfolio['portfolio-container__heading2']}>
                     Check out my latest projects
                 </h5>
-                {getProjects()}
+                <div className={portfolio['portfolio-container__projects']}>
+                    {getProjects()}
+                </div>
             </div>
         </div>
     );

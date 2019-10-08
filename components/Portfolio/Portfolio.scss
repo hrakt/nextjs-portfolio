@@ -1,4 +1,4 @@
-@import "../../sass/mixins.scss";
+@import '../../sass/mixins.scss';
 
 .container-3 {
     // background-color: lightgray;
@@ -37,22 +37,27 @@
         font-style: italic;
     }
 
-    &__box {
-        // background-color: #DEE4E7;
-        height: 40vh;
-        margin-top: 10rem;
-        display: flex;
-        align-content: center;
-        align-items: center;
-        flex-direction: column;
-        @include sm {
-            height: 60vh;
-            margin-top: 10rem;
-        }
+    // &__box {
+    //     // background-color: #DEE4E7;
+    //     height: 40vh;
+    //     margin-top: 10rem;
+    //     display: flex;
+    //     align-content: center;
+    //     align-items: center;
 
-        @include mobile {
-            height: 95vh;
-        }
+    //     @include sm {
+    //         height: 60vh;
+    //         margin-top: 10rem;
+    //     }
+
+    //     @include mobile {
+    //         height: 95vh;
+    //     }
+    // }
+
+    &__projects {
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
     &__heading3 {
         font-size: 3rem;
@@ -63,9 +68,9 @@
     }
 
     &__img {
-        width: 40rem;
-        height: 25rem;
-        margin-top: 2rem;
+        width: 60rem;
+        height: 35rem;
+        margin-top: 10rem;
         margin-right: 6rem;
         margin-left: 2rem;
         box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6);
@@ -77,12 +82,11 @@
 
     &__content {
         display: flex;
-
         align-items: center;
         align-self: center;
-        width: 80rem;
         font-size: 2.75rem;
         font-weight: 100;
+        flex-direction: column;
         @include sm {
             flex-direction: column;
             width: 50rem;
