@@ -1,7 +1,7 @@
-import { useState } from "react";
-import styles from "../Header/SideNav.scss";
-import cx from "classnames";
-import Link from "next/link";
+import { useState } from 'react';
+import styles from '../Header/SideNav.scss';
+import cx from 'classnames';
+import Link from 'next/link';
 
 const SideNav = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,19 +10,17 @@ const SideNav = () => {
         <div>
             <div
                 onClick={() => setIsOpen(!isOpen)}
-                className={cx(styles["navIcon"], {
-                    [styles["navIcon__clicked"]]: isOpen
+                className={cx(styles['navIcon'], {
+                    [styles['navIcon__clicked']]: isOpen,
                 })}
-            >
-                <div></div>
-            </div>
+            ></div>
 
             <div
-                className={cx(styles["navContainer"], {
-                    [styles["navContainer__opened"]]: isOpen
+                className={cx(styles['navContainer'], {
+                    [styles['navContainer__opened']]: isOpen,
                 })}
             >
-                <ul className={styles["navContainer__items"]}>
+                <ul className={styles['navContainer__items']}>
                     <Link href="/">
                         <li>About Me</li>
                     </Link>
