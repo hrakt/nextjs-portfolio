@@ -3,11 +3,11 @@ import { useEffect, useState } from 'react';
 import header from '../Header/Headers.scss';
 import SideBarMenu from '../Header/SideNav';
 import Scroller from '../common/Scroller';
-import Link from 'next/link';
+import Link from './ActiveLink';
 
 const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
-    const [activeLink, setActive] = useState(false);
+    const [activeLink, setActive] = useState('');
 
     const handleResize = () => {
         if (window.innerWidth < 600) {
@@ -36,19 +36,19 @@ const Header = () => {
             ) : (
                 <nav className={header['navbar']}>
                     <div className={header['navbar__item']}>
-                        <Link href="/about">
+                        <Link href="/about" activeClassName="active">
                             <a className={header['navbar__item-link']}>
                                 About Me
                             </a>
                         </Link>
                     </div>
                     <div className={header['navbar__item']}>
-                        <Link href="/work">
+                        <Link href="/work" activeClassName="active">
                             <a className={header['navbar__item-link']}>Work</a>
                         </Link>
                     </div>
                     <div className={header['navbar__item']}>
-                        <Link href="/contact">
+                        <Link href="/contact" activeClassName="active">
                             <a className={header['navbar__item-link']}>
                                 Contact
                             </a>

@@ -51,3 +51,9 @@
         }
     }
 }
+
+.navbarItem {
+    &__selected {
+        font-weight: 700;
+    }
+}
