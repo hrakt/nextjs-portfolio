@@ -52,6 +52,7 @@
         margin-top: 10rem;
         margin-right: 6rem;
         margin-left: 2rem;
+        cursor: pointer;
         &:hover {
             .portfolio-container__img {
                 filter: blur(5px);
@@ -65,27 +66,13 @@
         }
     }
 
-    // &__box {
-    //     // background-color: #DEE4E7;
-    //     height: 40vh;
-    //     margin-top: 10rem;
-    //     display: flex;
-    //     align-content: center;
-    //     align-items: center;
-
-    //     @include sm {
-    //         height: 60vh;
-    //         margin-top: 10rem;
-    //     }
-
-    //     @include mobile {
-    //         height: 95vh;
-    //     }
-    // }
-
     &__projects {
         display: grid;
         grid-template-columns: 50% 50%;
+        @include sm {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__heading3 {
@@ -97,11 +84,11 @@
     }
 
     &__img {
-        width: 60rem;
-        height: 35rem;
+        width: 65vw;
+        height: 50vh;
 
         box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6);
-        cursor: pointer;
+
         transition: all 0.5s;
         @include sm {
             margin-right: 0;

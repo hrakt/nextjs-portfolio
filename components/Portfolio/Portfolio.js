@@ -8,7 +8,10 @@ const getProjects = () => {
     return projects.map(project => {
         const picture = project.picture;
         return (
-            <div className={portfolio['portfolio-container__content']}>
+            <div
+                key={project.id}
+                className={portfolio['portfolio-container__content']}
+            >
                 <div className={portfolio['portfolio-container__box']}>
                     <img
                         src={project.picture}
@@ -17,6 +20,7 @@ const getProjects = () => {
                     />
                     <div className={portfolio['portfolio-container__buttons']}>
                         <Button
+                            type="internal"
                             title="Learn More"
                             href={`/project?title=${project.title}`}
                         />
