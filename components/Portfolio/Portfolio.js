@@ -10,11 +10,21 @@ const getProjects = () => {
         const picture = project.picture;
         return (
             <div className={portfolio['portfolio-container__content']}>
-                <img
-                    src={project.picture}
-                    alt="Portfolio-1"
-                    className={portfolio['portfolio-container__img']}
-                />
+                <div className={portfolio['portfolio-container__box']}>
+                    <img
+                        src={project.picture}
+                        alt="Portfolio-1"
+                        className={portfolio['portfolio-container__img']}
+                    />
+                    <div className={portfolio['portfolio-container__buttons']}>
+                        <a href="https://gahackathon-95ace.firebaseapp.com/">
+                            <Button title="Visit" />
+                        </a>
+                        <a href="https://github.com/aBurmeseDev/LA-homelessOutreachPortal-hackathon">
+                            <Button title="Source" />
+                        </a>
+                    </div>
+                </div>
 
                 {/* <div
                             className={portfolio['portfolio-container__right']}
