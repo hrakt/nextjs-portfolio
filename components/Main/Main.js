@@ -10,7 +10,14 @@ const Main = () => {
                     Hi, I'm Hrak 👋
                 </h1>
                 <h2 className={main['main-container__heading2']}>
-                    A passionate web developer
+                    I'm a
+                    <div className={main['slidingVertical']}>
+                        <span>self-taught</span>
+                        <span>curious</span>
+                        <span>creative</span>
+                        <span>energetic</span>
+                    </div>
+                    web developer
                 </h2>
 
                 <Button type="internal" href="/about" title="About Me" />
