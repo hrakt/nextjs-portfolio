@@ -13,7 +13,7 @@ const Main = () => {
                     A passionate web developer
                 </h2>
 
-                <Button href="/about" title="About Me" />
+                <Button type="internal" href="/about" title="About Me" />
             </div>
         </div>
     );
