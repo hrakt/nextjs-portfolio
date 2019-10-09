@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import projects from '../../utils/projects';
 
 const getProjects = () => {
-    console.log(projects);
     return projects.map(project => {
         const picture = project.picture;
         return (
@@ -17,12 +16,10 @@ const getProjects = () => {
                         className={portfolio['portfolio-container__img']}
                     />
                     <div className={portfolio['portfolio-container__buttons']}>
-                        <a href="https://gahackathon-95ace.firebaseapp.com/">
-                            <Button title="Visit" />
-                        </a>
-                        <a href="https://github.com/aBurmeseDev/LA-homelessOutreachPortal-hackathon">
-                            <Button title="Source" />
-                        </a>
+                        <Button
+                            title="Learn More"
+                            href={`/project?title=${project.title}`}
+                        />
                     </div>
                 </div>
 
