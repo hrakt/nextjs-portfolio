@@ -53,6 +53,7 @@
         margin-right: 2rem;
         margin-left: 2rem;
         cursor: pointer;
+
         &:hover {
             .portfolio-container__img {
                 filter: blur(5px);
@@ -93,7 +94,8 @@
         transition: all 0.5s;
         @include sm {
             margin-right: 0;
-            margin-left: 0;
+            margin-left: 2.5rem;
+            width: 90%;
         }
     }
 

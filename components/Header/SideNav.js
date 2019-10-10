@@ -6,6 +6,10 @@ import Link from 'next/link';
 const SideNav = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+    const closeSide = () => {
+        setIsOpen(false);
+    };
+
     return (
         <div>
             <div
@@ -21,13 +25,13 @@ const SideNav = () => {
                 })}
             >
                 <ul className={styles['navContainer__items']}>
-                    <Link href="/">
+                    <Link onClick={closeSide} href="/about">
                         <li>About Me</li>
                     </Link>
-                    <Link href="/work">
+                    <Link onClick={() => setIsOpen(false)} href="/work">
                         <li>Work</li>
                     </Link>
-                    <Link href="/contact">
+                    <Link onClick={() => setIsOpen(false)} href="/contact">
                         <li>Contact</li>
                     </Link>
                 </ul>

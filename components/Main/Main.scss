@@ -17,7 +17,6 @@
 
     @include sm {
         position: relative;
-        left: 30%;
     }
     @include mobile {
         left: 10%;
@@ -63,8 +62,8 @@
 
 .slidingVertical {
     display: inline;
-    text-indent: 8px;
-    margin-right: 20rem;
+    text-indent: 12px;
+    margin-right: 14rem;
     // margin-left: 5rem;
 }
 .slidingVertical span {
@@ -75,8 +74,6 @@
     opacity: 0;
     overflow: hidden;
     position: absolute;
-    width: 20rem;
-    text-align: center;
 }
 .slidingVertical span:nth-child(2) {
     animation-delay: 2.5s;

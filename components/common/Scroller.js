@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import svgStyle from '../common/Scroller.scss';
-// import icon from "../../img/_up_icon.svg";
 import cx from 'classnames';
 
 const Scroller = () => {
@@ -10,7 +9,7 @@ const Scroller = () => {
     useEffect(() => window.addEventListener('scroll', handleScroll));
 
     const handleScroll = () => {
-        if (!(window.scrollY < 250)) {
+        if (!(window.scrollY < 10)) {
             setScrollHit(true);
         } else {
             setScrollHit(false);

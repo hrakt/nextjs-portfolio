@@ -21,7 +21,7 @@ const ContactForm = () => {
                     type="heading"
                     recievedStyle={footer['contact-container__header1']}
                 >
-                    Let's talk
+                    Let's Talk
                 </Text>
                 <span className={contactform['textarea__emoji']}>
                     &#128071;
