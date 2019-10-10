@@ -58,13 +58,13 @@ const ContactForm = () => {
                 <div className={footer['contact-container__icons']}>
                     <a href="https://www.github.com/hrakt/">
                         <img
-                            src="/static/img/_ionicons_svg_logo-github.svg"
+                            src="/_ionicons_svg_logo-github.svg"
                             className={footer['contact-container__icon']}
                         ></img>
                     </a>
                     <a href="https://www.linkedin.com/in/hrakt/">
                         <img
-                            src="static/img/_ionicons_svg_logo-linkedin.svg"
+                            src="/_ionicons_svg_logo-linkedin.svg"
                             className={footer['contact-container__icon']}
                         ></img>
                     </a>

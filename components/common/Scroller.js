@@ -23,7 +23,7 @@ const Scroller = () => {
     return (
         <div onClick={scrollTop} className={svgStyle['container']}>
             <img
-                src="/static/img/_up_icon.svg"
+                src="/_up_icon.svg"
                 className={cx(svgStyle['icon'], {
                     [svgStyle['icon__visible']]: scrollHit,
                 })}
