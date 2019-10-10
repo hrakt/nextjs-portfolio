@@ -1,16 +1,15 @@
-import { useEffect, useState } from "react";
-import svgStyle from "../common/Scroller.scss";
-// import icon from "../../img/_up_icon.svg";
-import cx from "classnames";
+import { useEffect, useState } from 'react';
+import svgStyle from '../common/Scroller.scss';
+import cx from 'classnames';
 
 const Scroller = () => {
     const [scrollHit, setScrollHit] = useState(false);
-    const visibleStyle = svgStyle["icon__visible"];
+    const visibleStyle = svgStyle['icon__visible'];
 
-    useEffect(() => window.addEventListener("scroll", handleScroll));
+    useEffect(() => window.addEventListener('scroll', handleScroll));
 
     const handleScroll = () => {
-        if (!(window.scrollY < 250)) {
+        if (!(window.scrollY < 10)) {
             setScrollHit(true);
         } else {
             setScrollHit(false);
@@ -22,11 +21,11 @@ const Scroller = () => {
     };
 
     return (
-        <div onClick={scrollTop} className={svgStyle["container"]}>
+        <div onClick={scrollTop} className={svgStyle['container']}>
             <img
-                // src={icon}
-                className={cx(svgStyle["icon"], {
-                    [svgStyle["icon__visible"]]: scrollHit
+                src="/static/img/_up_icon.svg"
+                className={cx(svgStyle['icon'], {
+                    [svgStyle['icon__visible']]: scrollHit,
                 })}
             ></img>
         </div>

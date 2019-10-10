@@ -1,12 +1,12 @@
-@import "../../sass/mixins.scss";
+@import '../../sass/mixins.scss';
 
 .container-3 {
     // background-color: lightgray;
-    min-height: 100rem;
+    min-height: 80rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 5rem;
     margin: 2rem;
 }
 
@@ -23,6 +23,16 @@
 
     &__buttons {
         display: flex;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 1s;
+
         a {
             text-decoration: none;
         }
@@ -38,22 +48,35 @@
     }
 
     &__box {
-        // background-color: #DEE4E7;
-        height: 40vh;
-        margin-top: 10rem;
-        display: flex;
-        align-content: center;
-        align-items: center;
-        flex-direction: column;
-        @include sm {
-            height: 60vh;
-            margin-top: 10rem;
-        }
+        position: relative;
+        margin-top: 5rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        cursor: pointer;
 
-        @include mobile {
-            height: 95vh;
+        &:hover {
+            .portfolio-container__img {
+                filter: blur(5px);
+                transition: all 0.5s;
+            }
+            .portfolio-container__buttons {
+                visibility: visible;
+                opacity: 1;
+                transition: all 1s;
+            }
         }
     }
+
+    &__projects {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 90vw;
+        @include sm {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     &__heading3 {
         font-size: 3rem;
         font-weight: 500;
@@ -63,26 +86,26 @@
     }
 
     &__img {
-        width: 40rem;
-        height: 25rem;
-        margin-top: 2rem;
-        margin-right: 6rem;
-        margin-left: 2rem;
+        width: 100%;
+        // height: 50vh;
+
         box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6);
+
+        transition: all 0.5s;
         @include sm {
             margin-right: 0;
-            margin-left: 0;
+            margin-left: 2.5rem;
+            width: 90%;
         }
     }
 
     &__content {
         display: flex;
-
         align-items: center;
         align-self: center;
-        width: 80rem;
         font-size: 2.75rem;
         font-weight: 100;
+        flex-direction: column;
         @include sm {
             flex-direction: column;
             width: 50rem;

@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import header from "../Header/Headers.scss";
-import SideBarMenu from "../Header/SideNav";
-import Scroller from "../common/Scroller";
-import Link from "next/link";
+import header from '../Header/Headers.scss';
+import SideBarMenu from '../Header/SideNav';
+import Scroller from '../common/Scroller';
+import Link from './ActiveLink';
 
 const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
+    const [activeLink, setActive] = useState('');
 
     const handleResize = () => {
         if (window.innerWidth < 600) {
@@ -18,31 +19,37 @@ const Header = () => {
 
     useEffect(() => {
         handleResize();
-        window.addEventListener("resize", handleResize);
+        window.addEventListener('resize', handleResize);
     });
 
     return (
-        <div className={header["navbar__container"]}>
+        <div className={header['navbar__container']}>
             <Scroller />
-            <Link href="/">
-                <p className={header["logo"]}>Hrak Torousian</p>
-            </Link>
+            <div className={header['navbar__item']}>
+                <Link href="/">
+                    <p className={header['logo']}>Hrak Torousian</p>
+                </Link>
+            </div>
 
             {isMobile ? (
                 <SideBarMenu />
             ) : (
-                <nav className={header["navbar"]}>
-                    <div className={header["navbar__item"]}>
-                        <a className={header["navbar__item-link"]}>About Me</a>
-                    </div>
-                    <div className={header["navbar__item"]}>
-                        <Link href="/work">
-                            <a className={header["navbar__item-link"]}>Work</a>
+                <nav className={header['navbar']}>
+                    <div className={header['navbar__item']}>
+                        <Link href="/about" activeClassName="active">
+                            <a className={header['navbar__item-link']}>
+                                About Me
+                            </a>
                         </Link>
                     </div>
-                    <div className={header["navbar__item"]}>
-                        <Link href="/contact">
-                            <a className={header["navbar__item-link"]}>
+                    <div className={header['navbar__item']}>
+                        <Link href="/work" activeClassName="active">
+                            <a className={header['navbar__item-link']}>Work</a>
+                        </Link>
+                    </div>
+                    <div className={header['navbar__item']}>
+                        <Link href="/contact" activeClassName="active">
+                            <a className={header['navbar__item-link']}>
                                 Contact
                             </a>
                         </Link>
