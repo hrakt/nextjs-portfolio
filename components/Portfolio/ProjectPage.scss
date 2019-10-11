@@ -26,6 +26,7 @@
         width: 75vw;
         font-size: 2.5rem;
         font-weight: 300;
+
         @include cinema {
             width: 75rem;
         }

@@ -1,13 +1,17 @@
 import { useState } from 'react';
 import styles from '../Header/SideNav.scss';
 import cx from 'classnames';
-import Link from 'next/link';
+import Link from './ActiveLink';
 
 const SideNav = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const closeSide = () => {
         setIsOpen(false);
+    };
+
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
     };
 
     return (

@@ -13,7 +13,7 @@ export default ({ children }) => (
                 name="viewport"
                 content="width=device-width, initial-scale=1"
             />
-            <title>Hrak Torousan</title>
+            <title>Hrak Torousian</title>
             <link
                 href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
                 rel="stylesheet"
