@@ -6,7 +6,6 @@ import projects from '../../utils/projects';
 
 const getProjects = () => {
     return projects.map(project => {
-        const picture = project.picture;
         return (
             <div
                 key={project.id}
@@ -20,6 +19,7 @@ const getProjects = () => {
                     />
                     <div className={portfolio['portfolio-container__buttons']}>
                         <Button
+                            id={project.id}
                             type="internal"
                             title="Learn More"
                             href={`/project?title=${project.title}`}
