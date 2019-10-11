@@ -13,6 +13,16 @@ const Button = ({ title, type, href, id }) => {
                     </div>
                 </Link>
             );
+        case 'inter': // still internal but for non dynamic pages
+            return (
+                <Link href={href}>
+                    <div className={button['container']}>
+                        <button className={button['btn']} type={type}>
+                            {title}
+                        </button>
+                    </div>
+                </Link>
+            );
         case 'external':
             return (
                 <div className={button['container']}>

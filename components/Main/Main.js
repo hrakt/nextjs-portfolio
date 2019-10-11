@@ -20,7 +20,7 @@ const Main = () => {
                     web developer
                 </h2>
 
-                <Button type="internal" href="/about" title="About Me" />
+                <Button type="inter" href="/about" title="About Me" />
             </div>
         </div>
     );

@@ -16,13 +16,13 @@
     align-items: center;
 
     &__heading {
-        font-size: 3.5vw;
+        font-size: 6.5rem;
         font-weight: 400;
         margin: 0 auto;
     }
 
     &__heading2 {
-        font-size: 1.5vw;
+        font-size: 2rem;
         font-weight: 400;
         font-style: italic;
         margin-bottom: 2rem;
@@ -31,7 +31,11 @@
     &__content {
         text-align: center;
         padding-top: 2rem;
-        font-size: 1.75vw;
+        font-size: 3rem;
         font-weight: 200;
+    }
+
+    &__text {
+        width: 80vw;
     }
 }
