@@ -1,3 +1,5 @@
+@import '../../sass/mixins.scss';
+
 .projectPage {
     &__container {
         display: flex;
@@ -7,10 +9,13 @@
     }
 
     &__img {
-        width: 65vw;
-        height: 50vh;
+        max-width: 85rem;
+        height: auto;
         box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6);
         margin: 5rem;
+        @include sm {
+            width: 85vw;
+        }
     }
     &__buttons {
         display: flex;
@@ -18,9 +23,12 @@
         align-items: center;
     }
     &__textBox {
-        width: 50rem;
-        font-size: 1.5rem;
+        width: 75vw;
+        font-size: 2.5rem;
         font-weight: 300;
+        @include cinema {
+            width: 75rem;
+        }
     }
     &__heading {
         font-size: 30px;

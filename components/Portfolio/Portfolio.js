@@ -1,6 +1,7 @@
 import portfolio from '../Portfolio/Portfolio.scss';
 import Button from '../common/Button';
 import projects from '../../utils/projects';
+import Link from 'next/link';
 
 const getProjects = () => {
     return projects.map(project => {
@@ -9,20 +10,32 @@ const getProjects = () => {
                 key={project.id}
                 className={portfolio['portfolio-container__content']}
             >
-                <div className={portfolio['portfolio-container__box']}>
-                    <img
-                        src={project.picture}
-                        alt="Portfolio-1"
-                        className={portfolio['portfolio-container__img']}
-                    />
-                    <div className={portfolio['portfolio-container__buttons']}>
-                        <Button
-                            id={project.id}
-                            type="internal"
-                            title="Learn More"
-                            href={`/project?title=${project.title}`}
-                        />
-                    </div>
+                <div
+                    className={portfolio['portfolio-container__box']}
+                    href={`/project?title=${project.title}`}
+                >
+                    <Link href={`/projects/${project.id}`}>
+                        <div>
+                            <img
+                                src={project.picture}
+                                alt="Portfolio-1"
+                                className={
+                                    portfolio['portfolio-container__img']
+                                }
+                            />
+                            <div
+                                className={
+                                    portfolio['portfolio-container__buttons']
+                                }
+                            >
+                                <Button
+                                    id={project.id}
+                                    type="internal"
+                                    title="Learn More"
+                                />
+                            </div>
+                        </div>
+                    </Link>
                 </div>
             </div>
         );
