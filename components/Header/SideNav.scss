@@ -1,4 +1,7 @@
+@import '../../sass/mixins.scss';
+
 .navIcon {
+    visibility: hidden;
     margin: 1em;
     width: 30px;
     cursor: pointer;
@@ -6,6 +9,9 @@
     top: 1rem;
     right: 1rem;
     z-index: 100;
+    @include sm {
+        visibility: visible;
+    }
 }
 
 .navIcon:after,
