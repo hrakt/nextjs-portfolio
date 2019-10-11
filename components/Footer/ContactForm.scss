@@ -9,6 +9,34 @@
     padding-top: 5rem;
     margin: 2rem;
 }
+
+.text-container {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15rem;
+    &__email {
+        text-decoration: none;
+        color: inherit;
+        font-weight: 300;
+        font-size: 2rem;
+        padding-top: 2rem;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+        font-weight: 200;
+    }
+
+    &__heading {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+}
 .textarea {
     width: 25rem;
     height: 2.5rem;

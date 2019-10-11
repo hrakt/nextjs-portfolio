@@ -16,7 +16,22 @@ const ContactForm = () => {
     ];
     return (
         <div className={contactform['container']}>
-            <div className={contactform['header']}>
+            <div className={contactform['text-container']}>
+                <h1 className={contactform['text-container__heading']}>
+                    Let's have a chat
+                </h1>
+                <p className={contactform['text-container__paragraph']}>
+                    Always happy to hear from you whether inquiring about work
+                    or just catching up.
+                </p>
+                <a
+                    href="mailto:hello@hrak.to"
+                    className={contactform['text-container__email']}
+                >
+                    Send me an email!
+                </a>
+            </div>
+            {/* <div className={contactform['header']}>
                 <Text
                     type="heading"
                     recievedStyle={footer['contact-container__header1']}
@@ -46,10 +61,10 @@ const ContactForm = () => {
                     contactform['textarea__big']
                 )}
             />
-            <Button title="Send" />
+            <Button title="Send" /> */}
             <div className={footer['contact-container']}>
                 <h2 className={footer['contact-container__header1']}>
-                    Contact Me
+                    Find me at
                 </h2>
 
                 <h4 className={footer['contact-container__header2']}>

@@ -1,7 +1,5 @@
 import portfolio from '../Portfolio/Portfolio.scss';
 import Button from '../common/Button';
-import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 import projects from '../../utils/projects';
 
 const getProjects = () => {
@@ -26,32 +24,6 @@ const getProjects = () => {
                         />
                     </div>
                 </div>
-
-                {/* <div
-                            className={portfolio['portfolio-container__right']}
-                        >
-                            <div
-                                className={
-                                    portfolio[
-                                        'portfolio-container__description'
-                                    ]
-                                }
-                            >
-                                {project.description}
-                            </div>
-                            <div
-                                className={
-                                    portfolio['portfolio-container__buttons']
-                                }
-                            >
-                                <a href="https://gahackathon-95ace.firebaseapp.com/">
-                                    <Button title="Visit" />
-                                </a>
-                                <a href="https://github.com/aBurmeseDev/LA-homelessOutreachPortal-hackathon">
-                                    <Button title="Source" />
-                                </a>
-                            </div>
-                        </div> */}
             </div>
         );
     });
