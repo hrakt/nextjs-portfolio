@@ -2,6 +2,7 @@ import portfolio from '../Portfolio/Portfolio.scss';
 import Button from '../common/Button';
 import projects from '../../utils/projects';
 import Link from 'next/link';
+import Filter from '../Portfolio/Filter';
 
 const getProjects = () => {
     return projects.map(project => {
@@ -44,19 +45,22 @@ const getProjects = () => {
 
 const Portfolio = () => {
     return (
-        <div className={portfolio['container-3']} id="portfolio">
-            <div className={portfolio['portfolio-container']}>
-                <h4 className={portfolio['portfolio-container__heading']}>
-                    Portfolio
-                </h4>
-                <h5 className={portfolio['portfolio-container__heading2']}>
-                    Check out my latest projects
-                </h5>
-                <div className={portfolio['portfolio-container__projects']}>
-                    {getProjects()}
+        <React.Fragment>
+            <Filter />
+            <div className={portfolio['container-3']} id="portfolio">
+                <div className={portfolio['portfolio-container']}>
+                    <h4 className={portfolio['portfolio-container__heading']}>
+                        Portfolio
+                    </h4>
+                    <h5 className={portfolio['portfolio-container__heading2']}>
+                        Check out my latest projects
+                    </h5>
+                    <div className={portfolio['portfolio-container__projects']}>
+                        {getProjects()}
+                    </div>
                 </div>
             </div>
-        </div>
+        </React.Fragment>
     );
 };
 

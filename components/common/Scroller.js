@@ -7,12 +7,15 @@ const Scroller = () => {
     const visibleStyle = svgStyle['icon__visible'];
 
     const handleScroll = () => {
+        console.log('handling scroll');
         if (!(window.scrollY < 10)) {
             setScrollHit(true);
         } else {
             setScrollHit(false);
         }
     };
+
+    useEffect(() => window.addEventListener('scroll', handleScroll));
 
     return (
         <div className={svgStyle['container']}>

@@ -1,4 +1,5 @@
 @import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
 
 .logo {
     font-weight: 200;
@@ -11,6 +12,7 @@
     color: inherit;
     align-items: center;
     justify-content: center;
+    padding-left: 4rem;
 
     &:hover {
         text-decoration: underline;
@@ -27,15 +29,26 @@
     }
 
     &__item {
-        padding: 2rem;
+        color: white;
+        padding: 0;
+        width: 12rem;
         display: flex;
         align-items: center;
+    }
+
+    &__logo {
+        width: auto;
+        padding: 0;
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
     }
 
     &__container {
         display: flex;
         justify-content: space-between;
-        background-color: lightgrey;
+        background-color: $main-color;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
@@ -45,6 +58,9 @@
         text-transform: uppercase;
         font-weight: 200;
         font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+
         color: black;
         cursor: pointer;
         &:hover {

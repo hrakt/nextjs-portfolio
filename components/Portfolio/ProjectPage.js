@@ -1,12 +1,13 @@
 import { useEffect } from 'react';
 import Button from '../common/Button';
 import styles from '../Portfolio/ProjectPage.scss';
-const scrollToTop = () => {
-    console.log('being called');
-    window.scrollTo(0, 0);
-};
+
 const ProjectPage = ({ project }) => {
     useEffect(() => scrollToTop());
+
+    const scrollToTop = () => {
+        console.log('being called');
+    };
     return (
         <div className={styles['projectPage__container']}>
             <h1 className={styles['projectPage__heading']}>{project.title}</h1>

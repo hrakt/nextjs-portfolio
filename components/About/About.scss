@@ -1,4 +1,5 @@
 @import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
 
 .container-2 {
     // background-color: lightgray;s
@@ -28,7 +29,7 @@
     }
 
     &__heading2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 400;
         font-style: italic;
         margin-bottom: 2rem;
@@ -39,6 +40,22 @@
         padding-top: 2rem;
         font-size: 3rem;
         font-weight: 200;
+        color: #353b3c;
+    }
+
+    &__word {
+        display: inline-block;
+        background-color: $secondary-color;
+        width: auto;
+        transform: skewY(-5deg);
+        margin-right: 0.5rem;
+
+        & span {
+            display: inline-block;
+            transform: skewY(5deg);
+            // color: white;
+        }
+
         @include sm {
             font-size: 2rem;
         }

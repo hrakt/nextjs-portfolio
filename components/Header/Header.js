@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <div className={header['navbar__container']}>
             <Scroller />
-            <div className={header['navbar__item']}>
+            <div className={header['navbar__logo']}>
                 <Link href="/">
                     <p className={header['logo']}>Hrak Torousian</p>
                 </Link>
