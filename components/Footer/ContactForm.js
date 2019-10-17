@@ -1,9 +1,5 @@
-import Input from '../common/Input';
-import Button from '../common/Button';
-import Text from '../common/Text';
 import contactform from '../Footer/ContactForm.scss';
 import footer from '../Footer/Footer.scss';
-import cx from 'classnames';
 
 const ContactForm = () => {
     const options = [
@@ -16,40 +12,25 @@ const ContactForm = () => {
     ];
     return (
         <div className={contactform['container']}>
-            <div className={contactform['header']}>
-                <Text
-                    type="heading"
-                    recievedStyle={footer['contact-container__header1']}
+            <div className={contactform['text-container']}>
+                <h1 className={contactform['text-container__heading']}>
+                    Let's Have a Chat!
+                </h1>
+                <p className={contactform['text-container__paragraph']}>
+                    Always happy to hear from you whether inquiring about work
+                    or just catching up.
+                </p>
+                <a
+                    href="mailto:hello@hrak.to"
+                    className={contactform['text-container__email']}
                 >
-                    Let's Talk
-                </Text>
-                <span className={contactform['textarea__emoji']}>
-                    &#128071;
-                </span>
+                    Send me an email!
+                </a>
             </div>
-            <Input
-                recievedStyle={contactform['textarea']}
-                type="textarea"
-                placeholder="Email Address"
-            />
-            <Input
-                recievedStyle={contactform['select']}
-                type="select"
-                placeholder="What's this about?"
-                options={options}
-            />
-            <Input
-                type="textarea"
-                placeholder="Enter your message here"
-                recievedStyle={cx(
-                    contactform['textarea'],
-                    contactform['textarea__big']
-                )}
-            />
-            <Button title="Send" />
+
             <div className={footer['contact-container']}>
                 <h2 className={footer['contact-container__header1']}>
-                    Contact Me
+                    Find Me At:
                 </h2>
 
                 <h4 className={footer['contact-container__header2']}>

@@ -6,9 +6,8 @@ const Scroller = () => {
     const [scrollHit, setScrollHit] = useState(false);
     const visibleStyle = svgStyle['icon__visible'];
 
-    useEffect(() => window.addEventListener('scroll', handleScroll));
-
     const handleScroll = () => {
+        console.log('handling scroll');
         if (!(window.scrollY < 10)) {
             setScrollHit(true);
         } else {
@@ -16,12 +15,10 @@ const Scroller = () => {
         }
     };
 
-    const scrollTop = () => {
-        window.scrollTo(0, 0);
-    };
+    useEffect(() => window.addEventListener('scroll', handleScroll));
 
     return (
-        <div onClick={scrollTop} className={svgStyle['container']}>
+        <div className={svgStyle['container']}>
             <img
                 src="/_up_icon.svg"
                 className={cx(svgStyle['icon'], {

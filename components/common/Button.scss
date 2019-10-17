@@ -1,3 +1,6 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
 .container {
     display: flex;
     justify-content: center;
@@ -6,11 +9,7 @@
 
 .btn {
     color: #fff;
-    background-image: linear-gradient(
-        to right,
-        var(--color-primary-light),
-        var(--color-primary-dark)
-    );
+    background-image: linear-gradient(to right, $main-color, $secondary-color);
 
     text-transform: uppercase;
     font-family: inherit;

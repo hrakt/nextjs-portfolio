@@ -1,4 +1,5 @@
 @import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
 
 .container-3 {
     // background-color: lightgray;
@@ -70,7 +71,7 @@
     &__projects {
         display: grid;
         grid-template-columns: 50% 50%;
-        width: 90vw;
+        max-width: 90vw;
         @include sm {
             display: flex;
             flex-direction: column;
@@ -88,7 +89,6 @@
     &__img {
         width: 100%;
         // height: 50vh;
-
         box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6);
 
         transition: all 0.5s;
@@ -117,6 +117,29 @@
         @include sm {
             width: 70vw;
             margin-top: 1.5rem;
+        }
+    }
+}
+
+.filter-container {
+    height: 10rem;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    &__header {
+        font-size: 5rem;
+    }
+    &__list {
+        display: flex;
+        margin-right: 1rem;
+        justify-content: center;
+        list-style: none;
+        li {
+            margin-right: 3rem;
+            &:hover {
+                color: $secondary-color;
+                cursor: pointer;
+            }
         }
     }
 }

@@ -3,6 +3,7 @@ import cx from 'classnames';
 import Link from 'next/link';
 import React, { Children } from 'react';
 import header from '../Header/Headers.scss';
+import { useEffect } from 'react';
 
 const ActiveLink = ({
     router,

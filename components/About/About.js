@@ -10,8 +10,14 @@ const About = () => {
                 </h5>
                 <div className={about['about-container__text']}>
                     <p className={about['about-container__content']}>
-                        I'm Hrak, I'm a 22 years old Full-Stack developer from
-                        Los Angeles.
+                        I'm{' '}
+                        <div className={about['about-container__word']}>
+                            <span>Hrak</span>
+                        </div>
+                        , I'm a 22 years old Full-Stack Developer from{' '}
+                        <div className={about['about-container__word']}>
+                            <span>Los Angeles.</span>
+                        </div>
                     </p>
                     <p className={about['about-container__content']}>
                         3 years ago I made a decision to move out to Los Angeles
@@ -41,7 +47,10 @@ const About = () => {
                         Javascript in general.
                     </p>
                     <p className={about['about-container__content']}>
-                        I've always strived to do more, be more and never settle
+                        I've always strived to do more, be more and{' '}
+                        <div className={about['about-container__word']}>
+                            <span>never settle</span>
+                        </div>
                         learning.
                     </p>
                     <p className={about['about-container__content']}>

@@ -11,6 +11,7 @@
 }
 
 @mixin cinema {
-    @media (max-width: 1600) {
+    @media (max-width: 1200) {
+        @content;
     }
 }
