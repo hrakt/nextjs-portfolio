@@ -1,33 +1,75 @@
-import portfolio from '../Portfolio/Portfolio.scss';
+import filter from '../Portfolio/Filter.scss';
+import FilterItem from '../Portfolio/FilterItem';
 
-const Filter = () => {
-    const selected = [];
-    const handleClick = e => {
-        e.target.tagName == 'LI' && selected.includes(e.target.tagName)
-            ? selected.push(e.target.innerText)
+import cx from 'classnames';
+import { useState } from 'react';
+
+const useForceUpdate = () => useState()[1];
+
+class Filter extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            filterItems: [
+                'React',
+                'HTML5',
+                'CSS3',
+                'Redux',
+                'SASS',
+                'Javascript',
+            ],
+            selectedItems: [],
+        };
+    }
+
+    handleClick = e => {
+        const selectedArr = [...this.state.selectedItems];
+        const selectedIndex = selectedArr.indexOf(e.target.innerText);
+        e.target.tagName == 'LI'
+            ? !this.state.selectedItems.includes(e.target.innerText)
+                ? selectedArr.push(e.target.innerText) &&
+                  this.setState({
+                      selectedItems: [...selectedArr],
+                  })
+                : selectedArr.splice(selectedIndex, 1) &&
+                  this.setState({ selectedItems: [...selectedArr] })
             : null;
-        console.log(selected);
     };
-    return (
-        <div className={portfolio['filter-container']}>
-            <h1 className={portfolio['filter-container__header']}>
-                My current technology stack is
-            </h1>
-            <ul
-                className={portfolio['filter-container__list']}
-                onClick={handleClick}
-            >
-                <li>React</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Redux</li>
-                <li>Sass</li>
-                <li>Javascript</li>
-                <li>Styled Components</li>
-                <li>Firebase & Firestore</li>
-            </ul>
-        </div>
-    );
-};
+    render() {
+        return (
+            <div className={filter['filter-container']}>
+                <h1 className={filter['filter-container__header']}>
+                    My current technology stack is
+                </h1>
+                <ul
+                    className={filter['filter-container__list']}
+                    onClick={this.handleClick}
+                >
+                    {this.state.filterItems.map(item => {
+                        return (
+                            <li
+                                className={cx(filter['filter-item'], {
+                                    [filter[
+                                        'filter-item__selected'
+                                    ]]: this.state.selectedItems.includes(item),
+                                })}
+                            >
+                                {item}
+                            </li>
+                        );
+                    })}
+                    {/* {filterItems.map(item => {
+                    return (
+                        <FilterItem
+                            itemName={item}
+                            selectedItems={selectedItems}
+                        />
+                    );
+                })} */}
+                </ul>
+            </div>
+        );
+    }
+}
 
 export default Filter;
