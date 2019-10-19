@@ -22,6 +22,7 @@ const returnProjects = filteredProjects => {
                 key={project.id}
                 className={portfolio['portfolio-container__content']}
             >
+
                 <div
                     className={portfolio['portfolio-container__box']}
                     href={`/project?title=${project.title}`}
@@ -30,11 +31,30 @@ const returnProjects = filteredProjects => {
                         <div>
                             <img
                                 src={project.picture}
-                                alt="Portfolio-1"
-                                className={
+                                alt="Portfolio-1" 
+ className={
                                     portfolio['portfolio-container__img']
                                 }
-                            />
+/>
+
+                <div className={portfolio['portfolio-container__box']}>
+                    <img
+                        src={project.picture}
+                        alt="Portfolio-1"
+                        className={portfolio['portfolio-container__img']}
+                    />
+                    <div className={portfolio['portfolio-container__buttons']}>
+                        <Button
+                            id={project.id}
+                            type="internal"
+                            title="Learn More"
+                            href={`/project?title=${project.title}`}
+                        />
+                    </div>
+                </div>
+
+             
+
                             <div
                                 className={
                                     portfolio['portfolio-container__buttons']
