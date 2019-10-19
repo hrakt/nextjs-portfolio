@@ -1,10 +1,7 @@
 import filter from '../Portfolio/Filter.scss';
 import FilterItem from '../Portfolio/FilterItem';
-
 import cx from 'classnames';
 import { useState } from 'react';
-
-const useForceUpdate = () => useState()[1];
 
 class Filter extends React.Component {
     constructor(props) {
@@ -17,22 +14,23 @@ class Filter extends React.Component {
                 'Redux',
                 'SASS',
                 'Javascript',
+                'Express',
+                'Node.JS',
+                'Firebase',
             ],
-            selectedItems: [],
         };
     }
 
     handleClick = e => {
-        const selectedArr = [...this.state.selectedItems];
+        console.log(this.props.items);
+        const selectedArr = [...this.props.selectedItems];
         const selectedIndex = selectedArr.indexOf(e.target.innerText);
         e.target.tagName == 'LI'
-            ? !this.state.selectedItems.includes(e.target.innerText)
+            ? !this.props.selectedItems.includes(e.target.innerText)
                 ? selectedArr.push(e.target.innerText) &&
-                  this.setState({
-                      selectedItems: [...selectedArr],
-                  })
+                  this.props.setItems([...selectedArr])
                 : selectedArr.splice(selectedIndex, 1) &&
-                  this.setState({ selectedItems: [...selectedArr] })
+                  this.props.setItems([...selectedArr])
             : null;
     };
     render() {
@@ -51,21 +49,13 @@ class Filter extends React.Component {
                                 className={cx(filter['filter-item'], {
                                     [filter[
                                         'filter-item__selected'
-                                    ]]: this.state.selectedItems.includes(item),
+                                    ]]: this.props.selectedItems.includes(item),
                                 })}
                             >
                                 {item}
                             </li>
                         );
                     })}
-                    {/* {filterItems.map(item => {
-                    return (
-                        <FilterItem
-                            itemName={item}
-                            selectedItems={selectedItems}
-                        />
-                    );
-                })} */}
                 </ul>
             </div>
         );

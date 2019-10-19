@@ -3,9 +3,20 @@ import Button from '../common/Button';
 import projects from '../../utils/projects';
 import Link from 'next/link';
 import Filter from '../Portfolio/Filter';
+import { useState } from 'react';
 
-const getProjects = () => {
-    return projects.map(project => {
+const getProjects = filters => {
+    if (filters.length > 0) {
+        // Filter additively
+        return projects.filter(item =>
+            item.stack.some(r => filters.includes(r))
+        );
+    }
+    return projects;
+};
+
+const returnProjects = filteredProjects => {
+    return filteredProjects.map(project => {
         return (
             <div
                 key={project.id}
@@ -44,9 +55,10 @@ const getProjects = () => {
 };
 
 const Portfolio = () => {
+    const [filters, setFilters] = useState([]);
     return (
         <React.Fragment>
-            <Filter />
+            <Filter selectedItems={filters} setItems={setFilters} />
             <div className={portfolio['container-3']} id="portfolio">
                 <div className={portfolio['portfolio-container']}>
                     <h4 className={portfolio['portfolio-container__heading']}>
@@ -56,7 +68,7 @@ const Portfolio = () => {
                         Check out my latest projects
                     </h5>
                     <div className={portfolio['portfolio-container__projects']}>
-                        {getProjects()}
+                        {returnProjects(getProjects(filters))}
                     </div>
                 </div>
             </div>
