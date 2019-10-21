@@ -1,3 +1,4 @@
+
 import filter from '../Portfolio/Filter.scss';
 import FilterItem from '../Portfolio/FilterItem';
 import cx from 'classnames';
@@ -61,5 +62,7 @@ class Filter extends React.Component {
         );
     }
 }
+
+
 
 export default Filter;

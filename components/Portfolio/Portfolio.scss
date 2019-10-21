@@ -121,6 +121,29 @@
     }
 }
 
+.filter-container {
+    height: 10rem;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    &__header {
+        font-size: 5rem;
+    }
+    &__list {
+        display: flex;
+        margin-right: 1rem;
+        justify-content: center;
+        list-style: none;
+        li {
+            margin-right: 3rem;
+            &:hover {
+                color: $secondary-color;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
 .btn {
     color: #fff;
     background-image: linear-gradient(

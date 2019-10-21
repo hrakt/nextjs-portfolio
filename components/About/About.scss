@@ -55,6 +55,12 @@
             transform: skewY(5deg);
             // color: white;
         }
+
+
+        @include sm {
+            font-size: 2rem;
+        }
+
     }
 
     &__text {
