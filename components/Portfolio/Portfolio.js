@@ -3,9 +3,7 @@ import Button from '../common/Button';
 import projects from '../../utils/projects';
 import Link from 'next/link';
 import Filter from '../Portfolio/Filter';
-
 import { useState } from 'react';
-
 
 
 const getProjects = filters => {
@@ -25,9 +23,6 @@ const returnProjects = filteredProjects => {
                 className={portfolio['portfolio-container__content']}
             >
 
-
-
-
                 <div
                     className={portfolio['portfolio-container__box']}
                     href={`/project?title=${project.title}`}
@@ -36,8 +31,7 @@ const returnProjects = filteredProjects => {
                         <div>
                             <img
                                 src={project.picture}
-
-                                alt="Portfolio-1"
+            alt="Portfolio-1"
                                 className={
                                     portfolio['portfolio-container__img']
                                 }
@@ -49,9 +43,6 @@ const returnProjects = filteredProjects => {
                                 }
                             ></div>
 
-                                             </div>
-
-             
 
 
                             <div
@@ -89,6 +80,8 @@ const Portfolio = () => {
                     <div className={portfolio['portfolio-container__projects']}>
 
                         {returnProjects(getProjects(filters))}
+
+
 
                     </div>
                 </div>
