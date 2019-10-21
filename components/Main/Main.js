@@ -31,7 +31,7 @@ const Main = () => {
                     web developer
                 </h2>
 
-                <Button type="internal" href="/about" title="About Me" />
+                <Button type="external" href="/about" title="About Me" />
             </div>
         </motion.div>
     );
