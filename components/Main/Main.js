@@ -4,7 +4,11 @@ import { motion } from 'framer-motion';
 
 const Main = () => {
     return (
-        <div className={main['container']}>
+        <motion.div
+            animate={{ opacity: [0, 1] }}
+            transition={{ duration: 0.5 }}
+            className={main['container']}
+        >
             <div className={main['main-container']}>
                 <h1 className={main['main-container__heading1']}>
                     Hi, I'm Hrak{' '}
@@ -29,7 +33,7 @@ const Main = () => {
 
                 <Button type="internal" href="/about" title="About Me" />
             </div>
-        </div>
+        </motion.div>
     );
 };
 
