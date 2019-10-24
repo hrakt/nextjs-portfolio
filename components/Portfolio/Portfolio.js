@@ -34,6 +34,12 @@ const returnProjects = filteredProjects => {
                                     portfolio['portfolio-container__img']
                                 }
                             />
+                            <img
+                                src="../../public/_up_icon.svg"
+                                className={
+                                    portfolio['portfolio-container__cursorImg']
+                                }
+                            />
 
                             <div
                                 className={

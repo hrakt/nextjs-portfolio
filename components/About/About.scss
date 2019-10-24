@@ -1,5 +1,6 @@
 @import '../../sass/mixins.scss';
 @import '../../sass/variables.scss';
+@import '../../sass/animations.scss';
 
 .container-2 {
     // background-color: lightgray;s
@@ -56,11 +57,13 @@
             // color: white;
         }
 
+        &:hover {
+            animation: colorFromRight 0.25s;
+        }
 
         @include sm {
             font-size: 2rem;
         }
-
     }
 
     &__text {
