@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Filter from '../Portfolio/Filter';
 import { useState } from 'react';
 
-
 const getProjects = filters => {
     if (filters.length > 0) {
         return projects.filter(item =>
@@ -22,7 +21,6 @@ const returnProjects = filteredProjects => {
                 key={project.id}
                 className={portfolio['portfolio-container__content']}
             >
-
                 <div
                     className={portfolio['portfolio-container__box']}
                     href={`/project?title=${project.title}`}
@@ -31,15 +29,9 @@ const returnProjects = filteredProjects => {
                         <div>
                             <img
                                 src={project.picture}
-            alt="Portfolio-1"
+                                alt="Portfolio-1"
                                 className={
                                     portfolio['portfolio-container__img']
-                                }
-                            />
-                            <img
-                                src="../../public/_up_icon.svg"
-                                className={
-                                    portfolio['portfolio-container__cursorImg']
                                 }
                             />
 
@@ -48,8 +40,6 @@ const returnProjects = filteredProjects => {
                                     portfolio['portfolio-container__box']
                                 }
                             ></div>
-
-
 
                             <div
                                 className={
@@ -84,11 +74,7 @@ const Portfolio = () => {
                         Check out my latest projects
                     </h5>
                     <div className={portfolio['portfolio-container__projects']}>
-
                         {returnProjects(getProjects(filters))}
-
-
-
                     </div>
                 </div>
             </div>

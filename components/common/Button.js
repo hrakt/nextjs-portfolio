@@ -13,6 +13,7 @@ const Button = ({ title, type, href, id }) => {
                     </div>
                 </Link>
             );
+
         case 'external':
             return (
                 <div className={button['container']}>
