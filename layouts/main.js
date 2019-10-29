@@ -18,6 +18,11 @@ export default ({ children }) => (
                 href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
                 rel="stylesheet"
             />
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"
+                integrity="sha256-Wua0LsQkGDEeIkbmBNjj9wcThJh5uCD6R8+5YQhXveQ="
+                crossorigin="anonymous"
+            ></script>
         </Head>
         <Header />
         {children}

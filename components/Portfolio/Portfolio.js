@@ -31,8 +31,9 @@ const returnProjects = filteredProjects => {
                         <div>
                             <img
                                 src={project.picture}
-            alt="Portfolio-1"
-                                className={
+
+                                alt="Portfolio-1"
+               className={
                                     portfolio['portfolio-container__img']
                                 }
                             />
@@ -42,7 +43,6 @@ const returnProjects = filteredProjects => {
                                     portfolio['portfolio-container__box']
                                 }
                             ></div>
-
 
 
                             <div
@@ -78,10 +78,7 @@ const Portfolio = () => {
                         Check out my latest projects
                     </h5>
                     <div className={portfolio['portfolio-container__projects']}>
-
                         {returnProjects(getProjects(filters))}
-
-
 
                     </div>
                 </div>
