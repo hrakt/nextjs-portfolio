@@ -10,7 +10,7 @@
 .btn {
     color: #fff;
     background-image: linear-gradient(to right, $main-color, $secondary-color);
-
+    cursor: pointer;
     text-transform: uppercase;
     font-family: inherit;
     font-weight: 500;
