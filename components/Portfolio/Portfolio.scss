@@ -135,15 +135,24 @@
     margin-top: 3rem;
     text-align: center;
     font-size: 2rem;
+    max-width: 50rem;
     &__header {
         font-size: 5rem;
     }
+
     &__list {
         display: flex;
+        flex-wrap: wrap;
         margin-right: 1rem;
         justify-content: center;
-        list-style: none;
+
+        column-width: 10rem;
+        column-count: 4;
+        flex-wrap: wrap;
+        width: 100%;
+
         li {
+            list-style: none;
             margin-right: 3rem;
             &:hover {
                 color: $secondary-color;

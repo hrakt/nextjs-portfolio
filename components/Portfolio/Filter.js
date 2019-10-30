@@ -40,24 +40,35 @@ class Filter extends React.Component {
                 <h1 className={filter['filter-container__header']}>
                     My current technology stack is
                 </h1>
-                <ul
-                    className={filter['filter-container__list']}
-                    onClick={this.handleClick}
-                >
-                    {this.state.filterItems.map(item => {
-                        return (
-                            <li
-                                className={cx(styles['filter-item'], {
-                                    [styles[
-                                        'filter-item__selected'
-                                    ]]: this.props.selectedItems.includes(item),
-                                })}
-                            >
-                                {item}
-                            </li>
-                        );
-                    })}
-                </ul>
+                <div>
+                    <ul
+                        className={filter['filter-container__list']}
+                        onClick={this.handleClick}
+                    >
+                        {this.state.filterItems.map(item => {
+                            return (
+                                <li
+                                    className={cx(styles['filter-item'], {
+                                        [styles[
+                                            'filter-item__selected'
+                                        ]]: this.props.selectedItems.includes(
+                                            item
+                                        ),
+                                    })}
+                                >
+                                    {item}
+                                    <span
+                                        className={
+                                            styles['filter-item__tooltip']
+                                        }
+                                    >
+                                        Click to filter
+                                    </span>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
             </div>
         );
     }

@@ -42,11 +42,7 @@ const Projects = ({ filters }) => {
                                     portfolio['portfolio-container__img']
                                 }
                             />
-                            <div
-                                className={
-                                    portfolio['portfolio-container__box']
-                                }
-                            ></div>
+
                             <div
                                 className={
                                     portfolio['portfolio-container__buttons']
