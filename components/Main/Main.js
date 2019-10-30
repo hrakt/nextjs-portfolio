@@ -36,5 +36,4 @@ const Main = () => {
         </motion.div>
     );
 };
-
 export default Main;

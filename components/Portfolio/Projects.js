@@ -19,7 +19,9 @@ const Projects = ({ filters }) => {
     const filteredProjects = getProjects(filters);
     render++;
     return filteredProjects.map(project => {
-        const tagsString = project.toString().replace(/[,]/g, ' ');
+        const tagString =
+            `#` + project.stack.toString().replace(new RegExp(',', 'g'), ' #');
+
         return (
             <motion.div
                 animate={{ opacity: [0, 1] }}
@@ -55,9 +57,7 @@ const Projects = ({ filters }) => {
                                         portfolio['portfolio-container__tags']
                                     }
                                 >
-                                    {project.stack
-                                        .toString(' ')
-                                        .replace(',', ' ')}
+                                    {tagString}
                                 </div>
                                 <Button
                                     id={project.id}
