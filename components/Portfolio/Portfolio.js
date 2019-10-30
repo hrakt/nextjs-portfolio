@@ -4,8 +4,25 @@ import projects from '../../utils/projects';
 import Link from 'next/link';
 import Filter from '../Portfolio/Filter';
 
+
 const getProjects = () => {
     return projects.map(project => {
+
+import { useState } from 'react';
+
+
+const getProjects = filters => {
+    if (filters.length > 0) {
+        return projects.filter(item =>
+            item.stack.some(r => filters.includes(r))
+        );
+    }
+    return projects;
+};
+
+const returnProjects = filteredProjects => {
+    return filteredProjects.map(project => {
+
         return (
             <div
                 key={project.id}
@@ -20,6 +37,7 @@ const getProjects = () => {
                         <div>
                             <img
                                 src={project.picture}
+
                                 alt="Portfolio-1" 
  className={
                                     portfolio['portfolio-container__img']
@@ -43,6 +61,21 @@ const getProjects = () => {
                 </div>
 
              
+
+
+                                alt="Portfolio-1"
+               className={
+                                    portfolio['portfolio-container__img']
+                                }
+                            />
+
+                            <div
+                                className={
+                                    portfolio['portfolio-container__box']
+                                }
+                            ></div>
+
+
 
                             <div
                                 className={
@@ -76,7 +109,12 @@ const Portfolio = () => {
                         Check out my latest projects
                     </h5>
                     <div className={portfolio['portfolio-container__projects']}>
+
                         {getProjects()}
+
+                        {returnProjects(getProjects(filters))}
+
+
                     </div>
                 </div>
             </div>

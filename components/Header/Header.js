@@ -4,10 +4,15 @@ import header from '../Header/Headers.scss';
 import SideBarMenu from '../Header/SideNav';
 import Scroller from '../common/Scroller';
 import Link from './ActiveLink';
+import { motion } from 'framer-motion';
 
 const Header = () => {
     return (
-        <div className={header['navbar__container']}>
+        <motion.div
+            animate={{ height: [0, 90] }}
+            className={header['navbar__container']}
+            transition={{ duration: 0.5 }}
+        >
             <Scroller />
             <div className={header['navbar__logo']}>
                 <Link href="/">
@@ -16,7 +21,11 @@ const Header = () => {
             </div>
 
             <SideBarMenu />
-            <nav className={header['navbar']}>
+            <motion.nav
+                animate={{ opacity: [0, 1] }}
+                transition={{ duration: 1 }}
+                className={header['navbar']}
+            >
                 <div className={header['navbar__item']}>
                     <Link href="/about" activeClassName="active">
                         <a className={header['navbar__item-link']}>About Me</a>
@@ -32,8 +41,8 @@ const Header = () => {
                         <a className={header['navbar__item-link']}>Contact</a>
                     </Link>
                 </div>
-            </nav>
-        </div>
+            </motion.nav>
+        </motion.div>
     );
 };
 export default Header;

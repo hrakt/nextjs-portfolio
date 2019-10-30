@@ -1,0 +1,53 @@
+@import '../../sass/variables.scss';
+
+@keyframes colorFromRight {
+    0% {
+        background: linear-gradient(
+            to right,
+            #eee,
+            #eee 25%,
+            #eee 50%,
+            #eee 75%,
+            $secondary-color 100%
+        );
+    }
+    25% {
+        background: linear-gradient(
+            to right,
+            #eee,
+            #eee 25%,
+            #eee 50%,
+            $secondary-color 75%,
+            $secondary-color 100%
+        );
+    }
+    50% {
+        background: linear-gradient(
+            to right,
+            #eee,
+            #eee 25%,
+            $secondary-color 50%,
+            $secondary-color 75%,
+            $secondary-color 100%
+        );
+    }
+    75% {
+        background: linear-gradient(
+            to right,
+            #eee,
+            $secondary-color 25%,
+            $secondary-color 50%,
+            $secondary-color 75%,
+            $secondary-color 100%
+        );
+    }
+    100% {
+        background: linear-gradient(
+            to right,
+            $secondary-color,
+            $secondary-color 50%,
+            $secondary-color 75%,
+            $secondary-color 100%
+        );
+    }
+}
