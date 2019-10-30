@@ -15,22 +15,22 @@
         margin-right: 1rem;
         justify-content: center;
         list-style: none;
-        li {
-            margin-right: 3rem;
-            &:hover {
-                color: $secondary-color;
-                cursor: pointer;
-            }
-        }
-
-        li:visited {
-            color: $secondary-color;
-        }
     }
 }
 
 .filter-item {
+    margin-right: 3rem;
     &__selected {
+        color: white;
+        background-color: $secondary-color;
+        border-radius: 100px;
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+    &:hover {
         color: $secondary-color;
+        cursor: pointer;
     }
 }

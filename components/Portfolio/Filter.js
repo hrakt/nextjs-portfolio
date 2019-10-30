@@ -1,8 +1,8 @@
-
 import filter from '../Portfolio/Filter.scss';
 import FilterItem from '../Portfolio/FilterItem';
 import cx from 'classnames';
 import { useState } from 'react';
+import styles from './Filter.scss';
 
 class Filter extends React.Component {
     constructor(props) {
@@ -23,7 +23,6 @@ class Filter extends React.Component {
     }
 
     handleClick = e => {
-        console.log(this.props.items);
         const selectedArr = [...this.props.selectedItems];
         const selectedIndex = selectedArr.indexOf(e.target.innerText);
         e.target.tagName == 'LI'
@@ -34,6 +33,7 @@ class Filter extends React.Component {
                   this.props.setItems([...selectedArr])
             : null;
     };
+
     render() {
         return (
             <div className={filter['filter-container']}>
@@ -47,8 +47,8 @@ class Filter extends React.Component {
                     {this.state.filterItems.map(item => {
                         return (
                             <li
-                                className={cx(filter['filter-item'], {
-                                    [filter[
+                                className={cx(styles['filter-item'], {
+                                    [styles[
                                         'filter-item__selected'
                                     ]]: this.props.selectedItems.includes(item),
                                 })}
@@ -62,7 +62,5 @@ class Filter extends React.Component {
         );
     }
 }
-
-
 
 export default Filter;

@@ -5,13 +5,13 @@ const Button = ({ title, type, href, id }) => {
     switch (type) {
         case 'internal':
             return (
-                <Link href="projects/[id]" as={`/projects/${id}`}>
-                    <div className={button['container']}>
+                <div className={button['container']}>
+                    <Link href={href && 'projects/[id]'} as={`/projects/${id}`}>
                         <button className={button['btn']} type={type}>
                             {title}
                         </button>
-                    </div>
-                </Link>
+                    </Link>
+                </div>
             );
 
         case 'external':
