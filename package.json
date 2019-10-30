@@ -23,7 +23,8 @@
         "react-dom": "^16.10.2",
         "react-mail-form": "^2.0.2",
         "react-router-dom": "^5.1.2",
-        "react-scroll-up": "^1.3.3"
+        "react-scroll-up": "^1.3.3",
+        "use-force-update": "^1.0.7"
     },
     "devDependencies": {
         "@madeinhaus/prettier-config": "^1.0.0"

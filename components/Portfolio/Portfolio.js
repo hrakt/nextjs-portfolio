@@ -3,11 +3,6 @@ import Button from '../common/Button';
 import projects from '../../utils/projects';
 import Link from 'next/link';
 import Filter from '../Portfolio/Filter';
-
-
-const getProjects = () => {
-    return projects.map(project => {
-
 import { useState } from 'react';
 
 
@@ -22,7 +17,6 @@ const getProjects = filters => {
 
 const returnProjects = filteredProjects => {
     return filteredProjects.map(project => {
-
         return (
             <div
                 key={project.id}
@@ -38,31 +32,6 @@ const returnProjects = filteredProjects => {
                             <img
                                 src={project.picture}
 
-                                alt="Portfolio-1" 
- className={
-                                    portfolio['portfolio-container__img']
-                                }
-/>
-
-                <div className={portfolio['portfolio-container__box']}>
-                    <img
-                        src={project.picture}
-                        alt="Portfolio-1"
-                        className={portfolio['portfolio-container__img']}
-                    />
-                    <div className={portfolio['portfolio-container__buttons']}>
-                        <Button
-                            id={project.id}
-                            type="internal"
-                            title="Learn More"
-                            href={`/project?title=${project.title}`}
-                        />
-                    </div>
-                </div>
-
-             
-
-
                                 alt="Portfolio-1"
                className={
                                     portfolio['portfolio-container__img']
@@ -74,7 +43,6 @@ const returnProjects = filteredProjects => {
                                     portfolio['portfolio-container__box']
                                 }
                             ></div>
-
 
 
                             <div
@@ -97,9 +65,10 @@ const returnProjects = filteredProjects => {
 };
 
 const Portfolio = () => {
+    const [filters, setFilters] = useState([]);
     return (
         <React.Fragment>
-            <Filter />
+            <Filter selectedItems={filters} setItems={setFilters} />
             <div className={portfolio['container-3']} id="portfolio">
                 <div className={portfolio['portfolio-container']}>
                     <h4 className={portfolio['portfolio-container__heading']}>
@@ -109,11 +78,7 @@ const Portfolio = () => {
                         Check out my latest projects
                     </h5>
                     <div className={portfolio['portfolio-container__projects']}>
-
-                        {getProjects()}
-
                         {returnProjects(getProjects(filters))}
-
 
                     </div>
                 </div>

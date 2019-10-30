@@ -57,11 +57,9 @@
             // color: white;
         }
 
-
         &:hover {
             animation: colorFromRight 0.25s;
         }
-
 
         @include sm {
             font-size: 2rem;
