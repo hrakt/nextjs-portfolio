@@ -10,7 +10,7 @@ const Portfolio = () => {
     return (
         <React.Fragment>
             <Filter selectedItems={filters} setItems={setFilters} />
-            <Button type="internal" title="Apply" />
+            {/* <Button type="internal" title="Apply" /> */}
             <div className={portfolio['container-3']} id="portfolio">
                 <div className={portfolio['portfolio-container']}>
                     <h4 className={portfolio['portfolio-container__heading']}>
