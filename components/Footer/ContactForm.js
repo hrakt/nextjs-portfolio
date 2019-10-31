@@ -1,4 +1,4 @@
-import contactform from '../Footer/ContactForm.scss';
+import styles from '../Footer/ContactForm.scss';
 import footer from '../Footer/Footer.scss';
 
 const ContactForm = () => {
@@ -11,18 +11,18 @@ const ContactForm = () => {
         'Other',
     ];
     return (
-        <div className={contactform['container']}>
-            <div className={contactform['text-container']}>
-                <h1 className={contactform['text-container__heading']}>
+        <div className={styles['container']}>
+            <div className={styles['text-container']}>
+                <h1 className={styles['text-container__heading']}>
                     Let's Have a Chat!
                 </h1>
-                <p className={contactform['text-container__paragraph']}>
+                <p className={styles['text-container__paragraph']}>
                     Always happy to hear from you whether inquiring about work
                     or just catching up.
                 </p>
                 <a
                     href="mailto:hello@hrak.to"
-                    className={contactform['text-container__email']}
+                    className={styles['text-container__email']}
                 >
                     Send me an email!
                 </a>

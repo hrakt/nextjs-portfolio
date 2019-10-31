@@ -1,6 +1,6 @@
 import projects from '../../utils/projects';
 import { motion } from 'framer-motion';
-import portfolio from '../Portfolio/Portfolio.scss';
+import styles from '../Portfolio/Portfolio.scss';
 import Link from 'next/link';
 import Button from '../common/Button';
 
@@ -27,10 +27,10 @@ const Projects = ({ filters }) => {
                 animate={{ opacity: [0, 1] }}
                 transition={{ duration: 1 }}
                 key={`${render}_${project.id}`}
-                className={portfolio['portfolio-container__content']}
+                className={styles['portfolio-container__content']}
             >
                 <div
-                    className={portfolio['portfolio-container__box']}
+                    className={styles['portfolio-container__box']}
                     href={`/project?title=${project.title}`}
                 >
                     <Link href={`/projects/${project.id}`}>
@@ -38,19 +38,17 @@ const Projects = ({ filters }) => {
                             <img
                                 src={project.picture}
                                 alt="Portfolio-1"
-                                className={
-                                    portfolio['portfolio-container__img']
-                                }
+                                className={styles['portfolio-container__img']}
                             />
 
                             <div
                                 className={
-                                    portfolio['portfolio-container__buttons']
+                                    styles['portfolio-container__buttons']
                                 }
                             >
                                 <div
                                     className={
-                                        portfolio['portfolio-container__tags']
+                                        styles['portfolio-container__tags']
                                     }
                                 >
                                     {tagString}

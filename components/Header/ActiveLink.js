@@ -2,7 +2,7 @@ import { withRouter } from 'next/router';
 import cx from 'classnames';
 import Link from 'next/link';
 import React, { Children } from 'react';
-import header from '../Header/Headers.scss';
+import styles from '../Header/Headers.scss';
 import { useEffect } from 'react';
 
 const ActiveLink = ({
@@ -14,7 +14,7 @@ const ActiveLink = ({
 }) => {
     const child = Children.only(children);
     const className = cx(child.props.className, {
-        [header['navbarItem__selected']]: router.pathname === href,
+        [styles['navbarItem__selected']]: router.pathname === href,
     });
 
     return (
