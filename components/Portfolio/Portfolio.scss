@@ -76,6 +76,11 @@
         }
     }
 
+    &__error {
+        font-size: 2rem;
+        color: red;
+    }
+
     &__projects {
         display: grid;
         grid-template-columns: 50% 50%;
