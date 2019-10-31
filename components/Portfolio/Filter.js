@@ -25,10 +25,11 @@ class Filter extends React.Component {
     handleClick = e => {
         const selectedArr = [...this.props.selectedItems];
         const selectedIndex = selectedArr.indexOf(e.target.innerText);
+        const tag = e.target.innerText.split('\n')[0];
+        console.log(tag);
         e.target.tagName == 'LI'
-            ? !this.props.selectedItems.includes(e.target.innerText)
-                ? selectedArr.push(e.target.innerText) &&
-                  this.props.setItems([...selectedArr])
+            ? !this.props.selectedItems.includes(tag)
+                ? selectedArr.push(tag) && this.props.setItems([...selectedArr])
                 : selectedArr.splice(selectedIndex, 1) &&
                   this.props.setItems([...selectedArr])
             : null;
@@ -41,13 +42,11 @@ class Filter extends React.Component {
                     My current technology stack is
                 </h1>
                 <div>
-                    <ul
-                        className={filter['filter-container__list']}
-                        onClick={this.handleClick}
-                    >
+                    <ul className={filter['filter-container__list']}>
                         {this.state.filterItems.map(item => {
                             return (
                                 <li
+                                    onClick={this.handleClick}
                                     className={cx(styles['filter-item'], {
                                         [styles[
                                             'filter-item__selected'
