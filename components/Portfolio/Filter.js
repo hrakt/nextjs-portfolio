@@ -1,4 +1,3 @@
-import filter from '../Portfolio/Filter.scss';
 import FilterItem from '../Portfolio/FilterItem';
 import cx from 'classnames';
 import { useState } from 'react';
@@ -37,12 +36,12 @@ class Filter extends React.Component {
 
     render() {
         return (
-            <div className={filter['filter-container']}>
-                <h1 className={filter['filter-container__header']}>
+            <div className={styles['filter-container']}>
+                <h1 className={styles['filter-container__header']}>
                     My current technology stack is
                 </h1>
-                <div>
-                    <ul className={filter['filter-container__list']}>
+                <div className={styles['filter-container__items']}>
+                    <ul className={styles['filter-container__list']}>
                         {this.state.filterItems.map(item => {
                             return (
                                 <li

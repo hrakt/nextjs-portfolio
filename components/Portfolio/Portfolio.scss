@@ -145,6 +145,12 @@
         font-size: 5rem;
     }
 
+    &__items {
+        width: 50rem;
+        height: 50rem;
+        border: 1px black;
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
