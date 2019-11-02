@@ -1,4 +1,4 @@
-@import '../../sass/mixins.scss';
+@import '../../sass/breakpoints.scss';
 @import '../../sass/variables.scss';
 
 .container-3 {
@@ -9,6 +9,10 @@
     align-items: center;
     padding-top: 5rem;
     margin: 2rem;
+    margin-top: 20rem;
+    @include mobile {
+        margin-top: 15rrem;
+    }
 }
 
 .portfolio-container {
