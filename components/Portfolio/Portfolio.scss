@@ -10,8 +10,8 @@
     padding-top: 5rem;
     margin: 2rem;
     margin-top: 20rem;
-    @include mobile {
-        margin-top: 15rrem;
+    @include sm {
+        margin-top: 5rem;
     }
 }
 
@@ -86,12 +86,15 @@
     }
 
     &__projects {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
         @include sm {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 90vw;
+        }
+        @include cinema {
+            grid-template-columns: 1fr 1fr;
         }
     }
 
@@ -147,6 +150,9 @@
     max-width: 50rem;
     &__header {
         font-size: 5rem;
+        @include sm {
+            font-size: 3rem;
+        }
     }
 
     &__items {
