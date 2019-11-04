@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import styles from '../Portfolio/Portfolio.scss';
 import Link from 'next/link';
 import Button from '../common/Button';
+import PropTypes from 'prop-types';
 
 let render = 0;
 
@@ -79,6 +80,10 @@ const Projects = ({ filters }) => {
             </React.Fragment>
         );
     }
+};
+
+Projects.propTypes = {
+    filters: PropTypes.array,
 };
 
 export default Projects;

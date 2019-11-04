@@ -27,7 +27,6 @@
 .filter-item {
     min-width: 10rem;
     text-align: center;
-    margin-right: 1rem;
     position: relative;
     &__selected {
         color: white;
@@ -35,8 +34,8 @@
         border-radius: 100px;
 
         &:hover {
+            background-color: $secondary-color;
             color: white;
-            cursor: pointer;
         }
     }
 
@@ -60,7 +59,7 @@
 
     &:hover {
         color: $secondary-color;
-        color: white;
+        background-color: white;
         cursor: pointer;
     }
     &:hover &__tooltip {

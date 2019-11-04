@@ -17,9 +17,8 @@ const Portfolio = () => {
                     <h5 className={styles['portfolio-container__heading2']}>
                         Check out my latest projects
                     </h5>
-                    <div className={styles['portfolio-container__projects']}>
-                        <Projects filters={filters} />
-                    </div>
+
+                    <Projects filters={filters} />
                 </div>
             </div>
         </React.Fragment>

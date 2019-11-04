@@ -1,22 +1,29 @@
-$tablet: 720px;
-$desktop: 1120px;
+$mobile: 450px;
+$tablet: 800px;
+$desktop: 1200px;
 $largeDesktop: 1600px;
 $hugeDesktop: 1920px;
 
-@mixin sm {
-    @media (min-width: 800px) {
-        @content;
-    }
-}
-
 @mixin mobile {
-    @media (min-width: 450px) {
+    @media (min-width: $mobile) {
         @content;
     }
 }
 
-@mixin cinema {
-    @media (min-width: 1200px) {
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin largeDesktop {
+    @media (min-width: $largeDesktop) {
         @content;
     }
 }
