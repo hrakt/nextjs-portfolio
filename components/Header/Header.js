@@ -8,7 +8,9 @@ import { motion } from 'framer-motion';
 
 const Header = () => {
     return (
-        <div className={styles['navbar__container']}>
+
+        <div className={header['navbar__container']}>
+
             <Scroller />
             <div className={styles['navbar__logo']}>
                 <Link href="/">
@@ -17,8 +19,11 @@ const Header = () => {
             </div>
 
             <SideBarMenu />
-            <nav className={styles['navbar']}>
-                <div className={styles['navbar__item']}>
+
+
+            <nav className={header['navbar']}>
+                <div className={header['navbar__item']}>
+
                     <Link href="/about" activeClassName="active">
                         <a className={styles['navbar__item-link']}>About Me</a>
                     </Link>

@@ -1,9 +1,11 @@
 import projects from '../../utils/projects';
 import { motion } from 'framer-motion';
+
 import styles from '../Portfolio/Portfolio.scss';
 import Link from 'next/link';
 import Button from '../common/Button';
 import PropTypes from 'prop-types';
+
 
 let render = 0;
 
@@ -19,6 +21,7 @@ const getProjects = filters => {
 const Projects = ({ filters }) => {
     const filteredProjects = getProjects(filters);
     render++;
+
 
     if (filteredProjects.length > 0) {
         return filteredProjects.map(project => {
@@ -84,6 +87,8 @@ const Projects = ({ filters }) => {
 
 Projects.propTypes = {
     filters: PropTypes.array,
+
+  
 };
 
 export default Projects;

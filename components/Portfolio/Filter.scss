@@ -25,13 +25,16 @@
 }
 
 .filter-item {
+
     min-width: 10rem;
     text-align: center;
     position: relative;
+
     &__selected {
         color: white;
         background-color: $secondary-color;
         border-radius: 100px;
+
 
         &:hover {
             background-color: $secondary-color;
@@ -65,5 +68,7 @@
     &:hover &__tooltip {
         visibility: visible;
         opacity: 1;
+
+
     }
 }

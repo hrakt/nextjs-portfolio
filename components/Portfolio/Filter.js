@@ -1,3 +1,7 @@
+
+
+import filter from '../Portfolio/Filter.scss';
+
 import FilterItem from '../Portfolio/FilterItem';
 import cx from 'classnames';
 import { useState } from 'react';
@@ -16,8 +20,13 @@ const Filter = ({ selectedItems, setItems }) => {
         'Firebase',
     ]);
 
+
     const handleClick = e => {
         const selectedArr = [...selectedItems];
+
+
+
+
         const selectedIndex = selectedArr.indexOf(e.target.innerText);
         const tag = e.target.innerText.split('\n')[0];
         console.log(tag);
@@ -28,6 +37,7 @@ const Filter = ({ selectedItems, setItems }) => {
                   setItems([...selectedArr])
             : null;
     };
+
 
     return (
         <div className={styles['filter-container']}>
@@ -40,6 +50,7 @@ const Filter = ({ selectedItems, setItems }) => {
                         return (
                             <li
                                 onClick={handleClick}
+
                                 className={cx(styles['filter-item'], {
                                     [styles[
                                         'filter-item__selected'
@@ -57,8 +68,10 @@ const Filter = ({ selectedItems, setItems }) => {
                     })}
                 </ul>
             </div>
+
         </div>
     );
 };
+
 
 export default Filter;
