@@ -89,7 +89,8 @@
     &__projects {
         display: flex;
         flex-direction: column;
-        @include desktop {
+
+        @include tablet {
             display: grid;
             grid-template-columns: 1fr 1fr;
             max-width: 90vw;
@@ -121,12 +122,6 @@
         align-self: center;
         font-size: 2.75rem;
         font-weight: 100;
-        flex-direction: column;
-
-        @include tablet {
-            flex-direction: column;
-            width: 50rem;
-        }
     }
 
     &__description {
@@ -142,8 +137,9 @@
     height: 10rem;
     margin-top: 3rem;
     text-align: center;
-    font-size: 2rem;
+
     max-width: 50rem;
+
     &__header {
         font-size: 5rem;
         @include tablet {
@@ -156,6 +152,7 @@
         height: 50rem;
         border: 1px black;
         margin-top: 22rem;
+        font-size: 3rem;
     }
 
     &__list {
@@ -163,7 +160,6 @@
         flex-wrap: wrap;
         margin-right: 1rem;
         justify-content: center;
-
         column-width: 10rem;
         column-count: 4;
         flex-wrap: wrap;
@@ -172,6 +168,10 @@
         li {
             list-style: none;
             margin-right: 3rem;
+            font-size: 2rem;
+            @include tablet {
+                font-size: 10rem;
+            }
             &:hover {
                 color: $secondary-color;
                 cursor: pointer;

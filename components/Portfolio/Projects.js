@@ -25,7 +25,7 @@ const Projects = ({ filters }) => {
             const tagString =
                 `#` +
                 project.stack.toString().replace(new RegExp(',', 'g'), ' #');
-
+            const url = `/projects/${project.id}`;
             return (
                 <motion.div
                     animate={{ opacity: [0, 1] }}
@@ -37,7 +37,7 @@ const Projects = ({ filters }) => {
                         className={styles['portfolio-container__box']}
                         href={`/project?title=${project.title}`}
                     >
-                        <Link href={`/projects/${project.id}`}>
+                        <Link href={url.toString()}>
                             <div>
                                 <img
                                     src={project.picture}

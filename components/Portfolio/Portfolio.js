@@ -18,7 +18,9 @@ const Portfolio = () => {
                         Check out my latest projects
                     </h5>
 
-                    <Projects filters={filters} />
+                    <div className={styles['portfolio-container__projects']}>
+                        <Projects filters={filters} />
+                    </div>
                 </div>
             </div>
         </React.Fragment>

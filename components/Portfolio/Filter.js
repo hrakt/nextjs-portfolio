@@ -37,7 +37,6 @@ const Filter = ({ selectedItems, setItems }) => {
             <div className={styles['filter-container__items']}>
                 <ul className={styles['filter-container__list']}>
                     {filterItems.map(item => {
-                        console.log(item);
                         return (
                             <li
                                 onClick={handleClick}
