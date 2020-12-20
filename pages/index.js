@@ -1,5 +1,4 @@
 import Main from '../components/Main/Main';
-import About from '../components/About/About';
 import Layout from '../layouts/main';
 
 const Index = () => (
