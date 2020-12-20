@@ -88,6 +88,9 @@ const Projects = ({ filters }) => {
 Projects.propTypes = {
     filters: PropTypes.array,
 };
+Projects.defaultProps = {
+    filters: [],
+};
 
 
 export default Projects;
