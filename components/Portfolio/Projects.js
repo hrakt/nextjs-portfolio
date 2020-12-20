@@ -91,7 +91,7 @@ Projects.propTypes = {
 
 export async function getStaticProps() {
     const res = await fetch('https://.../work')
-    const posts = await res.json()
+    const filters = await res.json()
   
  
     return {
