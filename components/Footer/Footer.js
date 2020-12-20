@@ -1,7 +1,4 @@
-import styles from '../Footer/Footer.scss';
-// import githubLogo from "../../img/_ionicons_svg_logo-github.svg";
-// import linkedinLogo from "../../img/_ionicons_svg_logo-linkedin.svg";
-import Contact from '../Footer/ContactForm';
+import styles from '../Footer/Footer.module.scss';
 import Text from '../common/Text';
 
 const Footer = () => (
