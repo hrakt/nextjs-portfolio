@@ -1,4 +1,4 @@
-@import '../../sass/mixins.scss';
+@import '../../sass/breakpoints.scss';
 @import '../../sass/variables.scss';
 
 .filter-container {
@@ -7,11 +7,17 @@
     text-align: center;
     font-size: 2rem;
 
+    &__items {
+        text-align: center;
+        padding-bottom: 5rem;
+    }
     &__header {
         font-size: 5rem;
     }
     &__list {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         margin-right: 1rem;
         justify-content: center;
         list-style: none;
@@ -19,18 +25,50 @@
 }
 
 .filter-item {
-    margin-right: 3rem;
+
+    min-width: 10rem;
+    text-align: center;
+    position: relative;
+
     &__selected {
         color: white;
         background-color: $secondary-color;
         border-radius: 100px;
+
+
         &:hover {
+            background-color: $secondary-color;
             color: white;
-            cursor: pointer;
         }
     }
+
+    &__tooltip {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
     &:hover {
         color: $secondary-color;
+        background-color: white;
         cursor: pointer;
+    }
+    &:hover &__tooltip {
+        visibility: visible;
+        opacity: 1;
+
+
     }
 }

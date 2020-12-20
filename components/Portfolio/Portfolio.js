@@ -1,5 +1,6 @@
-import portfolio from '../Portfolio/Portfolio.scss';
-import Button from '../common/Button';
+
+import styles from '../Portfolio/Portfolio.scss';
+
 import Filter from '../Portfolio/Filter';
 import { useState } from 'react';
 
@@ -10,16 +11,20 @@ const Portfolio = () => {
     return (
         <React.Fragment>
             <Filter selectedItems={filters} setItems={setFilters} />
-            {/* <Button type="internal" title="Apply" /> */}
-            <div className={portfolio['container-3']} id="portfolio">
-                <div className={portfolio['portfolio-container']}>
-                    <h4 className={portfolio['portfolio-container__heading']}>
+
+            <div className={styles['container-3']} id="portfolio">
+                <div className={styles['portfolio-container']}>
+                    <h4 className={styles['portfolio-container__heading']}>
+
                         Portfolio
                     </h4>
-                    <h5 className={portfolio['portfolio-container__heading2']}>
+                    <h5 className={styles['portfolio-container__heading2']}>
                         Check out my latest projects
                     </h5>
-                    <div className={portfolio['portfolio-container__projects']}>
+
+
+                    <div className={styles['portfolio-container__projects']}>
+
                         <Projects filters={filters} />
                     </div>
                 </div>

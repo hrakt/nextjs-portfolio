@@ -1,8 +1,11 @@
 import projects from '../../utils/projects';
 import { motion } from 'framer-motion';
-import portfolio from '../Portfolio/Portfolio.scss';
+
+import styles from '../Portfolio/Portfolio.scss';
 import Link from 'next/link';
 import Button from '../common/Button';
+import PropTypes from 'prop-types';
+
 
 let render = 0;
 
@@ -18,59 +21,74 @@ const getProjects = filters => {
 const Projects = ({ filters }) => {
     const filteredProjects = getProjects(filters);
     render++;
-    return filteredProjects.map(project => {
-        const tagsString = project.toString().replace(/[,]/g, ' ');
-        return (
-            <motion.div
-                animate={{ opacity: [0, 1] }}
-                transition={{ duration: 1 }}
-                key={`${render}_${project.id}`}
-                className={portfolio['portfolio-container__content']}
-            >
-                <div
-                    className={portfolio['portfolio-container__box']}
-                    href={`/project?title=${project.title}`}
+
+
+    if (filteredProjects.length > 0) {
+        return filteredProjects.map(project => {
+            const tagString =
+                `#` +
+                project.stack.toString().replace(new RegExp(',', 'g'), ' #');
+            const url = `/projects/${project.id}`;
+            return (
+                <motion.div
+                    animate={{ opacity: [0, 1] }}
+                    transition={{ duration: 1 }}
+                    key={`${render}_${project.id}`}
+                    className={styles['portfolio-container__content']}
                 >
-                    <Link href={`/projects/${project.id}`}>
-                        <div>
-                            <img
-                                src={project.picture}
-                                alt="Portfolio-1"
-                                className={
-                                    portfolio['portfolio-container__img']
-                                }
-                            />
-                            <div
-                                className={
-                                    portfolio['portfolio-container__box']
-                                }
-                            ></div>
-                            <div
-                                className={
-                                    portfolio['portfolio-container__buttons']
-                                }
-                            >
+                    <div
+                        className={styles['portfolio-container__box']}
+                        href={`/project?title=${project.title}`}
+                    >
+                        <Link href={url.toString()}>
+                            <div>
+                                <img
+                                    src={project.picture}
+                                    alt="Portfolio-1"
+                                    className={
+                                        styles['portfolio-container__img']
+                                    }
+                                />
+
                                 <div
                                     className={
-                                        portfolio['portfolio-container__tags']
+                                        styles['portfolio-container__buttons']
                                     }
                                 >
-                                    {project.stack
-                                        .toString(' ')
-                                        .replace(',', ' ')}
+                                    <div
+                                        className={
+                                            styles['portfolio-container__tags']
+                                        }
+                                    >
+                                        {tagString}
+                                    </div>
+                                    <Button
+                                        id={project.id}
+                                        type="internal"
+                                        title="Learn More"
+                                    />
                                 </div>
-                                <Button
-                                    id={project.id}
-                                    type="internal"
-                                    title="Learn More"
-                                />
                             </div>
-                        </div>
-                    </Link>
-                </div>
-            </motion.div>
+                        </Link>
+                    </div>
+                </motion.div>
+            );
+        });
+    } else {
+        return (
+            <React.Fragment>
+                <p className={styles['portfolio-container__error']}>
+                    No results were found
+                </p>
+            </React.Fragment>
         );
-    });
+    }
+};
+
+Projects.propTypes = {
+    filters: PropTypes.array,
+
+  
 };
 
 export default Projects;
