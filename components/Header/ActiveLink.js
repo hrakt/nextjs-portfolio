@@ -2,7 +2,7 @@ import { withRouter } from 'next/router';
 import cx from 'classnames';
 import Link from 'next/link';
 import React, { Children } from 'react';
-import styles from '../Header/Headers.scss';
+import styles from '../Header/Header.module.scss';
 import { useEffect } from 'react';
 
 const ActiveLink = ({
