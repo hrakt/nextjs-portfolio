@@ -87,8 +87,18 @@ const Projects = ({ filters }) => {
 
 Projects.propTypes = {
     filters: PropTypes.array,
-
-  
 };
+
+export async function getStaticProps() {
+    const res = await fetch('https://.../work')
+    const posts = await res.json()
+  
+ 
+    return {
+      props: {
+        filters,
+      },
+    }
+  }
 
 export default Projects;
