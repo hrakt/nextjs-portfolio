@@ -24,7 +24,6 @@ const Portfolio = () => {
 
 
                     <div className={styles['portfolio-container__projects']}>
-
                         <Projects filters={filters} />
                     </div>
                 </div>

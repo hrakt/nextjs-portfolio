@@ -1,7 +1,3 @@
-:root {
-    --color-primary-light: #ff3366;
-    --color-primary-dark: #ba265d;
-}
 
 * {
     margin: 0;
@@ -16,7 +12,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; // 1rem = 10px
+    font-size: 62.5%; 
     scroll-behavior: smooth;
     overflow: hidden;
     height: 100%;
@@ -30,7 +26,6 @@ body {
     height: 100%;
     overflow: auto;
 
-    color: var(--color-grey-dark-2);
     background-size: cover;
     background-repeat: no-repeat;
 }
