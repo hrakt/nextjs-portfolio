@@ -1,10 +1,7 @@
-import { useEffect, useState } from 'react';
-
 import styles from '../Header/Header.module.scss';
 import SideBarMenu from '../Header/SideNav';
 import Scroller from '../common/Scroller';
 import Link from './ActiveLink';
-import { motion } from 'framer-motion';
 
 const Header = () => {
     return (
