@@ -27,6 +27,7 @@
         "use-force-update": "^1.0.7"
     },
     "devDependencies": {
-        "@madeinhaus/prettier-config": "^1.0.0"
+        "@madeinhaus/prettier-config": "^1.0.0",
+        "webpack": "^5.11.0"
     }
 }
