@@ -1,11 +1,11 @@
-import filter from '../Portfolio/Filter.scss';
+import styles from '../Portfolio/Filter.scss';
 import cx from 'classnames';
 
 const FilterItem = ({ itemName, selectedItems }) => {
     return (
         <li
-            className={cx(filter['filter-item'], {
-                [filter['filter-item__selected']]: selectedItems.includes(
+            className={cx(styles['filter-item'], {
+                [styles['filter-item__selected']]: selectedItems.includes(
                     itemName
                 ),
             })}

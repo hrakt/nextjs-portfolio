@@ -1,4 +1,4 @@
-@import '../../sass/mixins.scss';
+@import '../../sass/breakpoints.scss';
 @import '../../sass/variables.scss';
 
 .logo {
@@ -24,7 +24,7 @@
     align-content: center;
     margin-right: 4rem;
     min-height: 10rem;
-    @include sm {
+    @include tablet {
         visibility: hidden;
     }
 

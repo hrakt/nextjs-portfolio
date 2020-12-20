@@ -1,4 +1,4 @@
-@import '../../sass/mixins.scss';
+@import '../../sass/breakpoints.scss';
 @import '../../sass/variables.scss';
 @import '../../sass/animations.scss';
 
@@ -24,7 +24,7 @@
         font-weight: 400;
         margin: 0 auto;
 
-        @include sm {
+        @include tablet {
             font-size: 5.5rem;
         }
     }
@@ -61,7 +61,7 @@
             animation: colorFromRight 0.25s;
         }
 
-        @include sm {
+        @include tablet {
             font-size: 2rem;
         }
     }

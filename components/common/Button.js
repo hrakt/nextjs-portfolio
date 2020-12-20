@@ -1,13 +1,15 @@
-import button from '../common/Button.scss';
+import styles from '../common/Button.scss';
 import Link from 'next/link';
 
 const Button = ({ title, type, href, id }) => {
     switch (type) {
         case 'internal':
             return (
-                <div className={button['container']}>
+
+                <div className={styles['container']}>
                     <Link href={href && 'projects/[id]'} as={`/projects/${id}`}>
-                        <button className={button['btn']} type={type}>
+                        <button className={styles['btn']} type={type}>
+
                             {title}
                         </button>
                     </Link>
@@ -16,9 +18,9 @@ const Button = ({ title, type, href, id }) => {
 
         case 'external':
             return (
-                <div className={button['container']}>
+                <div className={styles['container']}>
                     <a href={href}>
-                        <button className={button['btn']} type={type}>
+                        <button className={styles['btn']} type={type}>
                             {title}
                         </button>
                     </a>
@@ -27,7 +29,7 @@ const Button = ({ title, type, href, id }) => {
         default:
             return (
                 <React.Fragment>
-                    <button className={button['btn']} type={type}>
+                    <button className={styles['btn']} type={type}>
                         {title}
                     </button>
                 </React.Fragment>
