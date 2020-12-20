@@ -1,4 +1,4 @@
-import styles from '../common/Button.scss';
+import styles from '../common/Button.module.scss';
 import Link from 'next/link';
 
 const Button = ({ title, type, href, id }) => {

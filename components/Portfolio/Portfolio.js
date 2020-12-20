@@ -1,5 +1,5 @@
 
-import styles from '../Portfolio/Portfolio.scss';
+import styles from '../Portfolio/Portfolio.module.scss';
 
 import Filter from '../Portfolio/Filter';
 import { useState } from 'react';

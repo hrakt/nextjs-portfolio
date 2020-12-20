@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from '../Header/SideNav.scss';
+import styles from '../Header/SideNav.module.scss';
 import cx from 'classnames';
 import Link from './ActiveLink';
 

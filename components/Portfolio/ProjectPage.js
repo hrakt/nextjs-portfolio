@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import Button from '../common/Button';
-import styles from '../Portfolio/ProjectPage.scss';
+import styles from '../Portfolio/ProjectPage.module.scss';
 
 const ProjectPage = ({ project }) => {
     useEffect(() => scrollToTop());

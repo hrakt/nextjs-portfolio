@@ -1,5 +1,5 @@
-import styles from '../Footer/ContactForm.scss';
-import footer from '../Footer/Footer.scss';
+import styles from '../Footer/ContactForm.module.scss';
+import footer from '../Footer/Footer.module.scss';
 
 const ContactForm = () => {
     const options = [

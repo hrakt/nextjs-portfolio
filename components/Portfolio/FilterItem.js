@@ -1,4 +1,4 @@
-import styles from '../Portfolio/Filter.scss';
+import styles from '../Portfolio/Filter.module.scss';
 import cx from 'classnames';
 
 const FilterItem = ({ itemName, selectedItems }) => {

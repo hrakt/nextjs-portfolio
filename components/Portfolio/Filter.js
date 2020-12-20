@@ -1,11 +1,6 @@
-
-
-import filter from '../Portfolio/Filter.scss';
-
-import FilterItem from '../Portfolio/FilterItem';
 import cx from 'classnames';
 import { useState } from 'react';
-import styles from './Filter.scss';
+import styles from './Filter.module.scss';
 
 const Filter = ({ selectedItems, setItems }) => {
     const [filterItems, setFitlerItems] = useState([

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import styles from '../common/Scroller.scss';
+import styles from '../common/Scroller.module.scss';
 import cx from 'classnames';
 
 const Scroller = () => {

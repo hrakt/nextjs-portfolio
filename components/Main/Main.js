@@ -1,4 +1,4 @@
-import styles from '../Main/Main.scss';
+import styles from '../Main/Main.module.scss';
 import Button from '../common/Button';
 import { motion } from 'framer-motion';
 

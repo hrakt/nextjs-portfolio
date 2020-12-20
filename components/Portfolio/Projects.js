@@ -1,7 +1,7 @@
 import projects from '../../utils/projects';
 import { motion } from 'framer-motion';
 
-import styles from '../Portfolio/Portfolio.scss';
+import styles from '../Portfolio/Portfolio.module.scss';
 import Link from 'next/link';
 import Button from '../common/Button';
 import PropTypes from 'prop-types';
