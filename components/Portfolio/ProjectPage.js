@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Button from '../common/Button';
 import styles from '../Portfolio/ProjectPage.module.scss';
+import PropTypes from 'prop-types';
 
 const ProjectPage = ({ project }) => {
     useEffect(() => scrollToTop());
@@ -22,5 +23,13 @@ const ProjectPage = ({ project }) => {
         </div>
     );
 };
+
+Projects.propTypes = {
+    project: PropTypes.object,
+};
+Projects.defaultProps = {
+    project: {},
+};
+
 
 export default ProjectPage;

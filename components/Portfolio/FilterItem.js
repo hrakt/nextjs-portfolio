@@ -1,5 +1,6 @@
 import styles from '../Portfolio/Filter.module.scss';
 import cx from 'classnames';
+import PropTypes from 'prop-types';
 
 const FilterItem = ({ itemName, selectedItems }) => {
     return (
@@ -13,6 +14,15 @@ const FilterItem = ({ itemName, selectedItems }) => {
             {itemName}
         </li>
     );
+};
+
+Projects.propTypes = {
+    itemName: PropTypes.string,
+    selectedItems: PropTypes.array,
+};
+Projects.defaultProps = {
+    itemName: "",
+    selectedItems: [],
 };
 
 export default FilterItem;

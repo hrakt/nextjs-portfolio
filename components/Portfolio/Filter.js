@@ -1,6 +1,7 @@
 import cx from 'classnames';
 import { useState } from 'react';
 import styles from './Filter.module.scss';
+import PropTypes from 'prop-types';
 
 const Filter = ({ selectedItems, setItems }) => {
     const [filterItems, setFitlerItems] = useState([
@@ -68,5 +69,12 @@ const Filter = ({ selectedItems, setItems }) => {
     );
 };
 
+Filter.propTypes = {
+    selectedItems: PropTypes.array,
+    setItems: PropTypes.func,
+};
+Filter.defaultProps = {
+    selectedItems: [],
+};
 
 export default Filter;
