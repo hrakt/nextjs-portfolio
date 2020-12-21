@@ -5,7 +5,7 @@ const Work = () => {
     return (
         <div>
             <Layout>
-                <Portfolio />
+                {/* <Portfolio /> */}
             </Layout>
         </div>
     );
