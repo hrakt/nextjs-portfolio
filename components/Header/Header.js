@@ -15,10 +15,10 @@ const Header = () => {
                 </Link>
             </div>
 
-            <SideBarMenu />
+            {/* <SideBarMenu /> */}
 
 
-            <nav className={styles['navbar']}>
+            {/* <nav className={styles['navbar']}>
                 <div className={styles['navbar__item']}>
 
                     <Link href="/about" activeClassName="active">
@@ -35,7 +35,7 @@ const Header = () => {
                         <a className={styles['navbar__item-link']}>Contact</a>
                     </Link>
                 </div>
-            </nav>
+            </nav> */}
         </div>
     );
 };
